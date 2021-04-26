@@ -1,0 +1,9 @@
+recipient=widget/entry
+mailhub=widget/entry
+hostname=widget/entry
+username=widget/entry
+password=widget/entry
+confirm=widget/entry
+use-tls=widget/combobox
+from-line=widget/combobox
+rewrite=widget/combobox

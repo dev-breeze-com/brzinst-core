@@ -1,0 +1,9 @@
+# BSDBOOT loader RC file
+
+include /boot/loader.4th
+start
+
+kernel="/boot/breeze..."
+kernels="/boot/breeze... /boot/breeze..."
+vfs.root.mountfrom="ufs:/dev/da0s1a"
+

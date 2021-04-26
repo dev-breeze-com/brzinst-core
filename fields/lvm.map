@@ -1,0 +1,6 @@
+device=widget/entry
+partition=widget/label
+vgroup=widget/entry
+vattr=widget/entry
+size=widget/spinbox
+filesystem=widget/combobox

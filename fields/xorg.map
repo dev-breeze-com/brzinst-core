@@ -1,0 +1,5 @@
+graphics-card=widget/comboboxentry
+monitor=widget/entry
+hsync=widget/comboboxentry
+vsync=widget/comboboxentry
+resolution=widget/combobox

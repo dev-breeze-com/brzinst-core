@@ -1,0 +1,488 @@
+#!/bin/sh
+#
+# GNU GENERAL PUBLIC LICENSE Version 3
+#
+# GNU GENERAL PUBLIC LICENSE Version 3
+#
+# Copyright 2016, Pierre Innocent, Tsert Inc. All Rights Reserved
+#
+# Initialize folder paths
+. d-dirpaths.sh
+
+shred_file()
+{
+	if [ -f "$1" ]; then
+		shred --remove --zero "$1"
+		return $?
+	fi
+	return 1
+}
+
+#init_luks_container()
+#{
+#	local container="$LUKSDIR/lockbox"
+#
+#	dd if=/dev/zero of=$lockbox bs=4K count=8192
+##
+#	modprobe cryptoloop ; sync
+#
+#	loopdev="`losetup -f 2> /dev/null`"
+#
+#	if [ -z "$loopdev" ]; then
+#		return 1
+#	fi
+#
+#	losetup $loopdev $container
+#}
+
+ascii_password()
+{
+	local count=0
+	local times=$1
+	local password=""
+	#set times i
+
+	while test $count -lt $times ; do
+		password="$password`mktemp -qu 'XXXXXX'`"
+		count=$(( $count + 1 ))
+	done
+
+	echo "$password"
+	return 0
+}
+
+secure_crypto_erase()
+{
+	local rc=0
+	local device="$1"
+	local mode="$2"
+
+	if [ -n "$device" ]; then
+		if [ "$mode" = "zero" ]; then
+			dd if=/dev/zero of=$device bs=1M status=none 2> /dev/null
+		elif [ "$mode" = "dd" ]; then
+			dd if=/dev/urandom of=$device bs=1M status=none 2> /dev/null
+		elif [ "$mode" = "shred" ]; then
+			shred -n 3 --random-source /dev/urandom $device
+		elif [ "$mode" = "dmcrypt" ]; then
+			cryptsetup open --type plain $device container \
+				--key-file /dev/urandom -q
+			rc=$?
+			if [ $rc = 0 ]; then
+				dd if=/dev/zero of=/dev/mapper/container bs=1M status=none 2> /dev/null
+				cryptsetup luksClose container
+			fi
+		fi
+	fi
+	return $rc
+}
+
+get_luks_keyname()
+{
+	local device="$1"
+
+	if [ -n "$device" ]; then
+		local vgroup="`echo "$1" | cut -f3-5 -d/`"
+		vgroup="`echo "$vgroup" | sed 's/\//-/g'`"
+		echo "$vgroup"
+	fi
+	return 0
+}
+
+get_luks_devname()
+{
+	local luksmode="$1"
+	local luksdev="$2"
+
+	if [ "$luksmode" = "keys" ]; then
+		echo "${luksdev}"
+		return 0
+	fi
+
+	if ! grep -qF "${luksdev}" $TMP/drives-on-atboot.lst ; then
+		echo "${luksdev}"
+		return 0
+	fi
+
+	for id in 1 2 3 4 5 6 7 8 9 ; do
+		if ! grep -qF "${luksdev}_${id}" $TMP/drives-on-atboot.lst ; then
+			echo "${luksdev}_${id}"
+			return 0
+		fi
+	done
+	return 1
+}
+
+get_keyfile_uniq_path()
+{
+	local uniq_id="$1"
+	echo "$BOOTLUKSDIR/${uniq_id}-cryptokey.bin"
+	return 0
+}
+
+get_keyfile_path()
+{
+	local cmd="$1"
+	local drive="$2"
+	local device="$3"
+
+	local devid="`basename $drive`"
+	local luksname="`get_luks_keyname $device`"
+	local usekey="`extract_value crypto-${devid} 'keyfile'`"
+
+	mkdir -p /mnt/lukskeys
+
+	if [ "$cmd" = "keys" ]; then
+		echo "$BOOTLUKSDIR/keys-cryptokey.bin"
+	elif [ "$cmd" = "master" ]; then
+		echo "$BOOTLUKSDIR/brz-cryptokey.bin"
+	elif [ "$usekey" = "unique" ]; then
+		if [ "$cmd" = "format" ]; then
+			echo "$BOOTLUKSDIR/brz-cryptokey.bin"
+		else
+			echo "/mnt/lukskeys/boot/luks/brz-cryptokey.bin"
+		fi
+	elif [ "$cmd" = "format" ]; then
+		echo "$BOOTLUKSDIR/${luksname}-cryptokey.bin"
+	elif [ "$cmd" = "luksuuid" ]; then
+		local rawuuid="`get_device_uuid $device`"
+		echo "/mnt/lukskeys/boot/luks/${rawuuid}-cryptokey.bin"
+	else
+		echo "/mnt/lukskeys/boot/luks/${luksname}-cryptokey.bin"
+	fi
+
+	return 0
+}
+
+create_luks_keyfile()
+{
+	local rc=1
+	local drive="$1"
+	local device="$2"
+	local luksmode="$3"
+	local password="$4"
+
+	local devid="`basename $drive`"
+	local passwd_file="$BOOTLUKSDIR/keys-password.txt"
+	local keyfile="`get_keyfile_path $luksmode $drive $device`"
+
+	if [ "$luksmode" = "master" ]; then
+		dd if=/dev/urandom of=$keyfile bs=512 count=4096 2> /dev/null
+		rc=$?
+		sync
+
+	elif [ "$luksmode" = "openssl" ]; then
+		openssl rand -base64 48 | \
+			gpg --symmetric --cipher-algo aes --armor 1> $LUKSDIR/key.gpg
+		dd if=$LUKSDIR/key.gpg of=$keyfile 2> /dev/null
+		rc=$?
+		sync
+
+	elif [ "$luksmode" = "gpg" ]; then
+		dd if=/dev/urandom bs=512 count=4 | \
+			gpg -v --cipher-algo aes256 --digest-algo sha512 -c -a \
+			1> $LUKSDIR/key.gpg
+		dd if=$LUKSDIR/key.gpg of=$keyfile 2> /dev/null
+		rc=$?
+		sync
+
+	elif [ "$luksmode" = "master" ]; then
+
+		modprobe cryptoloop ; sync
+
+		loopdev="`losetup -f 2> /dev/null`"
+
+		if [ -z "$loopdev" ]; then
+			return 1
+		fi
+
+		echo "INSTALLER: PROGRESS L_CREATING_CRYPTO_KEY"
+		sync
+
+		dd if=/dev/zero of=$LUKSDIR/keys.lbd bs=512 count=8192 2> /dev/null
+
+		if ! losetup $loopdev $LUKSDIR/keys.lbd ; then
+			return 1
+		fi
+
+		echo "INSTALLER: PROGRESS L_FORMATTING_CRYPTO_KEY"
+		sync
+
+		echo "$password" | \
+			cryptsetup luksFormat $loopdev -c aes-xts-plain64:sha512 -s 512 -q
+
+		if [ $? != 0 ]; then
+			return 1
+		fi
+
+		echo "INSTALLER: PROGRESS L_CHECKING_CRYPTO_KEY"
+		sync
+
+		echo "$password" | cryptsetup luksOpen $loopdev keys.lbd
+
+		if [ $? != 0 ]; then
+			return 1
+		fi
+
+		dd if=/dev/urandom of=$LUKSDIR/keys.lbd bs=512 count=2048 2> /dev/null
+
+		echo "INSTALLER: PROGRESS L_SAVING_CRYPTO_KEY"
+		sync
+
+		dd if=$LUKSDIR/keys.lbd of=$keyfile bs=512 count=2048 2> /dev/null
+		rc=$?
+
+		cryptsetup luksClose keys.lbd
+		losetup -d $loopdev
+		sync
+
+	elif [ "$luksmode" = "keys" ]; then
+
+		local hashpasswd="`extract_value crypto-${devid} 'passwd-type'`"
+
+		dd if=/dev/urandom of=$keyfile bs=512 count=4096 2> /dev/null
+		rc=$?
+
+		if [ "$hashpasswd" = "md5" ]; then
+			md5sum $keyfile | cut -f1 -d' ' 1> $passwd_file
+		elif [ "$hashpasswd" = "sha1" ]; then
+			sha1sum $keyfile | cut -f1 -d' ' 1> $passwd_file
+		elif [ "$hashpasswd" = "sha256" ]; then
+			sha256sum $keyfile | cut -f1 -d' ' 1> $passwd_file
+		elif [ "$hashpasswd" = "ascii-12" ]; then
+			ascii_password 2 1> $passwd_file
+		elif [ "$hashpasswd" = "ascii-24" ]; then
+			ascii_password 4 1> $passwd_file
+		elif [ "$hashpasswd" = "ascii-48" ]; then
+			ascii_password 8 1> $passwd_file
+		else
+			sha1sum $keyfile | cut -f1 -d' ' 1> $passwd_file
+		fi
+		sync
+	else
+		dd if=/dev/urandom of=$keyfile bs=512 count=4096 2> /dev/null
+		rc=$?
+
+		#local rawuuid="`get_device_uuid $device`"
+		#if [ -z "$rawuuid" ]; then return 1; fi
+		#dd if=$keyfile of=$BOOTLUKSDIR/${rawuuid}-cryptokey.bin
+
+		sync
+	fi
+
+	return $rc
+}
+
+store_uuid_cryptokey()
+{
+	local drive="$1"
+	local device="$2"
+	local keyfile="`get_keyfile_path "format" "$drive" "$device"`"
+	local rawuuid="`get_device_uuid $device`"
+	if [ -z "$rawuuid" ]; then return 1; fi
+	dd if=$keyfile of=$BOOTLUKSDIR/${rawuuid}-cryptokey.bin 2> /dev/null
+	return $?
+}
+
+get_crypto_options()
+{
+	local cmd="$1"
+	local drive="$2"
+	local crypto="$3"
+	local devid="`basename $1`"
+
+	local keysize="512"
+	local cipher="`extract_value crypto-${devid} 'cipher'`"
+	local checksum="`extract_value crypto-${devid} 'hash'`"
+	local blockmode="`extract_value crypto-${devid} 'block-mode'`"
+
+	if [ "$crypto" = "luks" ]; then
+
+		if [ "$cipher" = "fastest" ]; then
+			cipher="camellia-xts-$blockmode"
+		elif [ "$cipher" = "secure" ]; then
+			cipher="serpent-xts-$blockmode"
+		elif [ "$cipher" = "default" ]; then
+			cipher="aes-xts-$blockmode"
+		elif [ "$cipher" = "default-128" ]; then
+			cipher="aes-xts-$blockmode"
+			keysize="256"
+		fi
+
+		echo "-y --cipher $cipher --hash $checksum --key-size $keysize --iter-time 3000 --use-random"
+
+	elif [ "$crypto" = "encfs" ]; then
+		echo "-y --type luks"
+	elif [ "$crypto" = "ecryptfs" ]; then
+		echo "-y --type luks"
+	fi
+	return 0
+}
+
+init_crypto_encfs()
+{
+	local rc=1
+	local drive="$1"
+	local device="$2"
+	local folder="$3"
+	local user="$3"
+	local options="`get_crypto_options $drive encfs`"
+
+	mkdir -p $folder/.encfs 
+
+	if [ "$folder" = "/home" ]; then
+
+		mkdir -p /home/.encfs/$user 
+		mv /home/$user /home/${user}.bak
+		mkdir -p /home/$user 
+		chown $user:users /home/$user /home/.enc/$user 
+
+		encfs $options $folder/.encfs/$user /home/$user
+
+		if [ "$?" = 0 ]; then
+			mv /home/${user}.bak/* /home/$user/
+			mv /home/${user}.bak/.* /home/$user/
+			rm -rf /home/${user}.bak
+			rc=0
+		fi
+	else
+		encfs $options $folder/.encfs $folder/
+		rc=$?
+	fi
+	return $rc
+}
+
+init_crypto_ecryptfs()
+{
+	local rc=1
+	local drive="$1"
+	local device="$2"
+	local folder="$3"
+	local user="$3"
+	local options="`get_crypto_options $drive ecryptfs`"
+
+	ecryptfs $options $device crypto
+	rc=$?
+	echo "$device"
+
+	return $rc
+}
+
+init_crypto_luks()
+{
+	local rc=1
+	local drive="$1"
+	local device="$2"
+	local luksmode="$3"
+	local luksmtpt="`basename $4`"
+	local password="$5"
+	local devlabel="$6"
+
+	local devid="`basename $drive`"
+	local crypto="`extract_value crypto-${devid} 'type'`"
+	local erasure="`extract_value crypto-${devid} 'erasure'`"
+	local disktype="`extract_value scheme-${devid} 'disk-type'`"
+
+	local options="`get_crypto_options $drive $crypto`"
+	local keyfile="`get_keyfile_path "$luksmode" "$drive" "$device"`"
+
+	if [ "$luksmtpt" = "/" -o -z "$luksmtpt" ]; then
+		luksmtpt="luksroot"
+	elif ! echo "$luksmtpt" | grep -qF 'luks' ; then
+		luksmtpt="luks$luksmtpt"
+	fi
+
+	local luksdev="`get_luks_devname $luksmode $luksmtpt`"
+
+	if [ -n "$erasure" -a "$erasure" != "none" ]; then
+		secure_crypto_erase $device $erasure
+	fi
+
+	if [ "$crypto" = "luks" -a "$luksmode" = "keys" ]; then
+
+		echo "$password" | cryptsetup $options luksFormat $device -q
+
+		if [ $? != 0 ]; then return 1; fi
+
+		echo "$password" | cryptsetup $options luksOpen $device $luksdev
+
+		if [ $? != 0 ]; then return 1; fi
+
+		if create_luks_keyfile "$drive" "$device" "$luksmode" ; then
+			local passwd_file="$BOOTLUKSDIR/keys-password.txt"
+			echo "$password" | \
+				cryptsetup luksAddKey $device --key-file $keyfile
+			echo "$password" | \
+				cryptsetup luksAddKey $device --key-file $passwd_file
+		fi
+	elif [ "$crypto" = "luks" ]; then
+
+		if [ -n "$devlabel" -a "$luksmtpt" = "swap" ]; then
+			echo "/dev/mapper/$luksdev"
+			return $?
+		fi
+
+		if ! create_luks_keyfile "$drive" "$device" "$luksmode" ; then
+			return 1
+		fi
+
+		if ! cryptsetup $options luksFormat $device $keyfile -q ; then
+			return 1
+		fi
+
+		if ! cryptsetup $options -d $keyfile luksOpen $device $luksdev ; then
+			return 1
+		fi
+
+		if [ "$luksmode" != "keys" ]; then
+			backup_luks_header $device
+		fi
+	fi
+
+	echo "/dev/mapper/$luksdev"
+	return $?
+}
+
+restore_luks_header()
+{
+	local device="$1"
+	local luksname="`get_luks_keyname $device`"
+	local hdrfile="$BOOTLUKSDIR/hdr-${luksname}.img"
+
+	mkdir -p /mnt/lukstest
+	mkdir -p /mnt/lukskeys
+
+	cryptsetup -v --header $hdrfile open $device lukstest 
+
+	if [ $? = 0 ]; then
+
+		mount /dev/mapper/lukstest /mnt/lukstest && ls /mnt/lukstest 
+
+		if [ $? = 0 ]; then
+			umount /mnt/lukstest
+			sync
+			cryptsetup luksClose lukstest
+			sync
+			cryptsetup luksHeaderRestore $device \
+				--header-backup-file $hdrfile
+		fi
+	fi
+	return $?
+}
+
+backup_luks_header()
+{
+	local device="$1"
+	local luksname="`get_luks_keyname $device`"
+	local hdrfile="$BOOTLUKSDIR/hdr-${luksname}.img"
+
+	unlink $hdrfile 2> /dev/null 2> /dev/null
+
+	# Cryptsetup's luksHeaderBackup action stores a binary backup
+	# of the LUKS header and keyslot area:
+	cryptsetup luksHeaderBackup $device --header-backup-file $hdrfile
+
+	return $?
+}
+
+# end Breeze::OS script

@@ -1,0 +1,13 @@
+ [1;33;40m Kodiak.light Setup -- Disk Partitioning Scheme [1;37;40mfive [0;37;40m [0;37;40m
+
+    [1;37;40m Half your disk-space housing non-WINDOWS partitions will be used [0;37;40m
+
+         /   [1;32;40m################ 50.0% ########################[0;37;40m
+
+           Only the [1;37;40mnon-Windows [0;37;40m partitions [1;37;40mmay [0;37;40m be reformatted.
+        If you [1;37;40mrepartition [0;37;40m your drive, all data on it will be lost;
+               but, you can always [1;37;40mrecover [0;37;40m your data, by
+                    [1;37;40mrestoring [0;37;40m the [1;37;40msaved settings [0;37;40m.
+
+        Type [1;37;40m[Y]es to Partition [0;37;40m or press on any other key to [1;37;40mContinue [0;37;40m
+

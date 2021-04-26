@@ -1,0 +1,15 @@
+	    [1;33;40m Kodiak.light Setup -- Network Installation  [0;37;40m
+
+    You should pick [1;32;40mstandalone[0;37;40m as a network installation, if you only
+    require a [1;37;40mdesktop system[0;37;40m. Otherwise, either pick [1;32;40mnetwork-client[0;37;40m, or
+    [1;32;40mnetwork-master[0;37;40m depending on, whether or not, you want a [1;37;40mclient[0;37;40m or
+    [1;37;40mmaster[0;37;40m desktop computer.
+
+    If you want a [1;37;40mnetwork-client[0;37;40m, you can select replication
+	of a full installation from a [1;37;40mmaster system[0;37;40m.
+
+	   Type [[1;32;40mS[0;37;40m][1;37;40mtandalone[0;37;40m for the standalone installation.
+	   Type [[1;32;40mC[0;37;40m][1;37;40mlient[0;37;40m for the network client installation.
+	   Type [[1;32;40mM[0;37;40m][1;37;40master[0;37;40m for the network master installation.
+	   Type [1;37;40many other key[0;37;40m to continue.
+

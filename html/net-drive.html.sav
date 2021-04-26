@@ -1,0 +1,17 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<p color="yellow">Breeze::OS Installer Setup -- Package Source</p>
+<p>
+You selected a <b>network</b> source for <b>Breeze::OS</b> packages.<br>
+On saving your settings, the <b>selected</b> server will be contacted,<br>and the <b>specified desktop file</b> retrieved.<br>
+The <font color="#33FB01"><b>netinstall</b></font> desktop file is used<br>to <b>replicate</b> the server's installation onto this computer.<br>
+An <font color="#33FB01"><b>unattended</b></font> installation can be performed by specifying<br>the appropriate settings at <b>boot time</b> on the <b>boot prompt</b>.<br>
+      e.g. boot frontend=batch server=192.168.2.1 install=replicate.seq<br>
+	  See the file <b>/etc/packager/unattended.txt</b>.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your settings</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

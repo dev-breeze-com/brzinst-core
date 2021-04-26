@@ -1,0 +1,27 @@
+           [1;33;40m Kodiak.light Setup -- Configuring Packages  [0;37;40m
+
+     The [1;37;40mselected username[0;37;40m is [1;32;40m%username%[0;37;40m.
+
+     The [1;37;40mselected hostname[0;37;40m is [1;32;40m%hostname%[0;37;40m.
+     The [1;37;40mselected nameserver[0;37;40m is [1;32;40m%nameserver%[0;37;40m.
+     The [1;37;40mselected gateway[0;37;40m is [1;32;40m%gateway%[0;37;40m.
+
+     The [1;37;40mselected locale[0;37;40m is [1;32;40m%locale%[0;37;40m.
+     The [1;37;40mselected time zone[0;37;40m is [1;32;40m%timezone%[0;37;40m.
+
+     The [1;37;40mselected desktop[0;37;40m is [1;32;40m%desktop%[0;37;40m.
+     The [1;37;40mselected connection[0;37;40m is [1;32;40m%internet%[0;37;40m.
+     The [1;37;40mselected kernel[0;37;40m is [1;32;40m%kernel%[0;37;40m.
+     The [1;37;40mselected boot manager[0;37;40m is [1;32;40m%bootmgr%[0;37;40m.
+
+     The [1;37;40mselected source drive[0;37;40m is [1;32;40m%source-drive%[0;37;40m.
+     The [1;37;40mselected target drive[0;37;40m is [1;32;40m%target-drive%[0;37;40m.
+     The [1;37;40mselected source path[0;37;40m is [1;32;40m%source-path%[0;37;40m.
+
+    [1;37;40m%nb-packages%[0;37;40m [1;32;40m%release%[0;37;40m packages will be [1;37;40mconfigured[0;37;40m.
+    [1;37;40m%disk-space% MB[0;37;40m of [1;32;40mdisk space[0;37;40m will be [1;37;40mused[0;37;40m.
+
+
+     Type [[1;32;40mY[0;37;40m] to [1;37;40mconfigure[0;37;40m your packages.
+     Type any other key to [1;37;40mContinue[0;37;40m
+

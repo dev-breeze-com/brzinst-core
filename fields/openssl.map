@@ -1,0 +1,7 @@
+country=widget/combobox
+prov-state=widget/entry
+city=widget/entry
+company=widget/entry
+department=widget/entry
+full-name=widget/entry
+email-address=widget/entry

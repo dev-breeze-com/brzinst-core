@@ -1,0 +1,14 @@
+         [1;33;40m Kodiak.light Setup -- Swap Space Activation  [0;37;40m
+
+ You [1;37;40mmust [0;37;40m enable [1;32;40mswap space [0;37;40m before continuing.
+
+ It [1;37;40mincreases [0;37;40m the amount of [1;37;40mmemory [0;37;40m available
+                         to the installation process.
+
+
+                                  [hdd_mount]
+
+          Click on the [1;37;40mhard-disk [0;37;40m icon, to activate.
+
+                   Click on ● to [1;37;40mContinue [0;37;40m.
+

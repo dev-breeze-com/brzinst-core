@@ -1,0 +1,5 @@
+DISTRIB_ID=Breeze::OS
+DISTRIB_CODENAME=Community Edition
+DISTRIB_DESCRIPTION="Breeze::OS Community Edition GNU/Linux"
+DISTRIB_RELEASE="1.0.0 (Community Edition GNU/Linux) - release build 20130517"
+X_INSTALLATION_MEDIUM=cdrom,zip

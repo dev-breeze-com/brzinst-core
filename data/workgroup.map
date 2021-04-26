@@ -1,0 +1,3 @@
+L_STANDALONE=standalone
+L_NETWORK_CLIENT=network-client
+L_NETWORK_MASTER=network-master

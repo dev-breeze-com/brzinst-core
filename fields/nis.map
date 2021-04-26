@@ -1,0 +1,7 @@
+nisserver=widget/combobox
+nisdomain=widget/entry
+ip_address=widget/entry
+netmask=widget/entry
+submask=widget/entry
+gateway=widget/entry
+nameserver=widget/entry

@@ -1,0 +1,22 @@
+          [1;33;40m Kodiak.light Setup -- Desktop Installation  [0;37;40m
+
+    A [1;37;40mdesktop[0;37;40m consists of software applications and tools, such as:
+         a [1;32;40mWindowing Environment[0;37;40m, a [1;32;40mDesktop Environment[0;37;40m,
+         an [1;32;40mOffice Suite[0;37;40m, and [1;32;40mNetworking Tools[0;37;40m.
+
+    If you intend to [1;37;40mreplicate a desktop installation[0;37;40m from a [1;32;40mmaster[0;37;40m system;
+    then the [1;37;40mbasic[0;37;40m desktop option, is [1;37;40mthe one you should select[0;37;40m; and 
+    your selection for [1;37;40mnetwork installation[0;37;40m must have been [1;32;40mnetwork-client[0;37;40m.
+
+    The [1;37;40mBreeze[0;37;40m desktop option, is [1;37;40mthe default one[0;37;40m; and includes
+    the [1;32;40mBreeze::OS[0;37;40m desktop, as default, and the [1;32;40mXfce[0;37;40m desktop.
+
+    The [1;37;40mComplete[0;37;40m desktop installation includes the [1;32;40mKodiak.light[0;37;40m desktop; but,
+    also the [1;32;40mGnome[0;37;40m and [1;32;40mXfce[0;37;40m desktop. The [1;32;40mKDE[0;37;40m desktop is also available in
+    the [1;37;40mDVD[0;37;40m release.
+
+	   Type [[1;32;40mR[0;37;40m][1;37;40meplication[0;37;40m for the basic desktop installation.
+	   Type [[1;32;40mB[0;37;40m][1;37;40mreeze[0;37;40m for the default desktop installation.
+	   Type [[1;32;40mC[0;37;40m][1;37;40momplete[0;37;40m for the complete desktop installation.
+	   Type [1;37;40many other key [0;37;40m to continue.
+

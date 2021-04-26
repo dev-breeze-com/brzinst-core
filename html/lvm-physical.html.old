@@ -1,0 +1,12 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<h2><b>Breeze::OS Installer -- LVM Physical Volumes</b></h2>
+<p>
+A <b>physical volume</b> (PV) can be created using any block device; but,<br>our partitioning scheme creates only one volume group <b>lvmstore</b>.<br>You <b>must select</b> the partitions you wish to turn into physical volumes.<br>You can either <b>create</b>, <b>merge</b>, or <b>ignore</b> a physical volume.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/next.png"></a> to <b>Create LVM Physical Volumes</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

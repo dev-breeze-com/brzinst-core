@@ -1,0 +1,7 @@
+L_1#_MODEM_ROUTER=router
+L_2#_ADSL_MODEM=adsl
+L_3#_CABLE_MODEM=cable
+L_4#_WIRELESS_MODEM=wireless
+L_5#_DIALUP_MODEM=dialup
+L_6#_LOCAL_AREA_NETWORK=lan
+L_7#_NO_INTERNET=none

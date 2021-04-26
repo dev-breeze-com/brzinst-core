@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Breeze-Mustard
+Type=X-GNOME-Metatheme
+Comment=Attractive Usability
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Breeze-Mustard
+MetacityTheme=Breeze-Mustard

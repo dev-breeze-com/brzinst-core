@@ -1,0 +1,28 @@
+[1;33;40mWelcome to the Breeze::OS Kodiak.light Linux Distribution[0;37;40m
+
+    Our [1;37;40mBreeze::OS system[0;37;40m is a [1;37;40mdesktop oriented[0;37;40m Linux distro and desktop.
+
+    The [1;37;40mBreeze::OS dektop[0;37;40m is included in this release.
+
+    The [1;37;40mKodiak.light[0;37;40m release contains both the [1;36;40mGNome[0;37;40m and [1;36;40mXfce[0;37;40m desktop.
+
+    It also contains the [1;37;40mLibre Office[0;37;40m or [1;37;40mOpen Office[0;37;40m office suite.
+
+    The installation of this release is straightforward.
+    The [1;32;40msetup[0;37;40m process goes according to the [1;37;40minstallation steps[0;37;40m.
+
+    You [1;31;40mmust[0;37;40m have, at least, a [1;31;40m20G[0;37;40m hard-drive.
+    You [1;31;40mmust[0;37;40m have, at least, [1;31;40m256M[0;37;40m of real memory, preferably [1;31;40m512M[0;37;40m.
+
+    If you have a [1;31;40m512M or less[0;37;40m of memory in your computer; you will
+    be given the choice of using a [1;31;40mUSB memory key[0;37;40m as additional memory.
+
+    You [1;31;40mmust[0;37;40m activate a [1;31;40mSWAP[0;37;40m partition, after partitioning your drive.
+
+    It is [1;31;40mpreferable[0;37;40m that your computer be [1;31;40mnetwork/internet enabled[0;37;40m.
+
+    Other releases are the [1;35;40mKodiak[0;37;40m desktop, the [1;35;40mKatmai[0;37;40m server, and
+    the [1;35;40mMach[0;37;40m developer releases.
+
+
+[1;37;40mPress on any key to continue with the installation ![0;37;40m

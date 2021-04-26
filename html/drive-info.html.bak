@@ -1,0 +1,13 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<h2><b>Breeze::OS Installer -- Drive Information</b></h2>
+<p>
+<b>Drive</b>: <font color="#33FB01">%selected-drive%</font><br><b>Model</b>: <font color="#33FB01">%selected-drive-model%</font><br><b>Partition</b>: <font color="#33FB01">%detected-gpt-mbr-drive%</font><br>
+The table below displays information, about how your <b>hard-drive</b> was partitioned.<br>If you are <b>upgrading</b>, and wish to keep a <b>/home</b> partition on this drive; then,<br>you <font color="red"><b>must</b></font> first select it, as <font color="#33FB01">keep</font> under column <b>Mode</b>.<br>You <font color="red"><b>cannot keep</b></font> the <b>/home</b> partition if this drive was <b>LVM</b> partitioned.<br>Remember to <b>backup</b> your <b>data</b>, before proceeding !
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Keep the /home partition</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

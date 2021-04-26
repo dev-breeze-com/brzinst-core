@@ -1,0 +1,6 @@
+hostname=widget/combobox
+user-name=widget/entry
+primary-dns=widget/entry
+secondary-dns=widget/entry
+password=widget/entry
+confirm=widget/entry

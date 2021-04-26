@@ -1,0 +1,43 @@
+[fields]
+
+columns=4
+
+[intro]
+identifier=opmode
+row=0
+colspan=4
+font=Arial normal bold 30
+mimetype=widget/label
+value=<markup>Just a test</markup>
+[/intro]
+
+[timezone]
+identifier=timezone
+row=1
+colspan=2
+clicked=true
+mimetype=widget/button
+tooltip=TIP_WIFI_MODE
+value=Managed button
+icon=Oxygen/48x48/categories/preferences-desktop-peripherals.png
+[/timezone]
+
+[opmode1]
+identifier=opmode1
+row=1
+mimetype=widget/combobox
+tooltip=TIP_WIFI_MODE
+values=AdHoc,Managed,Master,Repeater,Secondary,Monitor,Auto
+value=Managed
+[/opmode1]
+
+[key-mgmt]
+identifier=key-mgmt
+row=1
+mimetype=widget/combobox
+tooltip=TIP_KEY_MGMT
+values=WPA,WPA-EAP,WPA-PSK,WPA2-PSK,WPA-PSK WPA2-PSK,IEEE
+value=WPA-PSK WPA2-PSK
+[/key-mgmt]
+
+[/fields]

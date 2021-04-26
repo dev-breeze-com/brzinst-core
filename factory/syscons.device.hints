@@ -1,0 +1,7 @@
+# Device hints for syscons
+hint.atkbdc.0.at="isa"
+hint.atkbdc.0.port="0x060"
+hint.atkbd.0.at="atkbdc"
+hint.atkbd.0.irq="1"
+hint.vga.0.at="isa"
+hint.sc.0.at="isa"

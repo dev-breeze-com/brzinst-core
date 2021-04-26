@@ -1,0 +1,16 @@
+          [1;33;40m Kodiak.light Setup -- Internet Connection  [0;37;40m
+
+   To the left is a list of [1;32;40mInternet [0;37;40m connections from which to choose.
+
+  You must have an [1;37;40maccount [0;37;40m with an [1;37;40mInternet Service
+     Provider (ISP) [0;37;40m if you want to connect to the [1;32;40mWorld Wide Web [0;37;40m.
+
+  You [1;37;40mmust [0;37;40m select the [1;37;40mtype [0;37;40m of account, that
+  your [1;37;40mISP [0;37;40m provides; for example, a [1;32;40mdialup [0;37;40m or [1;32;40madsl [0;37;40m account.
+
+       You [1;37;40mmust [0;37;40m provide [1;37;40muser-name [0;37;40m and
+[1;37;40mpassword [0;37;40m to enable your [1;37;40mInternet connection [0;37;40m.
+
+Select a [1;37;40mconnection [0;37;40m or [1;37;40maccount [0;37;40m, or click on ●
+                         to [1;37;40mContinue [0;37;40m.
+

@@ -1,0 +1,5 @@
+Linux=8300
+Linux plaintext=8800
+Linux LVM=8e00
+Linux raid auto=fd00
+Linux extended=8500

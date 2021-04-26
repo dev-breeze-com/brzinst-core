@@ -1,0 +1,7 @@
+essid=widget/entry
+wpa-mode=widget/entry
+key-mgmt=widget/combobox
+crypt-key=widget/entry
+nickname=widget/entry
+wifi-dns=widget/entry
+wifi-addr=widget/entry

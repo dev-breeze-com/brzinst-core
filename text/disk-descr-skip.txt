@@ -1,0 +1,17 @@
+            [1;33;40m Kodiak.light Setup -- Disk Partitions[0;37;40m
+
+			[1;37;40mDrive[0;37;40m: [1;32;40m%hard-drive%[0;37;40m
+			[1;37;40mModel[0;37;40m: [1;32;40m%hard-drive-model%[0;37;40m
+			[1;37;40mSize[0;37;40m: [1;32;40m%hard-drive-size% MB[0;37;40m
+-------------------------------------------------------------------------------
+%entries%
+-------------------------------------------------------------------------------
+    The above table displays information, about your [1;37;40mhard-drive [0;37;40m
+
+
+
+	   Type [[1;32;40mP[0;37;40m] to [1;37;40mPartition[0;37;40m your drive.
+	   Type [[1;32;40mF[0;37;40m] to [1;37;40mFormat[0;37;40m your existing partitions.
+	   Type [[1;32;40mR[0;37;40m] to [1;37;40mRestore[0;37;40m your previous partitions.
+	   Type any other key to [1;37;40mContinue[0;37;40m
+

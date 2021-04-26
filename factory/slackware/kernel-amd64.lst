@@ -1,0 +1,3 @@
+main/k/kernel/kernel-generic_3.10.17-smp_amd64.tkg
+main/k/kernel/kernel-headers_3.10.17-smp_amd64.tkg
+main/k/kernel/kernel-modules_3.10.17-smp_amd64.tkg

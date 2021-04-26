@@ -1,0 +1,13 @@
+core=oxygen/256x256/categories/applications-system.png
+xorg=oxygen/256x256/apps/xorg.png
+admin=oxygen/256x256/categories/preferences-desktop.png
+guicore=oxygen/256x256/categories/applications-multimedia.png
+guiapps=oxygen/256x256/apps/kchart.png
+themes=oxygen/256x256/mimetypes/image-x-generic.png
+openoffice.org=oxygen/256x256/categories/applications-office.png
+libreoffice.org=oxygen/256x256/categories/applications-office.png
+xfce.org=creativecommons/256x256/apps/xfce.png
+mate.org=creativecommons/256x256/apps/mate.png
+kde.org=oxygen/256x256/places/start-here-kde.png
+kde-l10n=oxygen/256x256/apps/preferences-desktop-locale.png
+i18n-l10n=oxygen/256x256/apps/preferences-desktop-locale.png

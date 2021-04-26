@@ -1,0 +1,15 @@
+      [1;33;40m Kodiak.light Setup -- Installation Source & Target  [0;37;40m
+
+                              Before continuing,
+     you [1;37;40mmust [0;37;40m specify the [1;32;40msource [0;37;40m from which
+to retrieve [1;32;40mKodiak.light [0;37;40m [1;37;40msoftware packages [0;37;40m; and
+            the [1;37;40mtarget [0;37;40m onto which to install them.
+
+           [cdrom]                          [iso]
+[1;37;40mCD/DVD Source [0;37;40m   [1;37;40mISO Source [0;37;40m
+            [usb]                       [network-se]
+ [1;37;40mUSB Source [0;37;40m   [1;37;40mNetwork Source [0;37;40m
+
+
+                   Click on ● to [1;37;40mContinue [0;37;40m.
+

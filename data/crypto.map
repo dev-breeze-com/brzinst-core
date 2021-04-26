@@ -1,0 +1,9 @@
+device=
+type=luks
+cipher=default
+hash=sha256
+block-mode=default
+erase=dd
+keyfile=unique
+password=
+confirm=

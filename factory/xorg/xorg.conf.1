@@ -1,0 +1,125 @@
+Section "ServerLayout"
+	Identifier     "X.org Configured"
+	Screen      0  "Screen0" 0 0
+	InputDevice    "Mouse0" "CorePointer"
+	InputDevice    "Keyboard0" "CoreKeyboard"
+EndSection
+
+Section "Files"
+	ModulePath   "/usr/lib/xorg/modules"
+	FontPath     "/usr/share/fonts/X11/misc"
+	FontPath     "/usr/share/fonts/X11/cyrillic"
+	FontPath     "/usr/share/fonts/X11/100dpi/:unscaled"
+	FontPath     "/usr/share/fonts/X11/75dpi/:unscaled"
+	FontPath     "/usr/share/fonts/X11/Type1"
+	FontPath     "/usr/share/fonts/X11/100dpi"
+	FontPath     "/usr/share/fonts/X11/75dpi"
+	FontPath     "/var/lib/defoma/x-ttcidfont-conf.d/dirs/TrueType"
+	FontPath     "built-ins"
+EndSection
+
+Section "Module"
+	Load  "type1"
+	Load  "speedo"
+	Load  "freetype"
+
+	Load  "glx"
+	Load  "extmod"
+	Load  "record"
+	Load  "dri2"
+	Load  "dbe"
+	Load  "dri"
+EndSection
+
+Section "InputDevice"
+	Identifier  "Keyboard0"
+	Driver      "kbd"
+	Option      "AutoRepeat" "500 30"
+EndSection
+
+Section "InputDevice"
+	Identifier  "Mouse0"
+	Driver      "mouse"
+	Option	    "Protocol" "ImPS/2"
+	Option	    "Device" "/dev/input/mice"
+	Option	    "ZAxisMapping" "4 5 6 7"
+#	Option	    "BaudRate"     "9600"
+#	Option	    "SampleRate"   "150"
+	Option      "Emulate3Buttons"
+EndSection
+
+Section "Monitor"
+	Identifier   "Monitor0"
+	VendorName   "Monitor Vendor"
+	ModelName    "Monitor Model"
+	HorizSync    31-65
+	VertRefresh  50-100
+	Option   "DPI" "96x96"
+	Option   "UseEdidDpi" "false"
+EndSection
+
+Section "Device"
+        ### Available Driver options are:-
+        ### Values: <i>: integer, <f>: float, <bool>: "True"/"False",
+        ### <string>: "String", <freq>: "<f> Hz/kHz/MHz"
+        ### [arg]: arg optional
+        #Option     "SWcursor"           	# [<bool>]
+        #Option     "HWcursor"           	# [<bool>]
+        #Option     "NoAccel"            	# [<bool>]
+        #Option     "ShadowFB"           	# [<bool>]
+        #Option     "VideoKey"           	# <i>
+	Identifier  "Card0"
+	VendorName  "nVidia Corporation"
+	BoardName   "C61 [GeForce 6150SE nForce 430]"
+	Driver      "%graphics%"
+		Option      "BackingStore" "True"
+		Option      "RenderAccel" "True"
+	BusID       "PCI:0:13:0"
+    VideoRam	8192
+EndSection
+
+Section "Screen"
+	Identifier "Screen0"
+	Device     "Card0"
+	Monitor    "Monitor0"
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     1
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     4
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     8
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     15
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     16
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     24
+	EndSubSection
+EndSection
+
+Section "Extensions"
+	Option	"Composite" "Enable"
+EndSection
+
+Section "DRI"
+    Mode 0666
+EndSection
+
+# **********************************************************************

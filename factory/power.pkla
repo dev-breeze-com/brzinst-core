@@ -1,0 +1,56 @@
+[Local restart]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.restart
+ResultAny=yes
+ResultInactive=no
+ResultActive=yes
+
+[Local shutdown]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.stop
+ResultAny=yes
+ResultInactive=no
+ResultActive=yes
+
+[Local suspend]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.suspend
+ResultAny=no
+ResultInactive=no
+ResultActive=no
+
+[Local hibernate]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.hibernate
+ResultAny=no
+ResultInactive=no
+ResultActive=no
+
+[Local restart - multiple]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.restart-multiple-users
+ResultAny=yes
+ResultInactive=no
+ResultActive=yes
+
+[Local shutdown - multiple]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.stop-multiple-users
+ResultAny=yes
+ResultInactive=no
+ResultActive=yes 
+
+[Local suspend - multiple]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.suspend-multiple-users
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
+
+[Local hibernate - multiple]
+Identity=unix-group:power
+Action=org.freedesktop.consolekit.system.hibernate-multiple-users
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
+

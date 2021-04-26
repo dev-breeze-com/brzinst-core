@@ -1,0 +1,21 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<h2><b>Breeze::OS Installer -- Drive Encryption Schemes</b></h2>
+<p>
+To the left are settings for <b>hard-drive</b> encryption <b>schemes</b>.<br>The schemes offered are <font color="#33FB01">dm-crypt</font> or <font color="#33FB01">encfs</font>.
+<ul>
+<li><font color="#33FB01">dm-crypt</font> a transparent disk encryption subsystem.
+<li><font color="#33FB01">encfs</font> an encrypted filesystem in user-space.
+</ul>
+The scheme <font color="#33FB01">dm-crypt</font> provides block device encryption; and,<br>can be used to encrypt your <b>entire</b> drive. <font color="#33FB01">encfs</font> is a stacked<br>cryptographic filesystem; and, is used to encrypt folders and files.<br><br>
+The <b>encfs</b> scheme is the easiest to use; but, is slower than <font color="#33FB01">dm-crypt</font>.<br>It is used to encrypt your <b>home</b> folder, and optionally, your <b>share</b> folder.<br>The encryption scheme <font color="#33FB01">encfs</font> is <font color="red"><b>not offered</b></font> in this version.<br><br>
+You <font color="red"><b>must</b></font> enter a password for <b>decryption</b>.<br><br>
+The <b>recommended</b> encryption scheme is <font color="#33FB01">dm-crypt [luks]</font>.<br>You may choose to use one keyfile per partition, or one for all partitions.<br>You are also given the choice to erase each partition to be encrypted.<br><br>
+<font color="red"><b>Beware</b></font>, partition erasure is an <font color="#33FB01">extremely slow process</font>.<br><b>30 minutes</b> on average for a <b>20G</b> partition with 3 iterations.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your Settings</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

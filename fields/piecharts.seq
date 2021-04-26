@@ -1,0 +1,342 @@
+[fields]
+
+[root]
+identifier=root
+title=L_SCHEME_ROOT
+description=\
+<big><b>Root</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root.csv
+[/root]
+
+[root-home]
+identifier=root-home
+title=L_SCHEME_ROOT_HOME
+description=\
+<big><b>Root-Home</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-home.csv
+[/root-home]
+
+[root-var]
+identifier=root-var
+title=L_SCHEME_ROOT_VAR
+description=\
+<big><b>Root-Var</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-var.csv
+[/root-var]
+
+[root-srv]
+identifier=root-srv
+title=L_SCHEME_ROOT_SRV
+description=\
+<big><b>Root-Srv</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-srv.csv
+[/root-srv]
+
+[root-usr]
+identifier=root-usr
+title=L_SCHEME_ROOT_USR
+description=\
+<big><b>Root-Usr</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/usr</font> separate system partition.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-usr.csv
+[/root-usr]
+
+[root-share]
+identifier=root-share
+title=L_SCHEME_ROOT_SHARE
+description=\
+<big><b>Root-Share</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-share.csv
+[/root-share]
+
+[root-opt]
+identifier=root-opt
+title=L_SCHEME_ROOT_OPT
+description=\
+<big><b>Root-Opt</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files (15% of the drive),\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv), and\n\
+    a <font color="#33FB01">/opt</font> partition for third-party software (+home, +var, +srv, +share).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-opt.csv
+[/root-opt]
+
+[root-lghome]
+identifier=root-lghome
+title=L_SCHEME_ROOT_LGHOME
+description=\
+<big><b>Root-LgHome</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files (25% of the drive),\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv), and\n\
+    a <font color="#33FB01">/opt</font> partition for third-party software (+home, +var, +srv, +share).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-lghome.csv
+[/root-lghome]
+
+[root-devel]
+identifier=root-devel
+title=L_SCHEME_ROOT_DEVEL
+description=\
+<big><b>Root-Devel</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-devel.csv
+[/root-devel]
+
+[root-build]
+identifier=root-build
+title=L_SCHEME_ROOT_BUILD
+description=\
+<big><b>Root-Build</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv), and\n\
+    a <font color="#33FB01">/opt</font> partition for third-party software (+home, +var, +srv, +share),\n\
+    a <font color="#33FB01">/build</font> partition for source code compilation.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-build.csv
+[/root-build]
+
+[root-build2]
+identifier=root-build2
+title=L_SCHEME_ROOT_BUILD2
+description=\
+<big><b>Root-Build</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located [7%],\n\
+    a <font color="#33FB01">/home</font> partition for user files [20%],\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files [20%],\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files,\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area, and\n\
+    a <font color="#33FB01">/opt</font> partition for third-party software,\n\
+    a <font color="#33FB01">/build</font> partition for source code compilation [20%].\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-build2.csv
+[/root-build2]
+
+[bsd-var]
+identifier=bsd-var
+title=L_SCHEME_BSD_VAR
+description=\
+<big><b>BSD-Var-</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files,\n\
+    a <font color="#33FB01">/usr</font> partition for main system files,\n\
+    a <font color="#33FB01">/usr/local</font> partition, as the local system partition, and\n\
+    a <font color="#33FB01">/tmp</font> partition for temporary files.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-bsd-var.csv
+[/bsd-var]
+
+[bsd-opt]
+identifier=bsd-opt
+title=L_SCHEME_BSD_OPT
+description=\
+<big><b>BSD-Opt-</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files,\n\
+    a <font color="#33FB01">/usr</font> partition for main system files,\n\
+    a <font color="#33FB01">/usr/local</font> partition, as the local system partition, and\n\
+    a <font color="#33FB01">/opt</font> partition, for optional commercial files,\n\
+    a <font color="#33FB01">/tmp</font> partition for temporary files.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-bsd-opt.csv
+[/bsd-opt]
+
+[server-build]
+identifier=server-build
+title=L_SCHEME_SERVER_BUILD
+description=\
+<big><b>Server-Build</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv), and\n\
+    a <font color="#33FB01">/opt</font> partition for third-party software (+home, +var, +srv, +share),\n\
+    a <font color="#33FB01">/build</font> partition for source code compilation,\n\
+    a <font color="#33FB01">/testing</font> partition for source code testing.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-server-build.csv
+[/server-build]
+
+[server-basic]
+identifier=server-basic
+title=L_SCHEME_SERVER_BASIC
+description=\
+<big><b>Server-Basic</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/usr</font> partition, for system files,\n\
+    a <font color="#33FB01">/home</font> partition for user files.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-server-basic.csv
+[/server-basic]
+
+[server-var]
+identifier=server-var
+title=L_SCHEME_SERVER_VAR
+description=\
+<big><b>Server-Var</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-server-var.csv
+[/server-var]
+
+[server-srv]
+identifier=server-srv
+title=L_SCHEME_SERVER_SRV
+description=\
+<big><b>Server-Srv</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-server-srv.csv
+[/server-srv]
+
+[server-usr]
+identifier=server-usr
+title=L_SCHEME_SERVER_USR
+description=\
+<big><b>Server-Usr</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files,\n\
+    a <font color="#33FB01">/usr</font> separate system partition (50% of the drive).\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-server-usr.csv
+[/server-usr]
+
+[lvm-10]
+identifier=lvm-10
+title=L_SCHEME_LVM_10
+description=\
+<big><b>LVM-10</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv), and\n\
+    plus 5 additional <font color="#33FB01">LVM</font> partitions, of equal size.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-lvm-10.csv
+[/lvm-10]
+
+[lvm-12]
+identifier=lvm-12
+title=L_SCHEME_LVM_12
+description=\
+<big><b>LVM-12</b></big>\n\n\
+This scheme creates the following partitions:\n\
+<ul>\n\
+    a <font color="#33FB01">/boot</font> partition, for boot loaders,\n\
+    a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,\n\
+    a <font color="#33FB01">/home</font> partition for user files,\n\
+    a <font color="#33FB01">/var</font> partition, for system and log files (+home),\n\
+    a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),\n\
+    a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv), and\n\
+    a <font color="#33FB01">/opt</font> partition for third-party software (+home, +var, +srv, +share),\n\
+    plus 6 additional <font color="#33FB01">LVM</font> partitions, of equal size.\n\
+</ul>\n
+piechart=$BRZDIR/data/scheme-root-opt.csv
+piechart=$BRZDIR/data/scheme-lvm-12.csv
+[/lvm-12]
+
+[/fields]

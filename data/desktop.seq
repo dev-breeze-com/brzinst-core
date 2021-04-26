@@ -1,0 +1,48 @@
+[Desktop]
+
+[corelxde]
+title=A basic Lxde desktop
+description=Lightweight X11 Desktop Environment. This project aimed to provide a new desktop environment which is useful enough and keep resource usage lower at the same time. Useabiliy, speed, and memory usage are our main concern. Suitable for netbooks.
+[/corelxde]
+
+[corexfce]
+title=A basic Xfce desktop
+description=Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
+[/corexfce]
+
+[coremate]
+title=A basic Mate desktop
+description=The MATE Desktop Environment is the continuation of GNOME 2. It provides an intuitive and attractive desktop environment using traditional metaphors for Linux and other Unix-like operating systems
+[/coremate]
+
+[/coregnome]
+title=A basic Gnome desktop
+description=An easy and elegant way to use your computer, GNOME 3 is designed to put you in control and get things done.
+[/coregnome]
+
+[lxde]
+title=A standard Lxde desktop
+description=Lightweight X11 Desktop Environment. This project aimed to provide a new desktop environment which is useful enough and keep resource usage lower at the same time. Useabiliy, speed, and memory usage are our main concern. Suitable for netbooks.
+[/lxde]
+
+[xfce]
+title=A standard Xfce desktop
+description=Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
+[/xfce]
+
+[mate]
+title=A standard Mate desktop
+description=The MATE Desktop Environment is the continuation of GNOME 2. It provides an intuitive and attractive desktop environment using traditional metaphors for Linux and other Unix-like operating systems
+[/mate]
+
+[/gnome]
+title=A standard Gnome desktop
+description=An easy and elegant way to use your computer, GNOME 3 is designed to put you in control and get things done.
+[/gnome]
+
+[kde]
+title=A standard KDE desktop
+description=The KDE Plasma Desktop is the default desktop environment on many Linux distributions.
+[/kde]
+
+[/Desktop]

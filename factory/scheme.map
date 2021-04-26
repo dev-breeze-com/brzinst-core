@@ -1,0 +1,12 @@
+disk-type=linux
+fstype=ext4
+encrypted=no
+device=@DEVICE@
+gpt-mode=@MODE@
+sector-size=@SECTORS@
+boot-size=@BOOT@
+swap-size=@SWAP@
+disk-size=@SIZE@
+disk-type=@TYPE@
+scheme=@SCHEME@
+reserved=@RESERVED@

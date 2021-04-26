@@ -1,0 +1,303 @@
+-------------------------------------------------------------------------------
+Use [1;32;40mArrow/Page keys[1;37;40m to scroll UP/DOWN, and '[1;32;40mQ[1;37;40m' to quit.
+-------------------------------------------------------------------------------
+
+    [1;37;40mOperating System License [1;37;40mfor [1;33;40mTsert Inc. Carbon C1/C2/C3/C4/C5/C8/C14/C60/C70 Desktop©®[1;37;40m
+
+    (c) Copyright 1996-2013, Tsert Inc., All Rights Reserved.
+
+    TSERT.COM MAKES NO REPRESENTATIONS AND EXTENDS NO WARRANTIES, EXPRESS OR
+    IMPLIED, WITH RESPECT TO THE SOFTWARE, INCLUDING, BUT NOT LIMITED TO,
+    THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR ANY PARTICULAR
+    PURPOSE, AND THE WARRANTY AGAINST INFRINGEMENT OF PATENTS OR OTHER
+    INTELLECTUAL PROPERTY RIGHTS. THE SOFTWARE IS PROVIDED "AS IS", AND IN NO
+    EVENT SHALL TSERT.COM OR ANY OF ITS AFFILIATES BE LIABLE FOR ANY DAMAGES,
+    INCLUDING ANY LOST PROFITS OR OTHER INCIDENTAL OR CONSEQUENTIAL DAMAGES
+    RELATING TO THE USE OF THIS SOFTWARE.
+
+    Protection of Tsert Inc. Systems Software and Data Files.
+
+    Except as expressly authorized by Tsert Inc., you may not (i) disassemble,
+    decompile or otherwise reverse engineer Tsert Inc. systems software, or
+    (ii) create derivative works based upon Tsert Inc. systems software and
+    data files, or (iii) rent, lease, sublicense, distribute, transfer, copy,
+    reproduce, modify or timeshare Tsert Inc. systems software and data files,
+    or (iv) allow any third party to access or use Tsert Inc. systems software
+    and data files, or (v) modify Tsert Inc. systems software or data files,
+    including any deletion of code from or addition of code to the software
+    and any modification to the data files.
+
+
+    [1;31;40m--------------------------- [1;37;40mPackaging system[1;31;40m ---------------------------
+
+    Our proprietary packaging system, Breeze::OS Packager©® uses a
+    zip-derived archive format, which includes the following entries:
+       mimetype,
+       meta.xml,
+       depends.xml,
+       manifest.xml,
+       settings.xml,
+       private.xml,
+       archive.[xz|txz|tlz|tbz|tgz|deb]
+       archive.sig
+
+    The contents of the compressed archive are taken from distributions;
+    such as, slackware, debian, freebsd, netbsd, etc..
+
+    The compressed archive of the packages can be extracted and re-used by
+    packaging systems other than the Breeze::OS packager; since they are
+    archived as downloaded from their respective websites. The original hash 
+    signatures of the downloaded archives are kept in the 'meta.xml' file.
+
+    The source code consisting of shell scripts, in the Breeze::OS package
+    installer fall under the GNU GPL license.
+
+[1;37;40mREDISTRIBUTION AND USE OF THE BREEZE::OS PACKAGER, AS WELL AS, THE ZIP DERIVED
+[1;37;40mARCHIVES OF EVERY PACKAGE, EXCEPT THOSE OF OUR COMMERCIALLY RELEASED DESKTOP,
+[1;37;40mIS PERMITTED; ONLY TO CREATE DERIVATIVES COMMUNITY DISTRIBUTIONS OF THE
+[1;37;40mBREEZE::OS DISTRIBUTION; AND PROVIDED THAT THE COPYRIGHT AT THE TOP IS KEPT.
+
+[1;37;40mTHE BREEZE:OS ARCHIVE FORMAT REMAINS [1;33;40mPROPRIETARY[1;37;40m; AND CAN ONLY BE USED WITHIN
+[1;37;40mTHE FRAMEWORK OF THE INSTALLER AND PACKAGING SYSTEM.
+
+-------------------------------------------------------------------------------
+
+[1;31;40mIf the Breeze::OS version you purchased, includes our commercially
+[1;31;40mreleased desktop; then read the following:
+
+[1;37;40mTSERT.COM IS WILLING TO LICENSE THE BREEZE::OS DESKTOP KODIAK.LIGHT
+[1;37;40mEDITION ("BREEZE::OS DESKTOP" - THE "SOFTWARE") TO YOU ONLY UPON THE
+[1;37;40mCONDITION THAT YOU ACCEPT ALL OF THE TERMS CONTAINED IN THIS LICENSE
+[1;37;40mAGREEMENT (THE "AGREEMENT").  PLEASE READ THE AGREEMENT CAREFULLY.
+[1;37;40mBY INSTALLING, OR USING THIS SOFTWARE, YOU ACCEPT ALL OF THE TERMS
+[1;37;40mOF THE AGREEMENT.
+
+
+[1;33;40m1.  DEFINITIONS.[0;37;40m
+    "Software" means the code identified above in binary form, any other
+    machine readable materials including, but not limited to, libraries,
+    source files, header files, and data files), any updates or error
+    corrections provided by Tsert Inc., and any user manuals, programming
+    guides and other documentation provided to you by Tsert Inc. under this
+    Agreement, and any subsequent versions that Tsert Inc. makes available
+    to you hereunder.
+    
+    "Operating System" means any version of the Linux or BSD operating
+    systems that manages the hardware resources of a general purpose desktop
+    or server computer and shares these resources with various software
+    programs that run on top of it. "Programs" means Breeze::OS Desktop
+    technology applets, daemons, and applications intended to run on
+    the [1;36;40mBreeze::OS and Breeze::OS Desktop[0;38;40m platform.
+
+
+[1;33;40m2.  LICENSE GRANT.[0;37;40m
+    Subject to the terms and conditions of this Agreement, as well as
+    the restrictions and exceptions set forth below, Tsert Inc. grants
+    you a non-exclusive, non-transferable, royalty-free limited license
+    to reproduce the software according the SEAT-LICENCE AGREEMENT; and
+    use the Software internally, complete and unmodified, for the sole
+    purposes of running Programs and designing, developing and testing
+    Programs.
+
+
+[1;33;40m3.  RESTRICTIONS.[0;37;40m
+    Software is copyrighted and title to Software and all associated
+    intellectual property rights is retained by Tsert Inc. unless
+    enforcement is prohibited by applicable law, you may not modify,
+    decompile, or reverse engineer Software.
+
+    You may not create, modify, or change the behavior of, or authorize
+    your licensees, distributors, resellers, OEMs, or end users
+    (collectively, "Licensees") to create, modify, or change the
+    behavior of, classes, interfaces, or subpackages that are in any
+    way identified as "Carbon c1/c2/c3/c4/c5 desktops",
+    "Carbon c1/c2/c3/c4/c5 desktop plugins",
+    "Carbon c1/c2/c3/c4/c5 desktop daemons",
+    "Carbon c1/c2/c3/c4/c5 desktop applications", or
+    similar convention as specified by Tsert Inc. in any naming convention
+    designation.
+
+    Licensee may not disclose, modify, sell, market, commercialise,
+    distribute, loan, rent, lease, or license the Licensed Software or any
+    copy of it or use the Licensed Software for any purpose that is not
+    expressly granted. Licensee may not alter or remove any details of
+    ownership, copyright, trademark or other property right connected with
+    the Licensed Software. Licensee may not distribute any software
+    statically or dynamically linked with the Licensed Software.
+
+
+[1;33;40m4.  OWNERSHIP.[0;37;40m
+    The Licensed Software is protected by copyright laws and international
+    copyright treaties, as well as other intellectual property laws and
+    treaties. The Licensed Software is licensed, not sold.
+
+    If Licensee provides any findings, proposals, suggestions or other
+    feedback ("Feedback") to Tsert Inc. regarding the Licensed Software,
+    Tsert Inc. shall own all right, title and interest including the
+    intellectual property rights in and to such Feedback, excluding however
+    any existing patent rights of Licensee. To the extent Licensee owns or
+    controls any patents for such Feedback Licensee hereby grants to
+    Tsert Inc. and its Affiliates, a worldwide, perpetual, non-transferable,
+    sublicensable, royalty-free license to (i) use, copy and modify
+    Feedback and to create derivative works thereof, (ii) to make (and
+    have made), use, import, sell, offer for sale, lease, dispose, offer
+    for disposal or otherwise exploit any products or services of Tsert Inc.
+    containing Feedback,, and (iii) sublicense all the foregoing rights to
+    third party licensees and customers of Tsert Inc. and/or its Affiliates.
+
+
+[1;33;40m5.  VALIDITY OF THE AGREEMENT[0;37;40m
+    By installing, copying, or otherwise using the Licensed Software,
+    Licensee agrees to be bound by the terms of this Agreement. If
+    Licensee does not agree to the terms of this Agreement, Licensee may
+    not install, copy, or otherwise use the Licensed Software. Upon
+    Licensee's acceptance of the terms and conditions of this Agreement,
+    Tsert Inc. grants Licensee the right to use the Licensed Software in the
+    manner provided below.
+
+
+[1;33;40m6.  NO ASSIGNMENT.[0;37;40m
+    Licensee shall not be entitled to assign or transfer all or any of
+    its rights, benefits and obligations under this Agreement without
+    the prior written consent of Tsert Inc., which shall not be unreasonably
+    withheld.
+
+
+[1;33;40m7.  VIRTUAL CLUBS.[0;37;40m
+    This license agreement only allows the licensee, with
+    regards to the creation and managment of virtual clubs, to only
+    create and manage virtual clubs in a peer-top-peer setup, or as 
+    a sales tool for the licensee's sale portal.
+    The agreement does not allow the licensee, to setup a web-based
+    service to create and manage virtual clubs, in any other context
+    than the peer-to-peer or sales portal context. Furthermore, the same
+    restrictions apply to the use of commercials, using a reminder like
+    message on any desktop running the software, whether or not, the
+    software is running in a virtual club setup.
+    The licensee also grants Tsert Inc. the right to advertise,
+    with commercials, using a reminder like message, on any of their
+    desktop running the software, or to include the licensee in virtual
+    clubs, created by Tsert Inc..
+
+
+[1;33;40m8.  TRADEMARKS and LOGOS.[0;37;40m
+    No right, title or interest in or to any trademark, service mark,
+    logo or trade name of Tsert Inc. or its licensors is granted under
+    this Agreement. You acknowledge and agree that, as between you and
+    Tsert Inc., Tsert Inc. owns the TSERT.COM, BREEZE::OS©®, KODIAK©®,
+    KATMAI©®, MACH©®, and Breeze::OS Desktop trademarks and all TSERT.COM
+    and Breeze::OS desktop related trademarks, service marks, logos and
+    other brand designations ("Tsert Inc. Marks"), and you agree to comply
+    with the restrictions stated in this section.
+
+
+[1;33;40m9.  LIMITED WARRANTY.[0;37;40m
+    If you received the Software directly from Tsert Inc. or its authorized
+    resellers, Tsert Inc. warrants to you that for a period of ninety (90)
+    days from delivery to you, the media on which Software is furnished
+    (if any) will be free of defects in materials and workmanship under
+    normal use.  Except for the foregoing, Software is provided "AS IS".
+    Your exclusive remedy and Tsert Inc.'s entire liability under this
+    limited warranty will be replacement of the Software media.
+    This limited warranty gives you specific legal rights.
+    You may have others, which vary from state to state, province to province.
+
+
+[1;33;40m10. DISCLAIMER OF WARRANTY.[0;37;40m
+    UNLESS SPECIFIED IN THIS AGREEMENT, ALL EXPRESS OR IMPLIED CONDITIONS,
+    REPRESENTATIONS AND WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT
+    ARE DISCLAIMED, EXCEPT TO THE EXTENT THAT THESE DISCLAIMERS ARE HELD
+    TO BE LEGALLY INVALID.
+
+
+[1;33;40m11. LIMITATION OF LIABILITY.[0;37;40m
+    IN NO EVENT WILL TSERT.COM OR ITS LICENSORS BE LIABLE FOR ANY INDIRECT,
+    INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES IN CONNECTION
+    WITH OR ARISING OUT OF THIS AGREEMENT (INCLUDING LOSS OF PROFITS, USE,
+    DATA, OR OTHER ECONOMIC ADVANTAGE), NO MATTER WHAT THEORY OF LIABILITY,
+    EVEN IF TSERT.COM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    In no event will Tsert Inc.'s liability to you, whether in contract, tort
+    (including negligence), or otherwise, exceed the amount paid by you for
+    the Software under this Agreement. The foregoing limitations will apply
+    even if the above stated warranty fails of its essential purpose.
+    Some states do not allow the exclusion of incidental or consequential
+    damages, so some of the terms above may not be applicable to you.
+
+
+[1;33;40m12. THIRD PARTY SOFTWARE.[0;37;40m
+    The Licensed Software may provide links to third party libraries or
+    code (collectively "Third Party Software") to implement various
+    functions.  Third Party Software does not comprise part of the
+    Licensed Software. In some cases, access to Third Party Software may
+    be included along with the Licensed Software delivery as a convenience
+    for development and testing only. Such source code and libraries may
+    be listed in the ".../src/3rdparty" source tree delivered with the
+    Licensed Software or documented in the Licensed Software where the
+    Third Party Software is used, as may be amended from time to time, do
+    not comprise the Licensed Software.  Licensee acknowledges (1) that
+    some part of Third Party Software may require additional licensing of
+    copyright and patents from the owners of such, and (2) that
+    distribution of any of the Licensed Software referencing any portion
+    of a Third Party Software may require appropriate licensing from such
+    third parties.
+
+
+[1;33;40m13. TERMINATION.[0;37;40m
+    This Agreement is effective until it is terminated.
+    You may terminate this Agreement at any time by ceasing usage or
+    distribution of the Software. This Agreement will terminate
+    immediately without notice from Tsert Inc. if you fail to comply
+    with any material provision herein.  Either party may terminate
+    this Agreement immediately should any Software become, or in either
+    party's opinion be likely to become, the subject of a claim of
+    infringement of any intellectual property right. Upon termination,
+    you must destroy all copies and cease copying and distribution of
+    the Software. All of your obligations and any applicable limitations
+    on your rights and remedies under this Agreement shall survive
+    termination.
+
+
+[1;33;40m14. TECHNICAL SUPPORT.[0;37;40m
+    Tsert Inc. has no obligation to furnish Licensee with any technical
+    support whatsoever. Any such support is subject to separate agreement
+    between the Parties.
+
+
+[1;33;40m15. SOURCE CODE.[0;37;40m
+    Software may contain source code that, unless expressly licensed for
+    other purposes, is provided solely for reference purposes pursuant
+    to the terms of this Agreement. Source code may not be redistributed
+    unless expressly provided for in this Agreement.
+
+
+[1;33;40m16. EXPORT REGULATIONS.[0;37;40m
+    All Software and technical data delivered under this Agreement are
+    subject to US/Canada export control laws and may be subject to export
+    or import regulations in other countries. You acknowledge that you
+    have the responsibility to obtain such licenses to export, re-export,
+    or import as may be required after delivery to you, under a distribution
+    agreement.
+
+
+[1;33;40m17. MISCELLANEOUS.[0;37;40m
+    Any action related to this Agreement will be governed by and controlling
+    U.S. federal law. No choice of law rules of any jurisdiction will apply.
+    If any provision of this Agreement is held to be unenforceable, this
+    Agreement will remain in effect upon the parties' agreement to revised
+    terms that most nearly accomplish the same effect.
+
+    This Agreement is the entire agreement between you and Tsert Inc. relating
+    to its subject matter.  It supersedes all prior or contemporaneous oral
+    or written communications, proposals, representations and warranties and
+    prevails over any conflicting or additional terms of any quote, order,
+    acknowledgment, or other communication between the parties relating to
+    its subject matter during the term of this Agreement. No modification of
+    this Agreement will be binding, unless in writing and signed by an
+    authorized representative of each party.
+
+
+[1;33;40mFor inquiries please:[0;37;40m
+    See http://glyph.cloud or email sales@tsert.com
+
+

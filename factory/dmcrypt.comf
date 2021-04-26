@@ -1,0 +1,15 @@
+#/etc/conf.d/dmcrypt
+# Definition for /dev/mapper/home (for /home)
+target=home
+source=UUID="abcdef12-321a-a324-a88c-cac412befd98"
+key=/etc/keys/home.key
+ 
+
+ # Definition for /dev/mapper/local (for /usr/local)
+ target=local
+ source=UUID="fedcba34-4823-b423-a94c-cadbefda2943"
+ key=/etc/keys/local.key
+
+
+# Don't forget to have the dmcrypt init service launched at boot: 
+ rc-update add dmcrypt boot

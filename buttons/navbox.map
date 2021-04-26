@@ -1,0 +1,9 @@
+copyright=copyright.png
+intro=oxygen/64x64/status/dialog-information.png
+locale=oxygen/64x64/apps/preferences-desktop-locale.png
+hostconfig=oxygen/64x64/devices/computer.png
+srcmedia=crystalproject/64x64/filesystems/folder_tar.png
+drives=oxygen/64x64/devices/drive-harddisk.png
+desktop=oxygen/64x64/categories/preferences-desktop.png
+install=64x64/install.png
+exit=crystalproject/64x64/apps/exit.png

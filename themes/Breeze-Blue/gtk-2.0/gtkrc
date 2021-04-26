@@ -1,0 +1,477 @@
+# Based on Bluecurve
+# Bluecurve created by Richard Stellingwerff, Emil Jacobs and Daniel Borgmann.
+
+gtk-color-scheme = "base_color:#1A232C\nfg_color:#ffffff\ntooltip_fg_color:#000000\nselected_bg_color:#7894B6\nselected_fg_color:#ffffff\ntext_color:#eeeeec\nbg_color:#626D79\ntooltip_bg_color:#5881A2"
+#gtk-color-scheme = "base_color:#1A232C\nfg_color:#ffffff\ntooltip_fg_color:#000000\nselected_bg_color:#7894B6\nselected_fg_color:#ffffff\ntext_color:#eeeeec\nbg_color:#8b8d8f\ntooltip_bg_color:#5881A2"
+#gtk-color-scheme = "base_color:#1A232C\nfg_color:#ffffff\ntooltip_fg_color:#000000\nselected_bg_color:#7894B6\nselected_fg_color:#ffffff\ntext_color:#eeeeec\nbg_color:#EDECEB\ntooltip_bg_color:#5881A2"
+
+gtk-auto-mnemonics = 1
+
+style "clearlooks-default"
+{
+  xthickness = 1
+  ythickness = 1
+
+  GtkWidget      ::interior_focus = 1
+  GtkWidget      ::focus_padding = 1
+
+  GtkWidget::tooltip-radius    = 3
+  GtkWidget::tooltip-alpha     = 230
+  GtkWidget::new-tooltip-style = 1 #for compatibility
+
+  GtkBox         ::default_border    = { 2, 2, 2, 2 }
+  GtkHBox        ::default_border    = { 2, 2, 2, 2 }
+  GtkVBox        ::default_border    = { 2, 2, 2, 2 }
+  GtkButton      ::default_border    = { 2, 2, 2, 2 }
+  GtkButton      ::default_outside_border  = { 3, 3, 3, 3 }
+  GtkButton      ::child_displacement_x = 0
+  GtkButton      ::child_displacement_y = 1
+
+  GtkButtonBox   ::default_border    = { 2, 2, 2, 2 }
+  GtkTable       ::default_border    = { 2, 2, 2, 2 }
+  GtkRange       ::trough_border     = 0
+  GtkPaned       ::handle_size       = 6
+  GtkRange       ::slider_width      = 15
+  GtkRange       ::stepper_size      = 15
+  GtkRange       ::trough_border = 0
+  GtkScrollbar   ::min_slider_length = 30
+  GtkCheckButton ::indicator_size    = 12
+  GtkMenuBar     ::internal-padding  = 0
+  GtkTreeView    ::expander_size     = 14
+  GtkExpander    ::expander_size     = 16
+
+  WnckTasklist::fade-overlay-rect = 0
+  GtkEntry::honors-transparent-bg-hint = 1
+  GtkEntry::progress-border = { 2, 2, 2, 2 }
+
+  bg[NORMAL]        = @base_color
+  bg[PRELIGHT]      = "#CCFFFF"
+  bg[ACTIVE]        = "#6E7B95" # "#A7B8F1" # light blueish
+  bg[SELECTED]      = @selected_bg_color
+  bg[INSENSITIVE]   = @bg_color
+
+  base[NORMAL]      = @base_color
+  base[PRELIGHT]    = "#e0e0e0" # light beige / grey
+  base[ACTIVE]      = "#6698FF" # blueish
+  base[SELECTED]    = "#736AFF" # blueish
+  base[INSENSITIVE] = "#404040"
+
+  fg[NORMAL]        = @fg_color
+  fg[PRELIGHT]      = @fg_color
+  fg[SELECTED]      = @selected_fg_color
+  fg[INSENSITIVE]   = darker (@bg_color)
+  fg[ACTIVE]        = @fg_color
+
+  text[NORMAL]      = @text_color
+  text[PRELIGHT]    = @text_color
+  text[SELECTED]    = @selected_fg_color
+  text[INSENSITIVE] = @fg_color
+  text[ACTIVE]      = @selected_fg_color
+
+  engine "clearlooks"  {
+     colorize_scrollbar = TRUE
+	 reliefstyle = 1
+	 menubarstyle = 2 # 0 = flat, 1 = sunken, 2 = flat gradient
+	 toolbarstyle = 0
+	 radius = 3.0
+	 style = GUMMY
+#    menuitemstyle = 1 # 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
+#    listviewitemstyle = 1 # 0 = flat, 1 = 3d-ish (gradient)
+#    progressbarstyle  = 0 # 0 = candy bar, 1 = flat
+  }
+}
+
+style "clearlooks-wide" = "clearlooks-default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "clearlooks-button" = "clearlooks-default"
+{
+  xthickness = 3
+  ythickness = 3
+
+  bg[NORMAL]   = "#434D56"
+  bg[PRELIGHT] = "#89b4b4"
+  base[NORMAL] = "#566470"
+
+  text[INSENSITIVE] = "#000000"
+  bg[INSENSITIVE]   = "#96999C"
+  base[INSENSITIVE]   = "#96999C"
+}
+
+style "clearlooks-check" = "clearlooks-button"
+{
+  text[NORMAL] = @text_color
+  text[PRELIGHT] = @text_color
+}
+
+style "clearlooks-notebook" = "clearlooks-wide"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "clearlooks-notebook_bg" = "clearlooks-wide"
+{
+    bg[NORMAL]   = shade (1.02, @bg_color)
+	base[NORMAL] = "#6E7690"
+	text[NORMAL] = @text_color
+}
+
+style "clearlooks-label_bg" = "clearlooks-wide"
+{
+    bg[NORMAL]   = shade (1.05, @bg_color)
+	base[NORMAL] = "#6E7690"
+	text[NORMAL] = @text_color
+}
+
+style "clearlooks-tasklist" = "clearlooks-default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+style "clearlooks-menu" = "clearlooks-default"
+{
+  xthickness = 2
+  ythickness = 1
+  bg[NORMAL] = "#213B52"
+  text[NORMAL] = "#EEEEEC"
+}
+
+style "clearlooks-menu-item" = "clearlooks-default"
+{
+  xthickness = 2
+  ythickness = 3
+  fg[PRELIGHT] = "#ffffff"
+  text[PRELIGHT] = "#ffffff"
+}
+
+style "clearlooks-menu-itembar" = "clearlooks-default"
+{
+  xthickness = 3
+  ythickness = 3
+  base[NORMAL] = "#6E7690"
+}
+
+style "clearlooks-tree" = "clearlooks-default"
+{
+  xthickness = 2
+  ythickness = 2
+#  base[NORMAL] = "#6E7690"
+  bg[NORMAL] = "#6E7690"
+}
+
+
+style "clearlooks-frame" = "clearlooks-default"
+{   
+	xthickness = 2
+	ythickness = 2
+
+	base[NORMAL] = "#6E7690"
+	bg[NORMAL] = "#303030"
+}
+
+style "clearlooks-frame-title" = "clearlooks-default"
+{
+	#fg[NORMAL] = "#2A2A2A"
+	base[NORMAL] = "#6E7690"
+}
+
+style "clearlooks-tooltips" = "clearlooks-default"
+{
+	xthickness = 8
+	ythickness = 4
+
+	GtkWidget::new-tooltip-style = 1
+
+	bg[NORMAL] = @tooltip_bg_color
+	fg[NORMAL] = @tooltip_fg_color
+}
+
+style "clearlooks-progressbar" = "clearlooks-progress"
+{
+  xthickness = 1
+  ythickness = 1
+
+  text[NORMAL]      = @fg_color
+  text[PRELIGHT]    = @fg_color
+  text[ACTIVE]      = @fg_color
+  text[SELECTED]    = @fg_color
+  text[INSENSITIVE] = @fg_color
+
+  bg[NORMAL]    = "#27425b"
+  base[NORMAL]  = "#27425b"
+}
+
+style "clearlooks-combo" = "clearlooks-default"
+{
+  xthickness = 3
+  ythickness = 3
+  bg[NORMAL]    = "#27425b"
+  base[NORMAL]  = "#27425b"
+  text[NORMAL]   = "#EEEEEC"
+
+  text[INSENSITIVE] = "#000000"
+  bg[INSENSITIVE]   = "#96999C"
+  base[INSENSITIVE]   = "#96999C"
+}
+
+style "clearlooks-combo-button" = "clearlooks-default"
+{
+  xthickness = 3
+  ythickness = 3
+  bg[NORMAL]    = "#17425b"
+  base[NORMAL]  = "#37425b"
+  text[NORMAL]   = "#EEEEEC"
+
+  text[INSENSITIVE] = "#000000"
+  bg[INSENSITIVE]   = "#96999C"
+  base[INSENSITIVE]   = "#96999C"
+}
+
+style "clearlooks-entry" = "clearlooks-default"
+{
+	xthickness = 3
+	ythickness = 3
+
+#	bg[NORMAL]   = "#FFFFFF"
+#	bg[ACTIVE]   = "#88CCFF"
+#	bg[ACTIVE]   = "#96999C"
+#	bg[INSENSITIVE]   = "#96999C"
+
+	base[NORMAL] = "#183E62"
+	text[NORMAL]   = "#EEEEEC"
+}
+
+style "spinbutton" {
+	engine "clearlooks" {
+	  hint = "spinbutton"
+	}
+}
+
+style "scale" {
+	xthickness = 2
+	ythickness = 2
+
+	GtkWidget::new-tooltip-style = 1
+	bg[NORMAL] = @tooltip_bg_color
+
+	engine "clearlooks" {
+	  hint = "scale"
+	}
+}
+
+style "vscale" {
+	engine "clearlooks" {
+	  hint = "vscale"
+	}
+}
+
+style "hscale" {
+	engine "clearlooks" {
+	  hint = "hscale"
+	}
+}
+
+style "clearlooks-scrollbar" = "clearlooks-default"
+{
+	xthickness = 2
+	ythickness = 2
+
+	engine "clearlooks" {
+		hint = "scrollbar"
+	}
+}
+
+style "midnight-treeview" = "clearlooks-default"
+{
+  xthickness = 3
+  ythickness = 3
+
+  bg[NORMAL]        = "#192d40"
+  bg[PRELIGHT]      = "#CCFFFF"
+  bg[ACTIVE]        = "#88CCFF"
+  bg[SELECTED]      = "#0099FF"
+  bg[INSENSITIVE]   = "#525b63"
+
+  base[NORMAL]      = "#192d40"
+  base[PRELIGHT]    = "#736AFF"
+  base[ACTIVE]      = "#6698FF"
+  base[SELECTED]    = "#736AFF"
+  base[INSENSITIVE] = "#0066FF"
+
+  text[NORMAL]      = "#FFFFFF" #@bg_color
+}
+
+
+
+# widget styles
+class "GtkWidget" style "clearlooks-default"
+class "GtkFrame"  style "clearlooks-frame"
+class "GtkBox"  style "clearlooks-wide"
+class "GtkHBox"  style "clearlooks-wide"
+class "GtkVBox"  style "clearlooks-wide"
+class "GtkLabel"  style "clearlooks-label_bg"
+class "GtkTooltip" style "clearlooks-tooltips"
+class "GtkTooltips" style "clearlooks-tooltips"
+class "GtkButton" style "clearlooks-button"
+class "GtkCombo"  style "clearlooks-combo"
+class "GtkComboBox"  style "clearlooks-combo"
+class "GtkRange"  style "clearlooks-wide"
+class "GtkMenu"   style "clearlooks-menu"
+class "GtkEntry"  style "clearlooks-entry"
+class "GtkMenuItem"    style "clearlooks-menu-item"
+class "GtkStatusbar"   style "clearlooks-wide"
+class "GtkNotebook"    style "clearlooks-notebook"
+class "GtkProgressBar" style "clearlooks-progressbar"
+class "GtkMenuBar" style "clearlooks-progressbar"
+class "GtkCheckButton" style "clearlooks-check"
+class "GtkRadioButton" style "clearlooks-check"
+class "GtkScrollbar" style "clearlooks-scrollbar"
+
+class "GtkSpinButton" style "spinbutton"
+#class "GtkSpinButton.GtkButton" style "clearlooks-button"
+#class "GtkSpinButton.*.GtkButton" style "clearlooks-button"
+
+class "GtkScale" style "scale"
+class "GtkHScale" style "hscale"
+class "GtkVScale" style "vscale"
+#class "GtkScale.GtkButton" style "scale"
+#class "GtkScale.*.GtkButton" style "scale"
+
+widget_class "*MenuItem.*" style "clearlooks-menu-item"
+widget_class "*.GtkLabel" style "clearlooks-label_bg"
+widget_class "*.GtkCheckButton.*.GtkLabel" style "clearlooks-entry"
+widget_class "*.GtkRadioButton.*.GtkLabel" style "clearlooks-entry"
+
+# combobox stuff
+widget_class "*.GtkCombo.*"    style "clearlooks-combo"
+widget_class "*.GtkComboBox.*" style "clearlooks-combo"
+widget_class "*.GtkCombo.GtkButton"    style "clearlooks-combo-button"
+widget_class "*.GtkComboBox.GtkButton" style "clearlooks-combo-button"
+widget_class "*.GtkComboBox.*.GtkCellView" style "clearlooks-combo-button"
+
+# This is the part of the workaround that fixes the menus
+widget "*.gtk-combobox-popup-menu.*" style "clearlooks-combo-button"
+
+# tooltips stuff
+#widget_class "*.tooltips.*.GtkToggleButton" style "clearlooks-tasklist"
+widget_class "*.tooltips.*.GtkToggleButton" style "clearlooks-tooltips"
+widget "gtk-tooltip" style "clearlooks-tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView*" style "midnight-treeview"
+widget_class "*.GtkTreeView.GtkButton" style "clearlooks-tree"
+widget_class "*.GtkTreeView.*.GtkScrolledWindow" style "midnight-treeview"
+widget_class "*.GtkCTree.GtkButton" style "clearlooks-tree"
+widget_class "*.GtkList.GtkButton" style "clearlooks-tree"
+widget_class "*.GtkCList.GtkButton" style "clearlooks-tree"
+
+widget_class "*.GtkEventBox" style "clearlooks-frame-title"
+widget_class "*.<GtkEventBox>" style "clearlooks-frame-title"
+widget_class "*.GtkFrame.GtkEventBox" style "clearlooks-frame-title"
+widget_class "*.<GtkFrame>.<GtkEventBox>" style "clearlooks-frame-title"
+widget_class "*.GtkFrame.GtkLabel" style "clearlooks-frame-title"
+widget_class "*.<GtkFrame>.<GtkLabel>" style "clearlooks-frame-title"
+
+# notebook stuff
+widget_class "*.GtkLabel" style "clearlooks-label_bg"
+widget_class "*.GtkText" style "clearlooks-notebook_bg"
+widget_class "*.GtkTextView" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook.*.GtkText" style "clearlooks-entry"
+widget_class "*.GtkNotebook.*.GtkTextView" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook.*.GtkEventBox" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook.*.GtkDrawingArea" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook.*.GtkLayout" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook.*.GtkViewport" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook.*.GtkScrolledWindow" style "clearlooks-notebook_bg"
+widget_class "*.GtkNotebook" style "clearlooks-notebook"
+
+# notebook stuff
+widget_class "*.GtkTable.*.GtkText" style "clearlooks-entry"
+widget_class "*.GtkTable.*.GtkTextView" style "clearlooks-notebook_bg"
+widget_class "*.GtkTable.*.GtkEventBox" style "clearlooks-notebook_bg"
+widget_class "*.GtkTable.*.GtkDrawingArea" style "clearlooks-notebook_bg"
+widget_class "*.GtkTable.*.GtkLayout" style "clearlooks-notebook_bg"
+widget_class "*.GtkTable.*.GtkViewport" style "clearlooks-tree"
+widget_class "*.GtkTable.*.GtkScrolledWindow" style "midnight-treeview"
+widget_class "*.GtkTable" style "midnight-treeview"
+
+# Workaround style for places where the text color is used instead of the fg color.
+style "text_is_fg_color_workaround" {
+
+	text[NORMAL]      = @fg_color
+	text[PRELIGHT]    = @fg_color
+	text[SELECTED]    = @selected_fg_color
+	text[ACTIVE]      = @fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+}
+
+###############################################################################
+# The following part of the gtkrc applies workarounds for issues in widgets.
+###############################################################################
+
+# Workaround style for menus where the text color is used instead of the fg color.
+style "menuitem_text_is_fg_color_workaround" {
+
+	text[NORMAL]      = @fg_color
+	text[PRELIGHT]    = @selected_fg_color
+	text[SELECTED]    = @selected_fg_color
+	text[ACTIVE]      = @fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+}
+
+# Workaround style for places where the fg color is used instead of the text color.
+style "fg_is_text_color_workaround" {
+
+	fg[NORMAL]        = @text_color
+	fg[PRELIGHT]      = @text_color
+	fg[SELECTED]      = @selected_fg_color
+	fg[ACTIVE]        = @selected_fg_color
+	fg[INSENSITIVE]   = darker (@bg_color)
+}
+
+# Style to set the toolbar to use a flat style. This is because the "New" button in
+# Evolution is not drawn transparent. So if there is a gradient in the background it will
+# look really wrong.
+# See http://bugzilla.gnome.org/show_bug.cgi?id=446953.
+style "evo_new_button_workaround" {
+	engine "clearlooks" {
+		toolbarstyle = 0
+	}
+}
+
+##########################################################################
+# Following are special cases and workarounds for issues in applications.
+##########################################################################
+
+# Workaround for the evolution ETable (bug #527532)
+widget_class "*.ETable.ECanvas" style "clearlooks-tree"
+# Workaround for the evolution ETree
+widget_class "*.ETree.ECanvas" style "clearlooks-tree"
+
+# Special case the nautilus-extra-view-widget
+# ToDo: A more generic approach for all applications that have a widget like this.
+#widget "*.nautilus-extra-view-widget" style : highest "nautilus_location"
+
+# Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
+# Note that this work around assumes that the combobox is _not_ in appears-as-list mode.
+#widget_class "*.<GtkTable>*" style "text_is_fg_color_workaround"
+widget_class "*.<GtkComboBox>.<GtkCellView>" style "text_is_fg_color_workaround"
+# This is the part of the workaround that fixes the menus
+widget "*.gtk-combobox-popup-menu.*" style "menuitem_text_is_fg_color_workaround"
+
+# Work around the usage of GtkLabel inside GtkListItems to display text.
+# This breaks because the label is shown on a background that is based on the base color.
+widget_class "*<GtkListItem>*" style "fg_is_text_color_workaround"
+# GtkCList also uses the fg color to draw text on top of the base colors.
+#widget_class "*<GtkCList>" style "fg_is_text_color_workaround"
+# Nautilus when renaming files, and maybe other places.
+widget_class "*<EelEditableLabel>" style "fg_is_text_color_workaround"
+
+# See the documentation of the style.
+widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"

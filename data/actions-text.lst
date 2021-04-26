@@ -1,0 +1,23 @@
+html=/install/text/intro.txt
+html=/install/text/pcmcia.txt&system-box=no&script=/etc/init.d/pcmciautils&value=restart
+html=/install/text/timezone.txt&entries=/install/timezone.map&listbox=yes&selected=timezone&value=America/New_York&locale-box=yes&icon=_flag
+html=/install/text/locale.txt&entries=/install/locales.map&listbox=yes&selected=locale&value=en_US&locale-box=yes&icon=_flag&script=/usr/bin/localechooser
+html=/install/text/keymap.txt&entries=/install/keymaps.map&listbox=yes&selected=keymap&value=qwerty/us.map&locale-box=yes&icon=keyboard_layout&script=/bin/setupcon
+html=/install/text/hostname.txt&system-box=no&script=/install/scripts/set-hostname.sh&title=L_CHOOSE_A_HOSTNAME&value=kodiak_light&system-box=yes
+html=/install/text/disk-intro.txt&cmd=/sbin/sfdisk -s&system-box=yes&listbox=yes
+html=/install/text/disk-descr.txt&cmd=/sbin/sfdisk -l %P&cmd-option=hard-drive&system-box=yes
+html=/install/text/disk-schemes.txt&entries=/install/schemes.map&listbox=yes&system-box=yes&icon=harddrive&selected=scheme&value=scheme-3
+html=/install/text/formatting.txt&treebox=yes&selected=hard-drive
+html=/install/text/swap-space.txt&system-box=yes&script=/install/scripts/swapon.sh
+html=/install/text/target.txt&system-box=yes&listbox=yes&selected=hard-drive
+html=/install/text/desktop.txt&desktop=no
+html=/install/text/workgroup.txt&desktop-box=yes&entries=/install/workgroup.map&listbox=yes&selected=workgroup&value=standalone&icon=workgroup
+html=/install/text/office.txt&desktop-box=yes&entries=/install/office.map&listbox=yes&selected=office-suite&value=complete&icon=office
+html=/install/text/users.txt&desktop-box=yes&users-box=yes&entries=/install/users.map&selected=user-id&value=root
+html=/install/text/password.txt&desktop-box=yes&users-box=yes&user-password-box=yes&entries=/install/users.map&selected=user-id&value=root
+html=/install/text/openssl.txt&desktop-box=yes&icon=openssl&openssl-box=yes&entries=/install/locales.map&selected=country&value=en_US
+html=/install/text/internet.txt&desktop-box=yes&entries=/install/connections.map&listbox=yes&selected=internet&value=dialup&icon=network
+html=/install/text/kernel.txt&desktop-box=yes&entries=/install/kernel.map&listbox=yes&selected=kernel&icon=pi-indexer&value=intel-32bit
+html=/install/text/unpack.txt&package-box=yes&entries=/install/packages.lst&progress-box=yes
+html=/install/text/config.txt&package-box=yes&entries=/install/packages.lst&progress-box=yes
+html=/install/text/grub.txt&progress-box=yes

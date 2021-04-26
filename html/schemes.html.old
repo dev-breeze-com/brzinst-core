@@ -1,0 +1,27 @@
+<html>
+<body bgcolor="#000000" fgcolor="#ffffff" halign="center">
+<p color="yellow">
+Kodiak.light Setup -- Drive Partitioning Schemes
+</p>
+<p>
+To the left are settings for <b>hard-drive</b> partitioning <b>schemes</b>.<br>The scheme <font color="#33fb01">auto-root-only</font> uses the <b>whole drive</b> for a <b>single</b> partition.<br>All sizes are in megabytes (<b>MB</b>).<br>
+The schemes create the following partitions:
+<ul>
+<li>a <font color="#33fb01">/</font> <b>root</b> partition,
+<li>a <font color="#33fb01">/usr</font> partition for installation,
+<li>a <font color="#33fb01">/home</font> partition for user files, and
+<li>a <font color="#33fb01">/share</font> partition, as a <b>common</b> area.
+<li>a <font color="#33fb01">/var</font> partition, for system and log files.
+</ul>
+The <b>recommended</b> scheme is <font color="#33fb01">auto-root-home</font>.<br>You may also <b>create your own</b> partitioning scheme, by<br>selecting <font color="#33fb01">a custom scheme</font>.
+</p>
+<p>
+Only use the <font color="#33fb01">LVM</font> or <font color="#33fb01">RAID</font> types, if you <b>know</b> what you are doing.
+</p>
+<br>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your Settings</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

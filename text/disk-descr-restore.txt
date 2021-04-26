@@ -1,0 +1,11 @@
+            [1;33;40m Kodiak.light Setup -- Disk Partitions  [0;37;40m
+
+  Below, is the list of partitions found on drive [1;32;40m%hard-drive% [0;37;40m.
+
+-----------------------------------------------------------------------------
+%header% %entries%
+-----------------------------------------------------------------------------
+
+    Click on [blockdevic] to [1;37;40mRestore settings [0;37;40m, or on ● to
+                          [1;37;40mContinue [0;37;40m
+

@@ -1,0 +1,16 @@
+           [1;33;40m Kodiak.light Setup -- Hostname Selection  [0;37;40m
+
+     You [1;37;40mmust [0;37;40m select a [1;37;40mhostname [0;37;40m for your
+                          [1;37;40mcomputer [0;37;40m.
+
+          Your [1;32;40mhostname [0;37;40m [1;37;40mmust [0;37;40m consists
+        [1;37;40monly [0;37;40m of [1;37;40mletters and numbers [0;37;40m.
+
+
+                                  [computer]
+
+           Click on the [1;37;40mcomputer [0;37;40m icon, to select a
+                            [1;32;40mhostname [0;37;40m.
+
+                   Press on ● to [1;37;40mContinue [0;37;40m.
+

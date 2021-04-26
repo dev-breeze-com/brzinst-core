@@ -1,0 +1,15 @@
+[buttons]
+
+[target]
+identifier=target
+icon=Oxygen/48x48/devices/drive-harddisk.png
+tooltip=TIP_TARGET_DRIVE
+[/target]
+
+[mountpoints]
+identifier=mountpoints
+icon=Oxygen/48x48/devices/kchart.png
+tooltip=TIP_MOUNTPOINTS
+[/mountpoints]
+
+[/buttons]

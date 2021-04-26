@@ -1,0 +1,14 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<p color="yellow">Breeze::OS Installer Setup -- LVM Logical Volumes</p>
+<p>
+A <b>logical volume</b> is allocated from a <b>volume group</b> and is analogous to a disk partition.<br>By default, logical volumes are created according to the selected partitioning scheme.<br>You may modify, or add to the set of logical volumes.<br>You <b>must</b> additionally provide a <b>size in MB</b> for the logical volume.<br>
+You <b>may</b> associate more than <b>one logical volume</b> to a volume group,<br> by assigning the <b>same volume group name</b> to several logical ones.<br>The total allocated size must not exceed the total space for logical volumes.<br>You can either <b>create</b>, <b>keep</b>, <b>remove</b>, or <b>ignore</b> a logical volume.<br>
+The total allocated space for logical volumes is <b>%lvm-footprint% MB</b>.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/next.png"></a> to <b>Create LVM Logical Volumes</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+American English
+Belarusian
+Belgian
+Brazilian (ABNT2 layout)
+Brazilian (EUA layout)
+British English
+Bulgarian
+Bulgarian (phonetic layout)
+Canadian Multilingual
+Canadian French
+Croatian
+Czech
+Danish
+Dutch
+Dvorak
+Estonian
+Finnish
+French
+German
+Greek
+Hebrew
+Hungarian
+Icelandic
+Italian
+Japanese
+Kirghiz
+Latin American
+Latvian
+Lithuanian
+Macedonian
+Norwegian
+Polish
+Portuguese
+Romanian
+Russian
+Serbian (Cyrillic)
+Slovakian
+Slovene
+Spanish
+Swedish
+Swiss French
+Swiss German
+Thai
+Turkish (F layout)
+Turkish (Q layout)
+Ukrainian

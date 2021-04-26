@@ -1,0 +1,22 @@
+<C>
+<C></32></B>Breeze::OS Installer Setup -- Laptop Installation<!B><!32>
+<C>
+<C>You </B>must<!B> enable </24>pcmcia<!24> devices, if you have a </B>laptop<!B>.
+<C>
+<C>   Xc:::::::::cccccccccccc::ccccccclX  
+<C>   X:</40>;;:::::::::;;;;;:::::;;;;;;;;;<!40>:X  
+<C>   K;</40>,;;:::cc:::;;;;::::::;,,,;;:c;<!40>:X  
+<C>   K,</40>,;;;;::::::;;;;;::;;,,;::::c:,<!40>;K  
+<C>   K,</40>,::;;;;;;:::;;;,,,,,;::::::;;,<!40>,K  
+<C>   K'</40>,:::::::::::::::;:cll:::cc:::,<!40>,K  
+<C>   K'</40>;lllllllllllllllloddlloolllll;<!40>'K  
+<C>   K'</40>;cccclllllllllllllolllollcccc;<!40>'K  
+<C>   Xllllld00xkxxxxxxxxxxxxxxO0OlllllK   
+<C>  WKKKOxxxxdoooolllllllllllloooookO00N  
+<C> WXXXKkxxxxdddddollllllooooooooood0KKKW 
+<C> NNNNNNNXXXXXXXKolllloodKKKKKKKKKKKKKKXW
+<C>dddddddddddddddddddddddddddddddddddddddd
+<C>
+<C>Press on </32></B>Apply<!B><!32> if you have a laptop computer
+<C>
+<C>Press on </32></B>Next<!B><!32> to </B>Continue<!B>

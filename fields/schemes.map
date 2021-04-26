@@ -1,0 +1,10 @@
+device=/dev/unknown
+disk-type=normal
+gpt-mode=mbr
+sector-size=512
+boot-size=512
+swap-size=2048
+scheme=root-home
+fstype=ext4
+reserved=2
+encrypted=no

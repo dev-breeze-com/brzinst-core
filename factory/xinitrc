@@ -1,0 +1,59 @@
+#!/bin/sh -x
+# the following variable defines the session which is started if the user
+# doesn't explicitely select a session
+DEFAULT_SESSION=/etc/X11/xinit/xinitrc.xfce
+
+echo "$1" 1> /tmp/xinitrc.err
+
+case $1 in
+kde)
+	exec /etc/X11/xinit/xinitrc.kde
+	;;
+xfce)
+	exec /etc/X11/xinit/xinitrc.xfce
+	;;
+gnome)
+	exec /etc/X11/xinit/xinitrc.gnome
+	;;
+cinnamon)
+	exec /etc/X11/xinit/xinitrc.cinnamon
+	;;
+mate)
+	exec /etc/X11/xinit/xinitrc.mate
+	;;
+e17)
+	exec /etc/X11/xinit/xinitrc.e17
+	;;
+icewm)
+	icewmbg &
+	icewmtray &
+	exec icewm
+	;;
+fluxbox)
+	exec /etc/X11/xinit/xinitrc.fluxbox
+	;;
+blackbox)
+	exec /etc/X11/xinit/xinitrc.blackbox
+	;;
+fvwm95)
+	exec /etc/X11/xinit/xinitrc.fvwm95
+	;;
+fvwm2)
+	exec /etc/X11/xinit/xinitrc.fvwm2
+	;;
+wmaker)
+	exec /etc/X11/xinit/xinitrc.wmaker
+	;;
+sawfish)
+	exec /etc/X11/xinit/xinitrc.sawfish
+	;;
+twm)
+	exec /etc/X11/xinit/xinitrc.twm
+	;;
+mwm)
+	exec /etc/X11/xinit/xinitrc.mwm
+	;;
+*)
+	exec $DEFAULT_SESSION
+	;;
+esac

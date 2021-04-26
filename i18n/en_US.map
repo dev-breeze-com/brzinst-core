@@ -1,0 +1,1254 @@
+[bundles]
+
+TIP_INTRO=Introduction and product announcements.
+TIP_COPYRIGHT=Copyright, credits, licence information, etc.
+TIP_LOCALE=Select locale, timezone, keyboard, etc.\nLocale and keyboard settings are required.
+TIP_HOSTCONFIG=Host networking configuration\nSetup your laptop devices, if any.\nDynamically configure your hostname, etc.
+TIP_PACKAGE_SOURCE=Select the source of packages to install.\nA disk drive, a flash drive, a cdrom drive,\na network server, or the web/internet.
+
+TIP_DESKTOP=Select your preferred type of desktop.\nSelect the type of workgroup installation.\nSetup your system's user accounts.\nEnable a set of system services, etc.
+
+TIP_TARGET=Select a target hard drive for installation
+TIP_TARGET_DRIVE=Select a drive for package installation.\nSelect mount points for the selected drive.
+
+TIP_DRIVES=Select a drive to partition and format.\nSelect the drive's partitioning scheme.\nCreate and format partitions on the selected drive.
+TIP_INSTALL=Select a boot loader for your system.\nUnpack and configure software packages.\nOther miscellaneous configuration tasks.
+
+TIP_EXIT=Exit installer and reboot
+TIP_STOP=Stop
+TIP_ADD=Add new entries
+TIP_APPLY=Save the current settings
+
+TIP_MAIN_MIRROR=Mirror for metadata and package retrieval. 
+TIP_WEB_PKG_MIRROR=Mirror for metadata and package retrieval. 
+TIP_SERVER_TYPE=Type of Server
+
+TIP_SET_LOCALE=Select a locale
+TIP_SET_TIMEZONE=Select a timezone
+TIP_SET_KEYBOARD=Select the type of keyboard
+TIP_SET_KEYMAP=Set the default keyboard map
+TIP_SET_LAYOUT=Set the default keyboard layout
+
+TIP_PARTITION_DEVICE=Drive Partition.
+TIP_PARTITION_TYPE=The <b>type</b> of the partition.
+TIP_PARTITION_SIZE=The size of the partition.
+TIP_FILESYSTEM=The selected filesystem to <b>format</b> a given partition.
+TIP_RESERVED_BLOCKS=The percentage of the filesystem blocks reserved for the super user.
+TIP_FSTAB_ALL_DRIVES=List all drives in the file '/etc/fstab'.
+
+TIP_DEFAULT_FILESYSTEM=Default filesystem to <b>format</b> a given partition.
+TIP_MOUNTPOINT=The <b>location</b> to which the partition is associated in the kernel.
+TIP_FORMAT_MODE=Mode of formatting to select.\nThe option <b>ignore</b> tells the installer not to process the partition.\nThe option <b>skip</b> tells the installer not to format the partition.\nThe option <b>check</b> tells the installer not to format and check the partition.\nThe option <b>keep</b> tells the installer to keep the partition as part of the new list of partitions.
+
+TIP_DEFAULT_LAYOUT=Use the default keyboard layout (us)
+TIP_LOCALE_LAYOUT=Layout based on your country locale
+
+TIP_DISK_DRIVE=Select a disk drive location where packages can be retrieved
+TIP_FLASH_DRIVE=Select a flash drive where packages can be retrieved
+TIP_CDROM_DRIVE=Select cdrom drive where packages can be retrieved
+TIP_NETINSTALL=Select a network source where packages can be retrieved
+TIP_NETWORK_SOURCE=Select a network source where packages can be retrieved
+
+TIP_DEFAULT_KEYMAP=Use the default keyboard map (us)
+TIP_LOCALE_KEYMAP=Map based on your country locale
+TIP_QWERTY_KEYMAP=Use a QWERTY keyboard map (qwerty/us)
+TIP_QWERTZ_KEYMAP=Use a QWERTZ keyboard map (qwertz/hu)
+TIP_DVORAK_KEYMAP=Use a DVORAK keyboard map (dvorak/no)
+TIP_COLEMAK_KEYMAP=Use a COLEMAK keyboard map (colemap/latin9)
+TIP_OLPC_KEYMAP=Use an OLPC keyboard map (olpc/es)
+
+TIP_SYSTEM_PASSWORD=You must use the one giving you access to your computer.
+TIP_ENTER_PASSWORD=Enter your password
+TIP_ACCOUNT_PASSWORD=Your account password
+TIP_CONFIRM_PASSWORD=Confirm your password
+TIP_UPDATE_PASSWORD=Update password information
+
+TIP_UNPACK=Unpack packages
+TIP_UNPACK_PACKAGES=Unpacking packages
+TIP_CONFIG=Configure packages
+TIP_FINISH=Various config tasks.
+TIP_CLEANUP=Reboot your computer
+
+TIP_BOOT_LOADER=Select a boot loader
+TIP_ENABLE_BOOT_MANAGER=Enable the boot loader
+TIP_SELECT_DRIVE=Select a hard drive
+TIP_SELECTION_DISABLED=Selection of <b>%option%</b> is <b>disabled</b>.
+
+TIP_USER_ID=Your system user name which is used to login.
+TIP_USER_NAME=Your account username which is used to login.
+TIP_FULL_NAME=First & last name
+TIP_JOB_DESCR=Job description
+TIP_STREET_ADDRESS=Street Address
+TIP_CITY=City of residence
+TIP_PROV_STATE=Province or State of residence
+TIP_SSL_PROV_STATE=Province or State of residence (<b>full name</b>)
+TIP_DEPARTMENT=Department in Company or Organization 
+TIP_JOB_TITLE=Title of position in Company or Organization 
+TIP_COUNTRY=Country of residence
+TIP_POSTAL_CODE=Zip or postal code.
+TIP_EMAIL_ADDRESS=Email Address
+TIP_HOME_PHONE=Your home phone number
+TIP_WORK_PHONE=Your work phone number
+TIP_COMMENTS=Enter a short comment.
+
+TIP_VIRTUAL_ACCOUNT=Enable a <b>virtual</b> or <b>system</b> account for the displayed email.
+TIP_WEBSITE=Website
+
+TIP_AREA_CODE=Your area code
+TIP_COMPANY=Your company name
+TIP_CRYPT_KEY=Your encryption key
+TIP_DEVICE=Device
+TIP_DOMAIN=Internet Domain name
+TIP_DHCP_DOMAIN=Your DHCP Internet Domain name
+TIP_ESSID=Extended Session or Service Set ID
+TIP_GATEWAY=IP address of the DHCP Server gateway 
+TIP_LAN_GATEWAY=IP address of the LAN DHCP Server Gateway 
+TIP_IP_ADDRESS=Your static or dynamic IP address
+TIP_URI_ADDRESS=schema://hostname:[port] e.g. tftp://192.168.1.1:69
+TIP_LAN_IP_ADDRESS=Your Local Area Network static IP address
+TIP_KEY_MGMT=Wireless Key Management
+TIP_MODE=Partitioning Mode
+TIP_NAMESERVER=DHCP Server for Dynamic Host configuration
+TIP_DNS_MODE=Network setup is either loopback, static IP on LAN, DHCP, or NetworkManager daemon, for Domain Name Resolution.
+TIP_NETWORK_TYPE=Network setup is either loopback, static IP on LAN, DHCP, or NetworkManager daemon
+TIP_LAN_NAMESERVER=LAN Dynamic Host Configuration Server
+TIP_LAN_SERVER=Local Area Network Server
+TIP_LAN_DOMAIN=Local Area Network Domain
+TIP_RC_SERVICES=RC Daemon Services
+TIP_NETMASK=IP Network Mask
+TIP_NICKNAME=Your wireless account nickname
+TIP_PHONE_NB=Phone number
+TIP_PRIMARY_DNS=Your primary nameserver (optional)
+TIP_SECONDARY_DNS=Your secondary nameserver (optional)
+TIP_WIFI_BSSID=Network BSSID (typically the MAC address of the access point)
+TIP_WIFI_PROTOCOL=Wireless Protocol
+TIP_WIFI_POWER=Transmission Power Level
+TIP_WIFI_ADDR=Wireless IP Address
+TIP_WIFI_DNS=Wireless IP Dynamic Nameserver
+TIP_WIFI_CHANNELS=Wireless channels to avoid interference
+TIP_WIFI_SENSITIVITY=Sensitivity (cell size + roaming speed)
+TIP_WIFI_FRAGMENTATION=Wireless Fragmentation Threshold
+TIP_WIFI_RTS=Wireless RTS Threshold
+TIP_WPA_MODE=WPA encryption mode
+TIP_DATABASE=Database
+TIP_DB_SERVER=Database Server, e.g. mysql, mongodb, postgresql, etc.
+TIP_MTA=Mail Transfer Agent
+TIP_LDAP=Lightweight Directory Access Protocol
+TIP_TFTP_ROOT_FOLDER=the tFtp root folder
+
+L_EXT_IF=External Interface
+L_INT_IF=Internal Interface
+L_EXT_IF_DHCP_IP=External DHCP IP
+L_EXT_NET=External Network
+L_DMZ_IF=DMZ Interface
+L_DMZ_NET=DMZ Network
+L_ENABLE_IPV6=Enable Ipv6
+L_ENABLE_IRC=Enable IRC
+L_ENABLE_ICMP=Enable ICMP
+L_ENABLE_ECHO_IGNORE=Enable Ignore
+L_ENABLE_NAT=Enable NAT
+L_NAT_STATIC_IP=NAT IP Address
+L_NAT_LOCAL_REDIRECT=NAT Redirection
+L_IP_FORWARDING=IP Forwarding
+L_DRDOS_PROTECT=Drdos Protect
+L_DROP_RESERVED=Drop Reserved
+L_LOG_DROP_RESERVED=Log Drop Rsrvd
+L_OPEN_TCP=Open TCP Ports
+L_OPEN_UDP=Open UDP Ports
+L_OPEN_IP=Open IP Ports
+L_DENY_TCP=Deny TCP Ports
+L_DENY_UDP=Deny UDP Ports
+
+L_MODEM_DEVICE_DETECTED=No moden device detected
+L_WIRELESS_ADAPTER_DETECTED=No wireless adapter detected
+L_ROOT_FOLDER=Root Folder
+L_NETWORK_SETTINGS_SAVED=Network settings saved.
+L_SECADMIN_PASSWORD_SAVED=Settings for <b>Security Admin</b> saved.
+L_SYSADMIN_PASSWORD_SAVED=Settings for <b>System Admin</b> saved.
+L_SYSADMIN_ACCOUNT_CREATED=Default password for sysadmin and secadmin saved.
+L_USER_PASSWORD_SAVED=User settings saved.
+L_ADMIN_PASSWORD_MISSING=<b>Security</b> or <b>System</b> admin password is missing !
+
+L_SAVEKEYS=Crypto Keys
+L_KEYSDRIVE=Crypto Keys USB Drive
+L_ADD_USERS=User Account Creation
+L_SETTING_DESKTOP=Desktop Selection
+L_SETTING_LOCALE=Locale Selection
+L_SETTING_TIMEZONE=Timezone Selection
+L_SETTING_KEYBOARD=Keyboard Selection
+L_SETTING_KEYMAP=Keymap Selection
+L_SETTING_KEYBOARD_LAYOUT=Keyboard Layout Selection
+L_SETTING_DISPLAY=Xorg X11 Installation
+L_SETTING_INTERNET=Internet Connection
+L_SETTING_PKGSRC=Package Source
+L_SETTING_PKGSRC_FLASH=Flash Drive Package Source
+L_SETTING_PKGSRC_CDROM=CDRom Drive Package Source
+
+L_MTA=Mail Transfer Agent
+L_MODEL=Model
+L_HSYNC=Horiz/Sync
+L_VSYNC=Vert/Sync
+L_LDAP=LDAP service
+L_LIFETIME=Lifetime
+L_GROUP=User Name
+L_FULL_NAME=Full Name
+L_UEFI_KEYS=UEFI Keys
+L_UEFI_64BIT_ONLY=UEFI requires the 64bit release of Breeze::OS
+L_USER_KEYS=User Keys
+L_SYSTEM_KEYS=System Keys
+L_UNSPECIFIED=Unspecified
+L_GRAPHICS_CARD=Graphics
+L_STREET_ADDRESS=Street
+L_POSTAL_CODE=Zip/Postal
+L_PROV_STATE=Prov/State
+L_STATE_PROV=State/Prov
+L_DEPARTMENT=Department
+L_DATABASE=Database
+L_DB_SERVER=Database Server
+L_EMAIL_ADDRESS=Email
+L_AREA_CODE=Area Code
+L_PHONE_NB=Phone Number
+L_HOME_PHONE=Home Phone
+L_WORK_PHONE=Work Phone
+L_PHOTO=Photo
+L_COMMENTS=Comments
+
+L_QUIT=Quit
+L_DELETE=Delete
+L_TOGGLE=Toggle
+L_DOMAIN=Domain
+L_DHCP_DOMAIN=DHCP Domain
+L_SYSTEM=SYSTEM
+L_DESKTOP=Desktop
+L_DESKTOP_FILE=Desktop File
+L_DESKTOP_TYPE=Desktop Type
+L_DESKTOP_INSTALL=Desktop Install
+L_INSTALL=Install
+L_INSTALL_MODE=Install Mode
+L_INSTALL_PACKAGES=Package Installation
+L_PASSWORD=Password
+L_CONFIRM=Confirm
+L_VIRTUAL=Virtual
+L_VOLUME=Volume
+L_VOLUME_ATTR=Volume Attr
+L_VOLUME_TYPE=Volume Type
+L_VOLUME_GROUP=Volume Group
+L_LOGICAL_VOLUMES=Logical Volumes
+L_WORK_NB=Work#
+L_WEBSITE=Website
+L_WEB_MIRRORS=Web Mirrors
+L_USER=User
+L_USER_ID=User ID
+L_USER_NAME=User Name
+L_USERS=Users
+L_NAME=Name
+L_TITLE=Title
+L_JOB_TITLE=Job Title
+L_DBLCLICK_TO_SELECT=Double Click to Select
+L_ADDRESS=Address
+L_CITY=City
+L_COUNTRY=Country
+L_EMAIL=Email
+L_HOME_NB=Home#
+L_COUNTRIES=Countries
+L_COMPANY=Company
+L_ISSUER=Issuer
+L_EMAIL=Email
+L_XORG_BOX=L_XORG_BOX
+L_VGA_DISPLAY=VGA Display
+L_DPI_DISPLAY=DPI Display
+L_HDMI_DISPLAY=HDMI Display
+L_MONITOR=Monitor
+L_MONITOR_TYPE=Monitor Type
+L_VENDOR=Vendor
+L_LOGIN_MANAGER=Login Mgr
+
+L_ENTER_ROOT_PASSWORD=You <b>must</b> enter passwords for <b>root</b> and <b>secadmin</b>
+
+L_PRESEEDING=Preseeding
+L_PRESEEDING_FAILURE=Preseeding failed !
+L_END_OF_BUTTONS=End of Buttons
+
+L_RETRIEVING_PKG_LIST=Retrieving package list ...
+L_RETRIEVING_METADATA_DB=Retrieving metadata archive ...
+L_RETRIEVING_UPDATES_DB=Retrieving updates database ...
+L_RETRIEVING_PACKAGES_DB=Retrieving packages database ...
+L_RETRIEVING_MANIFESTS_DB=Retrieving manifests database ...
+L_RETRIEVING_DESCRIPTIONS_DB=Retrieving descriptions database ...
+L_RETRIEVING_RELEASE_FILE=Retrieving distro release file ...
+
+L_RETRIEVING_RELEASE_FILE_FAILED=Retrieval of distro release file failed !
+L_RETRIEVING_PKG_LIST_FAILED=Retrieval of package list failed !
+L_RETRIEVING_METADATA_FAILED=Retrieval of metadata archive failed !
+L_RETRIEVING_UPDATES_DB_FAILED=Retrieval of updates database failed !
+L_RETRIEVING_PACKAGES_DB_FAILED=Retrieval of packages database failed !
+L_RETRIEVING_MANIFESTS_DB_FAILED=Retrieval of manifests database failed !
+L_RETRIEVING_DESCRIPTIONS_DB_FAILED=Retrieval of descriptions database failed !
+
+L_INFLATING_UPDATES_DB=Decompressing updates database ...
+L_INFLATING_METADATA_DB=Decompressing metadata archive ...
+L_INFLATING_PACKAGES_DB=Decompressing packages database ...
+L_INFLATING_MANIFESTS_DB=Decompressing manifests database ...
+L_INFLATING_DESCRIPTIONS_DB=Decompressing descriptions database ...
+L_INFLATING_PACKAGES_DB_FAILED=Decompressing packages database failed !
+
+L_CREATING_CRYPTO_KEYS_FAILED=Creating crypto keys failed !
+
+L_GPT_ZAPPING_FAILED=Failed to zap all partition information !
+L_GPT_PARTITION_REMOVAL_FAILED=Failed to remove GPT partition !
+
+L_MISSING_DRIVE_NAME=The drive name or partition list is missing.
+L_NO_DRIVE_SELECTED=No drive or device path was selected.
+L_INVALID_TEST_DRIVE_SELECTED=Invalid test drive selected.
+L_INVALID_KEYS_DRIVE_SELECTED=Invalid drive selected as<br>the <b>crypto key</b> container
+L_SAFEMODE_DRIVE_SELECTED=Invalid safemode drive selected<br>Drive sda or hda is probably your <b>boot</b> drive !
+
+L_CANNOT_KEEP_HOME_WITH_LVM=Cannot keep <b>home</b> partition<br>with <b>LVM</b> partitioning.
+L_CANNOT_KEEP_HOME_WITH_SSD=Cannot keep <b>home</b> partition on <b>SSD</b> drive.
+L_KEEP_HOME_MOUNT_FAILURE=Home partition failed to mount properly !<br>Keeping home partition is not possible.
+
+L_SETTING_SHADOW_ON=Setting shadowconfig on
+L_SAVING_TMP_FILES=Saving message logs and /tmp files to /var/tmp
+L_UPDATING_DISPLAY_MANAGER=Updating Display Manager Settings
+L_UPDATING_DIALOUT_FILES=Updating Dialout Files
+L_UPDATING_SYSTEM_FILES=Updating System Files
+L_UPDATING_USER_ACCOUNTS=Updating User Accounts
+L_UPDATING_LVM_PARTITIONS=Updating Lvm Partitions
+L_UPDATING_SYSTEM_KEYMAP=Updating System Keymap
+L_UPDATING_SYSTEM_CLOCK=Updating System Clock
+L_UPDATING_SYSTEM_SERVICES=Updating System Services
+L_UPDATING_LIB_DATABASE=Updating Library Database
+L_UPDATING_FONT_CACHE=Updating Font Cache
+L_UPDATING_DEFAULT_LOCALES=Updating Default Locales
+L_UPDATING_DESKTOP_SCHEMAS=Updating Desktop Schemas
+L_UPDATING_DESKTOP_DATABASE=Updating Desktop Database
+L_UPDATING_MIME_DATABASE=Updating Mime Database
+L_UPDATING_ICON_CACHE=Updating Icon Cache
+L_UPDATING_PANGO_SETTINGS=Updating Pango Settings
+L_UPDATING_CA_CERTS=Updating CA Certificates
+L_UPDATING_SSL_CERTS=Updating SSL Certificates
+L_UPDATING_UEFI_CERTS=Updating UEFI Certificates
+L_UPDATING_ICON_CACHE=Updating Icon Cache
+L_UPDATING_NETWORK_CONFIG=Updating Network Settings
+L_UPDATING_XORG_CONFIG=Updating X11/Xorg Settings
+L_UPDATING_PACKAGE_DATABASE=Updating Package Database
+L_MOUNTING_ROOT_FS=Mounting the <b>/boot</b> device
+L_MOUNTING_BOOT_FS=Mounting the <b>root</b> device
+
+L_ERASING_BOOT_SECTOR=Please wait -- Erasing boot sector
+
+L_ACTIVATING_EXISTING_LVM_PARTITIONS=Please wait -- Activating any existing LVM partitions
+L_DEACTIVATING_EXISTING_LVM_PARTITIONS=Please wait -- De-activating any existing LVM partitiens
+L_UNMOUNTING_EXISTING_LVM_PARTITIONS=Please wait -- Unmounting any existing LVM partitions
+L_CLOSING_EXISTING_LUKS_PARTITIONS=Please wait -- Closing any existing LUKS partitions
+
+L_COPYING_TEMPORARY_FILES=Please wait -- Copying Temporary Files ...
+L_CREATING_NEEDED_FOLDERS=Please wait -- Creating Required Folders ...
+L_CREATING_SWAP_SPACE="Please wait -- Creating Swap space ..."
+L_ACTIVATING_SWAP_SPACE=Please wait -- Activating Swap space ..." 
+
+L_NETWORK_SRCMEDIA_SELECTED=Network selected as package source
+L_AUTO_SRCMEDIA_PROBING=Please wait -- Searching for source media
+L_MANUAL_SRCMEDIA_PROBING=Defaulting to manual source media selection
+L_CREATING_INITRD=Creating the <b>kernel initrd</b>
+
+L_SAVING_CRYPTO_KEYS=Please wait -- Saving <b>crypto</b> keys
+L_SAVING_CRYPTO_KEYS_FAILURE=Failed to save <b>crypto</b> keys
+
+L_SETTING_MOUNTPOINTS=Please wait -- Setting <b>mount</b> points
+L_SETTING_MOUNTPOINTS_FAILURE=Failed tO set <b>mount</b> points
+L_SETTING_MOUNTPOINTS_SUCCESS=Successfully set <b>mount</b> points
+
+L_PLEASE_WAIT=Please Wait ...
+L_INIT_FOLDERS=Please Wait -- Initializing folders
+L_INIT_CRYPTO_CONTEXT=Please Wait -- Initializing Crypto Context
+L_INIT_ETC_FILES=Please Wait -- Initializing etc files
+L_INIT_LIBRARIES=Please Wait -- Initializing libraries
+L_INIT_DATABASES=Please Wait -- Initializing the package database
+
+L_INIT_PKGLIST=Please Wait -- Initializing the package list
+L_INIT_PKGLIST_FAILED=Initializing the package list failed !
+
+L_ENABLING_BOOT_LOADER=Please Wait -- Enabling your Boot Loader
+L_PROBING_DEVICES=Please Wait -- Probing for devices on your computer
+L_PLEASE_MOVE_YOUR_MOUSE=Please -- Move your mouse
+
+L_INSTALLING_PACKAGES=Please Wait -- Installing packages
+L_INSTALLING_PACKAGES_FAILED=Installing packages failed !
+
+L_INFLATING_SQUASHFS_PACKAGES=Please Wait -- Decompressing Squashfs packages
+L_INFLATING_SQUASHFS_PACKAGES_FAILED=Decompressing Squashfs packages failed !
+
+L_UNPACKING_PACKAGES=Please Wait -- Unpacking packages
+L_UNPACKING_PACKAGES_FAILED=Unpacking packages failed !
+
+L_UNPACKING_SQUASHFS_MODULES=Please Wait -- Unpacking SquashFS modules
+L_UNPACKING_SQUASHFS_MODULES_FAILED=Unpacking SquashFS modules failed !
+
+L_UNPACKING_METADATA=Please Wait -- Unpacking metadata archive
+L_UNPACKING_METADATA_FAILED=Unpacking metadata archive failed !
+
+L_UPDATING_PKG_DATABASE=Please Wait -- Updating package database
+L_UPDATING_PKG_DATABASE_FAILED=Updating package database failed !
+
+L_UNPACK_PROGRESS=Please Wait -- Unpacking packages<br><small>%title%</small>
+
+L_RETRIEVING_PACKAGES=Please Wait -- Retrieving packages
+L_CONFIGURING_PACKAGES=Please Wait -- Configuring packages
+L_CONFIG_PROGRESS=Please Wait -- Configuring packages<br><small>%title%</small>
+L_CONFIGURING_XORG=Please Wait -- Configuring Xorg/X11 desktop
+L_PREPARING_CONFIGURATION=Please Wait -- Preparing Configuration
+L_PARTITIONING_DRIVE=Please Wait -- Partitioning your Drive
+
+L_FORMATTING_DRIVE=Please Wait -- Formatting your Drive ...
+L_CRYPTO_FORMATTING_DRIVE=Please Wait -- Crypto formatting your Drive ...
+L_FORMATTING_FAILED=Failed to properly format your drive !
+L_BAD_SECTORS_FOUND=Formatting failed -- Bad sectors found !
+
+L_CRYPTO_FORMATTING_FAILED=Failed to properly crypto format your drive !
+L_FORMATTING_SWAP_PARTITION=Please Wait -- Formatting your <b>swap</b> partition
+L_ACTIVATING_SWAP_PARTITION=Please Wait -- Activating your <b>swap</b> partition
+L_FORMATTING_X_PARTITION=Please Wait -- Formatting your <b>%partition%</b> partition
+L_CREATING_X_PARTITION=Please Wait -- Creating partition <b>%partition%</b>
+
+L_CRYPTO_FORMATTING_X_PARTITION=Please Wait -- Crypto formatting your <b>%partition%</b> partition
+
+L_CREATING_LVM_PHYSICAL=Please Wait -- Creating LVM Physical Volumes
+L_CREATING_LVM_LOGICAL=Please Wait -- Creating LVM Logical Volumes
+L_CREATING_LVM_GROUPS=Please Wait -- Creating LVM Volume Groups
+
+L_COMPLETED_CONFIGURATION=Completed Configuration
+L_SAVED_FIREWALL_CONFIGURATION=Saved Firewall Configuration
+L_SAVED_SSL_CONFIGURATION=Saved SSL Crypt key Configuration
+L_SAVED_EFI_CONFIGURATION=Saved EFI Crypt key Configuration
+L_SAVED_ZRAM_CONFIGURATION=Saved zRam Configuration
+L_SAVED_TFTP_CONFIGURATION=Saved tFtp Configuration
+
+L_NVIDIA_XORG_USER_ONLY_SETUP=NVidia drivers must be downloaded and compiled.<br>You should invoke <b>t-pkg -I -f nvidia-driver</b> after reboot !.<br>The driver for your card must also be installed.
+L_NO_DOWNLOAD_PACKAGES=No packages to be downloaded !
+L_CANNOT_DOWNLOAD_PACKAGES=Cannot download packages -- no internet connection
+L_SKIPPING_DOWNLOAD_PACKAGES=Skipping downloading packages -- no internet connection
+
+L_SCHEME_SUCCESS=Your scheme was <b>saved</b> succesfully.
+L_UNPACK_SUCCESS=Successfully <b>unpacked</b> the selected packages.
+L_CONFIG_SUCCESS=Successfully <b>configured</b> the selected packages.
+L_FORMATTING_SUCCESS=Successfully <b>formatted</b> the selected partitions.
+L_PARTITIONING_SUCCESS=Successfully <b>partitioned</b> the selected drive.
+L_LVM_LOGICAL_SUCCESS=Successfully <b>created</b> the logical volumes.
+L_LVM_PHYSICAL_SUCCESS=Successfully <b>created</b> the physical volumes.
+L_LVM_FORMAT_SUCCESS=Successfully <b>formatted</b> the logical volumes.
+L_LVM_REMOVAL_SUCCESS=Successfully <b>removed</b> the physical volumes.
+L_BOOTMGR_CONFIG_SUCCESS=Successfully <b>configured</b> your boot loader.
+
+L_SAVING_CRYPTO_KEYS_FAILURE=Failed to save <b>crypto</b> keys
+L_SAVING_CRYPTO_KEYS_SUCCESS=Successfully saved <b>crypto</b> keys
+
+L_UNPACKING_TOO_MANY_FAILURE=Too many unpacking failures
+L_SELECT_CRYPTED_SCHEME=You <b>must</b> select encryption in<br>your scheme settings !
+
+L_LSBLK_FAILURE=Utility <b>lsblk</b> failed, possibly a corrupt distro !
+L_INITRD_FAILURE=Failed to <b>create</b> the kernel initrd.
+L_RETR_FAILURE=Failed to <b>retrieve</b> the list of packages successfully.
+L_UNPACK_FAILURE=Failed to <b>unpack</b> the list of packages successfully.
+L_CONFIG_FAILURE=Failed to <b>configure</b> the list of packages successfully.
+L_FINISH_CONFIG_FAILURE=Failed to complete <b>system configuration</b>.
+L_FORMATTING_FAILURE=Failed to <b>format</b> the selected partitions.
+L_PARTITIONING_FAILURE=Failed to <b>partition</b> the selected drive.
+
+L_LVM_LOGICAL_FAILURE=Failed to <b>create</b> the logical volumes.
+L_LVM_PHYSICAL_FAILURE=Failed to <b>create</b> the physical volumes.
+L_LVM_GROUP_FAILURE=Failed to <b>create</b> the volume groups.
+
+L_LVM_VGSTORE_CREATION_FAILURE=Failed to <b>create</b> the <b>vgstore</b> volume group.
+L_LVM_VGSWAP_CREATION_FAILURE=Failed to <b>create</b> the <b>vgswap</b> volume group.
+L_LVM_LOGICAL_REMOVAL_FAILURE=Failed to <b>remove</b> the <b>logical</b> volume group.
+
+L_LVM_FORMAT_FAILURE=Failed to <b>format</b> the logical volumes.
+L_LVM_REMOVAL_FAILURE=Failed to <b>remove</b> the physical volumes.
+
+L_LVM_LOGICAL_REMOVAL_FAILURE=Failed to <b>remove</b> the logical volumes.
+L_LVM_GROUP_REMOVAL_FAILURE=Failed to <b>remove</b> the volume groups.
+L_LVM_PHYSICAL_REMOVAL_FAILURE=Failed to <b>remove</b> the physical volumes.
+
+L_USERS_VALUES_SUCCESS=Settings for user <b>%key%</b> were <b>saved</b> succesfully.
+L_USER_ACCOUNT_MISSING=Your <b>user</b> account settings<br>have not yet been created !
+L_SAVE_VALUES_SUCCESS=Your <b>%page%</b> settings were <b>saved</b> succesfully.
+L_SAVE_VALUES_FAILURE=<b>Failed</b> to <b>save</b> %page% settings properly.
+L_SAVE_OPTION_FAILURE=<b>Failed</b> to <b>save</b> option %option% properly.
+L_NO_DEVICE_SPECIFIED=You <b>must</b> first select a <b>device</b>.
+L_PASSWORD_MISSING_FAILURE=You <b>must</b> enter the <b>password</b> and its <b>confirmation</b> !
+L_PASSWORD_FAILURE=Password <b>does not match !</b>
+L_PASSWORD_MISMATCH_FAILURE=Password confirmation <b>does not match !</b>
+L_MISMATCH_SCHEME_DISK_TYPE=Disk type and scheme <b>must be based</b> on the <b>LVM</b> setup
+L_COMMAND_FAILURE=The <b>last command failed</b> to <b>complete</b> successfully.
+L_COMMAND_MISSING=No such <b>command</b> !
+L_SYSPIPE_ERROR=There was a <b>system error</b> !
+
+L_BOOTLOADER_SETTING_FAILURE=Unable to select a boot loader using your settings
+L_DRIVE_SIZE_ERROR=Encountered an <b>invalid</b> estimated partition size.
+L_DRIVE_PARTITIONING_SCHEMES=Breeze::OS Installer -- Drive Partitioning Schemes
+
+L_MOUNTING_FLASH_FAILURE=Failed to mount flash drive properly. Try again !
+L_MOUNTING_CDROM_FAILURE=Failed to mount cdrom drive properly. Try again !
+L_MOUNTING_DISK_FAILURE=Failed to mount drive partition properly. Try again !
+L_SQUASHFS_DECOMPRESSION_FAILURE=Failed to decompress SQUASHFS archives !
+
+L_NO_CDROM_INSTALLED=No <b>cdrom drive</b> detected on this computer.
+L_NO_FLASH_INSTALLED=No <b>flash drive</b> detected on this computer.
+L_NO_DISK_INSTALLED=No <b>hard drive</b> detected on this computer.
+L_NO_FLASH_DRIVES_FOUND=No <b>available flash drive</b> detected on this computer.
+L_NO_INSTALL_INSTALLED=No <b>install media</b> detected on this computer.<br>Assuming a <b>network install</b> is to be performed.
+L_MUST_PARTITION_DRIVES=No <b>Breeze::OS LVM partitioned drives</b> detected.
+
+L_NO_VALID_MEDIA_FOUND=No valid <b>INSTALL media</b><br>was detected on this computer.
+L_NO_VALID_FLASH_FOUND=No valid <b>INSTALL flash drive</b><br>was detected on this computer.
+L_NO_VALID_CDROM_FOUND=No valid <b>INSTALL cdrom drive</b><br>was detected on this computer.
+
+L_PACKAGE_LIST_MISSING=Package list missing or empty -- Please, <b>re-select</b> desktop !
+L_OLDER_KERNEL_INVALID_FOR_UEFI=<b>Older</b> kernel is not appropriate for <b>UEFI</b> or <b>GPT</b> partitioned hard-drive.
+L_OLDER_KERNEL_UNAVAILABLE=No <b>older non-PAE</b> kernel available in this release !
+L_SMP32_KERNEL_UNAVAILABLE=No <b>32bit SMP</b> kernel available in this release !
+L_SMP64_KERNEL_UNAVAILABLE=No <b>64bit SMP</b> kernel available in this release !
+L_RT_KERNEL_UNAVAILABLE=No <b>real-time PAE</b> kernel available in this release !
+L_AMD64_KERNEL_UNAVAILABLE=No <b>AMD64</b> kernel available in this release !
+
+L_CHECKING_FLASH_MEDIA=Checking <b>flash</b> media ...
+L_CHECKING_CDROM_MEDIA=Checking <b>cdrom</b> media ...
+L_CHECKING_DISK_MEDIA=Checking <b>hard drive</b> partitions ...
+L_CHECKING_NETWORK_MEDIA=Checking <b>network</b> connections ...
+
+L_CHECKING_ETH_NETWORK=Checking wireless <b>eth[0-9]</b> network ...
+L_CHECKING_WLAN_NETWORK=Checking wireless <b>wlan[0-9]</b> network ...
+L_CHECKING_WIFI_NETWORK=Checking wireless <b>wifi[0-9]</b> network ...
+L_CHECKING_ATH_NETWORK=Checking wireless <b>ath[0-9]</b> network ...
+
+L_CRYPTO_PASSWORD_MISMATCH=Confirm your crypto password !
+L_SOURCE_MEDIA_MISMATCH=Reselecting source media using detected device.
+L_FLASH_MEDIA_VALID=The <b>Install flash</b> media was recognized.
+L_CDROM_MEDIA_VALID=The <b>Install cdrom</b> media was recognized.
+L_NETWORK_MEDIA_VALID=The <b>Install network</b> source is valid.
+L_NETWORK_SOURCE_VALID=The specified <b>network source</b> is <b>valid</b>.
+L_DISK_MEDIA_VALID=The specified <b>location</b> for packages is valid.
+L_DISK_MEDIA_CANCEL=No <b>location</b> for packages was specified.<br>Unpacking of packages cannot take place.
+
+L_NO_SUCH_SCRIPT_CHROOT=No script found for chroot command.
+
+L_TARGETDRIVE=Installation Target Drive
+L_TARGET_DRIVES=Target Drives
+L_TARGET_DRIVES_UNSPECIFIED=You <b>must</b> have partitioned and/or formatted<br>at least one <b>drive</b> before continuing !
+
+L_TARGET_DRIVE_SELECTED=Target drive was selected.
+L_SELECT_TARGET_DRIVE=<b>Remember</b> to select<br>a <b>target drive</b> before continuing !
+L_TARGET_DRIVE_VALID=The selected <b>target drive</b> is <b>valid</b>.
+L_TARGET_DRIVE_UNSPECIFIED=You <b>must</b> select<br>a <b>target drive</b> before continuing !
+
+L_SELECTED_DRIVE_UNSPECIFIED=You <b>must</b> select<br>a <b>drive</b> before continuing !<br><b>Double click</b> on the <b>desired</b> drive !
+L_TARGET_DRIVE_INVALID=The selected <b>target drive</b> has no <b>root</b> filesystem mounts. You must reselect your partitions, in order to set a <b>root '/'</b> filesystem.
+
+L_NETWORK_CONNECTIONR_REQUIRED=A <b>network connection</b> is required !
+L_MISSING_ROOT_FILESYSTEM=The selected <b>drive</b> has no specified <b>mount points</b>.
+
+L_ROOT_MUST_BE_DECLARED_FIRST=The <b>root</b> partition <b>must</b> be declared <b>first</b>
+L_HOME_MUST_BE_DECLARED_LAST=The <b>home</b> partition <b>must</b> be declared <b>last</b>
+
+L_BOOT_FILESYSTEM_INVALID=The selected <b>drive</b> has no valid <b>root</b> filesystem. Only <b>reiserfs</b>, <b>ext4</b>, or <b>vfat</b> are allowed as boot filesystems.
+
+L_INVALID_PKGHOST=Invalid or missing <b>network</b> package source.
+
+L_FLASH_MEDIA_INVALID=The <b>Breeze::OS Install flash</b> media was <b>not</b> recognized.
+L_CDROM_MEDIA_INVALID=The <b>Breeze::OS Install cdrom</b> media was <b>not</b> recognized.
+L_NETWORK_MEDIA_INVALID=The specified <b>network source</b> is <b>invalid</b>.
+L_NETWORK_SOURCE_INVALID=The specified <b>network source</b> is <b>invalid</b>.
+L_DISK_MEDIA_INVALID=The specified <b>location</b> for packages is <b>invalid</b>.
+
+L_BOOT_FILESYSTEM_INVALID=The selected <b>target drive</b> has no valid <b>root</b> filesystem. Only <b>reiserfs</b>, <b>ext4</b>, or <b>vfat</b> are allowed as boot filesystems.
+
+L_POWER=Power
+L_PROTOCOL=Protocol
+L_FIREWALL=Firewall Service
+L_RNG_DAEMON=RNG Daemon
+L_TFTP_DAEMON=TFTP Daemon
+L_INVALID_ARGUMENT=Invalid argument
+L_INVALID_FORMAT_INFO=Invalid format info
+L_CANNOT_FORMAT_SRC_DRIVE=Cannot format and partition source hard drive.
+L_INVALID_LVM_DISKTYPE=Disk type must be <b>LVM</b> with <b>LVM</b> scheme.
+
+L_DNS_MODE=DNS Mode
+L_NETWORK_TYPE=Networking
+L_NETWORK_CONFIG_SUCCESS=Successfully configured your <b>network</b> device.
+L_NETWORK_CONFIG_CANCEL=Your <b>network</b> device was not configured.<br>You may configure it in the <b>following steps</b>.
+L_NETWORK_CONFIG_FAILURE=Failed to configure your <b>network</b> device.<br>You may try again later ...
+L_NETWORK_CONFIG_SETUP=Please wait !<br>Trying to configure your network ...
+L_NETWORK_CONFIG_PROGRESS=Network configuration in progress ...
+L_NETWORK_CONFIG_DISABLED=DHCP network probing was disabled on boot !
+L_NETWORK_CLIENT=Network Client
+L_NETWORK_MASTER=Network Master
+L_STANDALONE=Standalone
+L_MASTER=Master
+L_MASTER_COMPUTER=Master Computer
+
+L_LAPTOP_CONFIG_SUCCESS=Successfully configured your <b>laptop</b> devices.
+L_LAPTOP_CONFIG_FAILURE=Failed to configure your <b>laptop</b> devices.
+
+L_ARCH=Arch
+L_SECTION=Section
+L_VERSION=Version
+L_VERBOSE=Verbose
+L_SOURCE=Source
+
+L_XKB_MODEL=Kbd Model
+L_XKB_VARIANT=Kbd Variant
+L_XKB_LAYOUT=Kbd Layout
+L_XKB_OPTIONS=Kbd Options
+
+L_HORIZ_SYNC=Horizontal Sync
+L_VERT_SYNC=Vertical Sync
+L_RESOLUTION=Resolution
+L_DESCRIPTION=Description
+
+L_PKG_NAME=Package name
+L_PKG_TITLE=Package title
+L_PKG_SECTION=Package section
+L_PKG_VERSION=Package version
+L_PKG_SOURCE=Package Source
+
+L_TIMEZONE=Time Zone
+L_LANGUAGE=Language
+L_KEYMAP=Keymap
+L_HOSTNAME=Hostname
+L_DHCP_HOSTNAME=DHCP Hostname
+
+L_INVALID_HOST=Invalid hostname
+L_INVALID_RELEASE_FILE=Invalid Breeze::OS release file
+
+L_HOME=Home
+L_WORKGROUP=Workgroup
+L_BACKWARD=Backward
+L_PROGRESS=Progress
+L_IP_ADDRESS=IP Address
+L_IPV4_ADDRESS=IPv4 Address
+L_URI_ADDRESS=URI Address
+L_LAN_ADDRESS=LAN Address
+L_LAN_IP_ADDRESS=LAN IP Address
+L_GATEWAY=Gateway
+L_NAMESERVER=Nameserver
+L_NETMASK=Netmask
+
+L_BIND=Bind Daemon
+L_BITRATE=Bit Rate
+L_BLUETOOTH=Bluetooth daemon
+L_BLOCKED_HOSTS=Blocked Hosts
+L_CUPS=CUPS daemon
+L_ZRAM=Compressed ramdrive
+L_ZRAM_SPACE=ZRAM Space
+L_ZRAM_DAEMON=ZRAM Daemon
+L_HTTPD=HTTP Web Server
+L_PRINTER=Printer Daemon
+L_PRINTING=Printing Daemon
+L_MONITORING=Monitoring
+L_INETD=Inetd daemon
+L_MCELOG=Mcelog daemon
+L_MYSQLD=Mysql daemon
+L_NETWORK_MANAGER=Network Manager
+L_NGINX=Nginx Web server
+L_PCMCIA=Laptop Utilities
+L_POWERSAVE=CPU Powersave
+L_CPUFREQ=CPU Frequency
+L_RPC=Remote Procedure Call
+L_NFSD=Network File System
+L_SAMBA=Samba Server
+L_SENDMAIL=Sendmail
+L_SENSITIVITY=Sensitivity
+L_SSHD=Secure Shell Server
+L_SYSLOG=Syslog daemon
+L_WIRELESS=Wireless daemon
+L_YP=Yellow Pages (NIS)
+
+L_SSMTP=sSMTP
+L_RECIPIENT=Recipient
+L_MAILHUB=Mailhub
+L_USE_TLS=Use TLS
+L_OVERRIDE=Override
+
+L_SERVER=Server
+L_SERVER_TYPE=Server Type
+L_SERVER_INSTALL=Server Install
+
+L_FTP_SERVER=Ftp Server
+L_TFTP_SERVER=tFtp Server
+L_HTTP_SERVER=Http Server
+L_MAIN_MIRROR=Main Mirror
+L_WEB_MIRROR=Web Mirror
+
+L_NIS_SERVER=NIS Server
+L_NIS_SUBMASK=NIS Submask
+L_NIS_IPADDR=NIS IP Address
+L_NIS_NETMASK=NIS Netmask
+L_NIS_DOMAIN=NIS Domain
+L_NIS_WORKGROUP=NIS Workgroup
+
+TIP_BITRATE=Bit Rate
+#TIP_BIND=
+#TIP_BLUETOOTH=
+#TIP_CUPS=
+#TIP_HTTPD=
+#TIP_INETD=
+#TIP_MCELOG=
+#TIP_MYSQLD=
+#TIP_NETWORK_MANAGER=
+#TIP_NGINX=
+#TIP_PCMCIA=
+#TIP_POWERSAVE=CPU Frequency Governors
+TIP_CPUFREQ=CPU Frequency Governors
+#TIP_RPC=
+#TIP_SAMBA=
+#TIP_SENDMAIL=
+#TIP_SSHD=
+#TIP_SYSLOG=
+#TIP_WIRELESS=
+
+TIP_NIS=Network Information Service / Yellow Pages
+TIP_DOMAIN_MASTER=Local Area Network Master Server
+
+L_AS_BOOT=Boot Device
+L_ALL_OSES=All Oses
+
+L_BOOT=Boot
+L_BOOT_LOADER=Boot Loader
+L_BOOT_SIZE=Boot Size
+L_CHECK=Check
+L_CHECK_FLAG=Keep
+L_CHANNELS=Channels
+L_MBR=MBR
+L_SIZE_MB=Size (MB)
+L_VOL_SIZE_MB=Volume Size (MB)
+L_STRIPE_KB=Stripe (KB)
+L_PARTITION=Partition
+L_PARTITION_TYPE=Partition Type
+L_FILESYSTEM=Filesystem
+L_RESERVED_BLOCKS=Reserved Blocks
+L_FSTAB_ALL_DRIVES=List all Drives
+
+L_SELECT_FOR_FORMAT=Select for reformatting
+L_SELECT_AS_BOOT_PARTITION=Select as boot partition
+L_CHECK_BAD_SECTORS=Check bad sectors
+L_SELECT_AS_MBR_LOCATION=Select as MBR location
+L_TEST_YOUR_KEYBOARD=Test your Keyboard
+L_DEFAULTING_TO_RSYNC=<b>Low Memory</b> -- Defaulting to <b>rsync</b>
+
+L_STATUS=Status
+L_PRIORITY=Priority
+L_DEVICE=Device
+L_DRIVER=Driver
+L_MODE=Mode
+L_PARTITIONS=Partitions
+L_SWAP_SIZE=Swap Size
+L_ACTIVE=active
+L_INACTIVE=inactive
+L_ACTIVATE_SWAP=Init Swap
+L_SECTOR_SIZE=Sector Size
+L_ZRAM_SIZE=Z-Ram Size
+L_DISK_TYPE=Disk Type
+L_DISK_SIZE=Disk Size
+L_SCHEME=Scheme
+L_MOUNTPOINT=Mountpoint
+L_BASIC_DESKTOP=Basic Desktop
+L_GUI_DESKTOP=Graphical Desktop
+L_SYSTEM_DESKTOP=Computer Desktop
+L_FULL_DESKTOP=Complete Desktop
+L_OPEN_OFFICE_DESKTOP=OpenOffice Desktop
+L_SERVER_DESKTOP=Server Desktop
+L_ENTER_A_HOSTNAME=Enter a Host Name
+L_ENTER_A_SERVER=Enter a Download Server Name
+L_ENTER_A_SOURCE_PATH=Enter a Source Path
+L_ENTER_A_NIS_DOMAIN=Enter a NIS Domain Name
+
+L_WINDOWS=Windows
+L_LINUXES=Linuxes
+
+L_INTERFACE=Interface
+L_MODEM_ROUTER=Router Modem
+L_ADSL_ROUTER=ADSL Router Modem
+L_ADSL_MODEM=ADSL Modem
+L_CABLE_MODEM=Cable Modem
+L_DIALUP_MODEM=Dialup Modem
+L_NO_INTERNET=No Internet Connection
+L_WIRELESS_MODEM=Wireless Modem
+L_LOCAL_AREA_NETWORK=Local Area Network
+L_NO_CHANGE=No Change
+
+L_ESSID=ESSID
+L_SCAN_SSID=Scan SSID
+L_BSSID=Network BSSID
+L_WPA_MODE=WPA Mode
+L_WIFI_MODE=Mode
+L_MODULATION=Modulation
+L_FRAGMENTATION=Fragmentation
+L_RTS=RTS handshake
+L_KEY_MGMT=Key Mgmt
+L_CRYPT_KEY=Crypt Key
+L_NICKNAME=Nick Name
+L_WIFI_DNS=Wifi DNS
+L_WIFI_NWID=Network ID
+L_WIFI_ADDR=Wifi Address
+L_WIFI_DRIVER=Wifi Driver
+L_PRIMARY_DNS=Primary DNS
+L_SECONDARY_DNS=Secondary DNS
+L_NB_PROCESSOR=Processor#
+L_START_ON_BOOT=Start on Boot
+L_NOT_ENOUGH_DISK_SPACE=Not enough disk space
+
+TIP_XKB_MODEL=Selected keyboard model
+TIP_XKB_VARIANT=Selected keyboard variant
+TIP_XKB_LAYOUT=Selected keyboard layout
+TIP_XKB_OPTIONS=Selected keyboard options 
+
+TIP_ZRAM=Compressed ramdrive
+TIP_ZRAM_NPROC=Number of Compressed ramdrives (ZRAM)
+TIP_ZRAM_DAEMON=Compressed ramdrive daemon (ZRAM)
+TIP_ENTER_ISOFILE_PATH=Enter ISO9660 archive path
+TIP_LVM=Logical Volume Manager (LVM)
+TIP_LVM_TYPE=Type of LVM Partitioning
+TIP_LVM_PHYSICAL=LVM Physical Volumes
+TIP_LVM_LOGICAL=LVM Logical Volumes
+TIP_LVM_INFO=Logical Volume Manager Information
+TIP_LVM_FORMAT=LVM Logical Volume Formatting
+TIP_LOGICAL_VOLUME=Logical Volume
+TIP_VENDOR=Vendor
+TIP_MONITOR=Monitor
+TIP_MONITOR_TYPE=Your type of monitor (VGA,HDMI,DPI)
+TIP_MONITOR_VENDOR=Your monitor vendor
+TIP_MONITOR_MODEL=Your monitor model
+TIP_GRAPHICS_CARD=Your computer graphics card
+TIP_SCREEN_HSYNC=Your monitor horizontal sync value
+TIP_SCREEN_VSYNC=Your monitor vertical sync value
+TIP_SCREEN_RESOLUTION=Your monitor resolution (screen size)
+TIP_LOGIN_MANAGER=Login manager for Xorg/X11 GUI desktops
+TIP_DESCRIPTION=Description
+TIP_WIFI_DRIVER=Wireless Driver
+
+TIP_SSMTP_RECIPIENT=The person who gets all mail for userids < 1000
+TIP_SSMTP_MAILHUB=The mail server (where the mail is sent to),<br>both port 465 or 587 should be acceptable.
+TIP_SSMTP_HOSTNAME=The full hostname
+TIP_SSMTP_DOMAIN=The address where the mail appears to come from for user authentification.
+TIP_SSMTP_OVERRIDE=Email 'From header's can override the default domain ?
+TIP_SSMTP_USE_TLS=Use SSL/TLS before starting negotiation 
+TIP_SSMTP_USERNAME=Username of the mail account
+TIP_SSMTP_PASSWORD=Password of the mail account
+TIP_SSMTP_CONFIRM=Confirmation of the mail account pasword
+
+TIP_PKG_NAME=Package name
+TIP_PKG_TITLE=Package title
+TIP_PKG_SECTION=Package section
+TIP_PKG_VERSION=Package version
+TIP_PKG_INSTALL_CMD=Install command
+TIP_INSTALL_MODE=Mode of Package Installation
+
+TIP_DISTRO_ARCH=Release architecture
+TIP_DISTRO_VERSION=Release version
+
+TIP_CREATE_PKG_LIST=Generate the list of packages
+TIP_COMPLETE_INSTALLATION=Download additional packages
+
+TIP_TIMEZONE=Timezone
+TIP_LANGUAGE=Language
+TIP_KEYMAP=Keyboard map
+TIP_HOSTNAME=Select a hostname
+TIP_DHCP_HOSTNAME=Your DHCP Hostname
+TIP_LAPTOP=Laptop devices setup
+TIP_HARD_DRIVES=Hard Drives
+TIP_INCL_LINUXES=Include bootable Linux partitions.
+TIP_INCL_WINDOWS=Include bootable Windows partitions.
+TIP_DHCP=Dynamic Host Configuration
+TIP_HARD_DRIVE_SCAN=Scan hard drive partitions.
+TIP_FORMAT_PAGE=Hard drive formatting and partitioning.
+TIP_WORKGROUP=The type of desktop network installation (workgroup)
+TIP_DESKTOP_TYPE=The type of desktop installation.
+TIP_DESKTOP_FILE=A specific desktop installation.
+TIP_USERS=Create user system accounts.
+TIP_OPENSSL=Open SSL private and public keys generation.
+TIP_UEFI_KEYS=Generate or keep encryption keys for UEFI platform.
+TIP_ORG_CY=Organization/Company
+TIP_INTERNET=Settings for your Internet Service Provider (ISP) account.
+TIP_INTERFACE=Network Interfaces
+TIP_INITCFG=Setup configure settings and paths
+TIP_KERNEL=Linux kernel
+TIP_XORG=Xorg Server Settings
+TIP_HOME=Go to the home page.
+TIP_BACKWARD=Go to the previous page.
+TIP_PROGRESS=Progress
+TIP_SCHEME=Hard drive partitioning schemes.
+TIP_DISK_TYPE=The available types of use for your hard drive, (normal, lvm, raid).
+TIP_DISK_SIZE=Total Disk Space
+TIP_SWAP_SIZE=Swap space for virtual memory.
+TIP_SWAP_SPACE=Swap space for virtual memory.
+TIP_ACTIVATE_SWAP=Activate the created swap space.
+TIP_FIREWALL=Protects your computer from network intrusions.
+TIP_RNG_DAEMON=Generates random numbers for your computer.
+TIP_TFTP_DAEMON=Trivial File Transfer Protocol Daemon
+TIP_SRC_MEDIA=Probe computer for source of packages.
+
+TIP_ADD_PARTITION=Add Partition
+TIP_REMOVE_PARTITION=Remove Partition
+TIP_RESTORE_PARTITION=Restore Partitions
+TIP_MOUNTPOINTS=Select mount points for selected drive
+TIP_SCHEMES=Partitioning schemes
+TIP_FORMAT=Format selected drive
+TIP_FORWARD=Go to the next page
+TIP_GPGKEY_LIFETIME=Lifetime of GnuPG encryption keys
+
+TIP_LUKS_PASSWORD=Default dm-crypt[luks] password.
+TIP_CONFIRM_LUKS_PASSWORD=Confirm default dm-crypt[luks] password.
+TIP_ENCRYPT_DRIVE=<markup>Choose, whether or not, to encrypt your drive.</markup>
+
+TIP_USE_AS_BOOT_DEVICE=Use as the main boot hard-drive for your computer.
+TIP_BOOT_SIZE=<markup><b>UEFI</b> and our method of partitoning mandates the presence\nof a boot partition, whose recommended size is <b>256M</b>.</markup>
+
+TIP_TOTAL_ZRAM=<markup>If your computer has less than <b>512M</b>  of memory; then,\n<b>compresed ram drives</b> can be used to increase\nits responsiveness.</markup>
+
+TIP_SECTOR_SIZE=<markup>If your drive is <b>newer</b> than <b>2010</b> and <b>larger</b> than <b>750 GB</b>; then,\nit may be a <b>4K</b> drive. Most drives have, either a <b>512</b> or <b>4K</b> sector size.</markup>
+
+TIP_PARTITIONS=<markup>The selected mode of partitioning.<br><b>UEFI</b>: Unified Extensible Firmware Interface, for newer computers, or\n<b>GPT</b>: GUID Partitioning Table, for newer computers or\n<b>MBR</b> Master Boot Record, for older computers.</markup>
+
+L_CORE_MATE=A basic Mate desktop
+L_CORE_XFCE=A basic Xfce desktop
+L_CORE_LXDE=A basic Lxde desktop
+L_STD_MATE=A standard Mate desktop
+L_STD_XFCE=A standard Xfce desktop
+L_STD_LXDE=A standard Lxde desktop
+L_STD_KDE=A standard KDE desktop
+L_STD_CARBON2=A standard C2 desktop
+L_STD_HTTP=A standard HTTP webserver
+
+L_CORE=The <b>Core</b> list of packages
+L_CORE_BOOT=The <b>Boot</b> archive
+L_CORE_META=The <b>Metadata</b> archive
+L_CORE_ZZZCONF=The <b>Live Conf</b> archive
+L_CORE_GUI=The <b>GUI Core</b> list of packages
+L_CORE_GUIAPPS=The <b>GUI Apps</b> list of packages
+L_CORE_EXTRA=The <b>GUI Extra Apps</b> list of packages
+L_CORE_ADMIN=The <b>Admin</b> list of packages
+L_CORE_LIBREOFFICE=The <b>LibreOffice</b> office suite
+L_CORE_OPENOFFICE=The <b>OpenOffice</b> office suite
+L_CORE_THEMES=The <b>Desktop Themes</b> list of packages
+L_CORE_XFCE_ORG=The <b>XFCE</b> Desktop environment
+L_CORE_LXDE_ORG=The <b>LXDE</b> Desktop environment
+L_CORE_MATE_ORG=The <b>MATE</b> Desktop environment
+L_CORE_KDE_ORG=The <b>KDE Plasma</b> Desktop environment
+L_CORE_KDE_L10N=KDE Internationalization
+L_CORE_XORG=The <b>Xorg [X]</b> Window System
+
+L_LOW_MEM_NO_KDE_PKG=<b>-- Low Memory --</b><br>The <b>KDE</b> desktop will not be installed.
+L_LOW_MEM_NO_MATE_PKG=<b>-- Low Memory --</b><br>The <b>Mate</b> desktop will not be installed.
+
+TIP_CORE=\
+The <b>Core</b> package includes base system files needed for the normal\n\
+functioning of your computer in addition to the selected Linux kernel.
+
+TIP_CORE_BOOT=\
+The <b>Boot</b> package includes a <b>Linux</b> kernel needed for the\n\ 
+proper booting of your computer.
+
+TIP_CORE_META=\
+The <b>Meta</b> package includes basic configuration needed for the normal\n\
+functioning of your <b>Breeze::OS Live</b> installation.
+
+TIP_CORE_ZZZCONF=\
+The <b>Live Conf</b> package includes configuration to allow the normal\n\
+booting of your <b>Breeze::OS Live</b> DVD/USB environment.
+
+TIP_CORE_GUI=\
+The <b>GUI</b> Core package includes base system files needed for the normal\n\
+excution of GTK or KDE based desktops with additional multimedia packages.
+
+TIP_CORE_GUIAPPS=\
+The <b>GUI</b> Apps package includes some GUI files needed for the normal\n\
+excution of GTK or KDE based desktops with some miscellaneous applications.
+
+TIP_CORE_EXTRA=\
+The <b>Extra</b> Apps package includes some GUI files needed for the normal\n\
+excution of GTK or KDE based desktops with some miscellaneous applications.
+
+TIP_CORE_ADMIN=\
+The <b>Admin</b> package includes base system files needed for the normal\n\
+administration of your installation and selected desktop environments.
+
+TIP_CORE_LIBREOFFICE=\
+<b>LibreOffice</b> is an Open Source, community-developed, office\n\
+productivity suite. It includes key desktop applications, such as a\n\
+word processor, spreadsheet, presentation manager, formula editor and\n\
+drawing program, with a user interface and feature set similar to\n\
+other office suites. LibreOffice also works transparently with a\n\
+variety of file formats, including Microsoft Office File Formats.
+
+TIP_CORE_OPENOFFICE=\
+<b>OpenOffice</b> is an Open Source, community-developed, office\n\
+productivity suite. It includes key desktop applications, such as a\n\
+word processor, spreadsheet, presentation manager, formula editor and\n\
+drawing program, with a user interface and feature set similar to\n\
+other office suites. OpenOffice also works transparently with a\n\
+variety of file formats, including Microsoft Office File Formats.
+
+TIP_CORE_XORG=\
+<b>Xorg</b> is a full featured X server that was originally designed for UNIX\n\
+and UNIX-like operating systems running on Intel x86 hardware. It now\n\
+runs on a wider range of hardware and OS platforms. This work was\n\
+derived by the X.Org Foundation from the XFree86 Project's XFree86\n\
+4.4rc2 release. The XFree86 release was originally derived from X386\n\
+1.2 by Thomas Roell which was contributed to X11R5 by Snitily Graphics\n\
+Consulting Service.
+
+TIP_CORE_THEMES=\
+The <b>Themes</b> package includes a set of themes needed to enhance your\n\
+selected desktop environments with icons and desktop styles.
+
+TIP_CORE_XFCE=\
+The <b>Xfce</b> desktop package includes common files needed for XFCE\n\
+desktop apps (Pixmaps, .desktop files and internationalization files,\n\
+as well default settings for the XFCE desktop).
+
+TIP_CORE_LXDE=\
+The <b>Lxde</b> desktop package includes common files needed for LXDE\n\
+desktop apps (Pixmaps, .desktop files and internationalization files,\n\
+as well default settings for the LXDE desktop).
+
+TIP_CORE_MATE=\
+The <b>Mate</b> desktop package includes common files needed for MATE\n\
+desktop apps (Pixmaps, .desktop files and internationalization files,\n\
+as well default settings for the MATE desktop).
+
+TIP_CORE_KDE=\
+The <b>KDE Plasma</b> desktop package includes common files needed for KDE\n\
+desktop apps (Pixmaps, .desktop files and internationalization files,\n\
+as well default settings for the KDE Plasma desktop).
+
+TIP_CORE_KDE_L10N=\
+This package includes a basic set of internationalization packages\n\
+for the <b>KDE Plasma</b> desktop.
+
+TIP_SAVEKEYS=\
+You <b>must</b> now choose, whether or not, to <span bgcolor="red"><b>encrypt</b></span> your <b>USB flash</b> drive.<br>\
+Your choices are as follows:<br><br>\
+  <span color="#33FB01"><b>Encrypted</b></span> for first time saving of keys on an encrypted container.<br>\
+  <span color="#33FB01"><b>Unencrypted</b></span> for first time saving of keys on an non-encrypted container.<br>\
+  <span color="#33FB01"><b>Reuse</b></span> to save keys on an already formatted container.<br>\
+  <span color="#33FB01"><b>Factory</b></span> to use a <b>factory formatted</b> flash drive as is.<br><br>\
+If you selected an <b>encrypted</b> container, then you <span color="red"><b>must</b></span> select<br>the <span color="#33FB01"><b>encryption</b></span> parameters on the left.<br>The parameters are used in the encryption of the <b>crypto keys</b> container.<br>You <span color="red"><b>must</b></span> also provide a password.<br>\
+The <b>USB drive</b> will be partitioned and formatted with <b>EFI</b> and <b>Ext4</b>.<br>The container is the <b>Ext4</b> partition, and is to be mounted as /mnt/lukskeys.<br><br>\
+Click on the <span color="yellow"><b><u>Apply</u></b></span> button to <b>save your keys</b>.<br>
+
+TIP_KEYSDRIVE=\
+You <span color="red"><b>must</b></span> select a <b>drive</b>, from the list on the left, onto which to save the <b>crypto keys</b>. The <b>USB</b> drive <b>will</b> be partitioned and formatted.<br><br>\
+<span color="red"><b>Ensure</b></span> that the <b>right drive</b> is selected; and, any data on it, is no longer needed.<br><br>\
+Select a <b>USB drive</b> before <b>continuing</b>.
+
+TIP_TARGETDRIVE=\
+You <b>must</b> select the <span color="#33FB01"><b>target drive</b></span>, from the list on the left.<br>\
+The <b>target</b> drive <b>must</b> have been partitioned and formatted.<br>\
+If you formatted the drive; then the proper filesystem mounts will be set.<br><br>\
+If you have partitioned several drive(s) without <b>LVM</b>; then, any of the<br>\
+selected drives will do; otherwise, select the <span color="red"><b>first</b></span> <b>LVM partitioned</b> drive.<br><br>\
+Select a <b>target drive</b> before <b>continuing</b>.
+
+TIP_TARGET_DRIVES=\
+You <b>must</b> select amongst the <span color="#33FB01"><b>target drives</b></span>, listed on the left;<br>\
+the <b>ones</b> you <b>wish</b> to include in your <span color="#33FB01"><b>filesystem table</b></span>.<br><br>\
+Your <b>filesystem table [fstab]</b> list the partitions which are<br>activated at boot time.<br><br>\
+Select one or more <b>target drives</b> before <b>continuing</b>.
+
+TIP_INSTALL_PACKAGES=\
+To the left is a list of some of the <b>Breeze::OS packages</b> or <b>SquashFS archives</b><br>which will be installed onto your selected <b>target</b> drive.<br><br>\
+Click on the <span color="yellow"><b><u>Apply</u></b></span> button to <b>Start package installation</b>.
+
+TIP_SETTING_DESKTOP=\
+A <b>desktop</b> consists of software applications, such as, a <b>windowing environment</b>, a <b>desktop environment</b>, an <b>office suite</b>, and a set of <b>networking tools</b>.<br><br>\
+The <b>standard</b> desktops also includes the <b>OpenOffice</b> or <b>LibreOffice</b> suite, and all other <b>usual</b> desktop applications; such as, a multimedia player, a messenger app, a web browser, etc..<br><br>\
+If you have already picked a desktop by selecting <b>network</b> as a package source;<br>you <b>can re-select</b> a different one now.<br><br>\
+Select a <b>desktop</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+TIP_SETTING_LOCALE=\
+Setting your locale will select settings, such as:<br><br>\
+   <span color="#33FB01"><b>Message</b></span> setting for localized messages.<br>\
+   <span color="#33FB01"><b>Monetary</b></span> setting for monetary formats.<br>\
+   <span color="#33FB01"><b>Numeric</b></span> setting for number formats.<br>\
+   <span color="#33FB01"><b>Time</b></span> setting for time and date formats, etc..<br><br>\
+The selected settings will be used by your desktop, after rebooting.<br>\
+The <span color="#33FB01"><b>US</b></span> locale and <span color="#33FB01"><b>UTF-8</b></span> character encoding are used by default.<br><br>\
+Select a <b>locale</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+TIP_SETTING_TIMEZONE=\
+You <span color="red"><b>should</b></span> select a timezone that matches your <span color="#33FB01"><b>geographical location</b></span>.<br>\
+For example, <span color="#33FB01"><b>America/New-York</b></span>.<br><br>\
+Select a <b>timezone</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+TIP_SETTING_KEYBOARD=\
+The <span color="#33FB01"><b>pc105</b></span> keyboard is picked by <b>default</b>.<br><br>\
+Most <b>keyboards</b> are in general <b>qwerty</b> based ones.<br>\
+Some keyboards required slightly more setting management; because,<br>\
+they are not <b>qwerty</b> based; or, the user requires the use of accented charaters.<br><br>\
+Select a <b>keyboard</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+
+TIP_SETTING_KEYMAP=\
+The <span color="#33FB01"><b>Qwerty</b></span> <b>en_US</b> keymap is picked by <b>default</b>.<br><br>\
+<b>Keymaps</b> are used to associate characters to keystrokes.<br>\
+They are able to remap your keystrokes to permit the use of accented characters.<br><br>\
+Based on your <span color="#33FB01"><b>locale</b></span>, and <span color="#33FB01">keymap</span> selection on the left;<br>\
+a keymap package is picked, so that accented characters can be handled.<br><br>\
+Select a <b>keymap</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+TIP_SETTING_KEYBOARD_LAYOUT=\
+The <span color="#33FB01"><b>US</b></span> keyboard layout is picked by <b>default</b>.<br><br>\
+By selecting the entry <b>locale</b> on the left, a <b>keyboard layout</b> is picked,<br>\
+based on the <span color="#33FB01"><b>locale</b></span> you selected on the <b>locale page</b>; so that accented characters can be handled.<br><br>\
+Select a <b>keyboard layout</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+TIP_SETTING_PACKAGE_TYPE=\
+The default <b>package type</b> is <font color="#33FB01"><b>squashfs</b></font> within the <b>Live DVD</b> environment.<br><br>\
+If you choose <font color="#33FB01"><b>package</b></font>, and are using the <b>Live DVD</b> release; then all packages will be retrieved from the network. The process could take, at least, an hour more than the <font color="#33FB01"><b>squashfs</b></font> installation, several hours, if you have a slow connection.<br><br>\
+Select a <b>package type</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+
+TIP_SELECTING_PARTITIONING_MODE=\
+Several partitioning modes are offered, including the choice for a <b>single</b> partition.<br><br>\
+The <b>default choice</b> is to partition your whole drive, as a single partition on top of <b>GPT boot</b>.<br><br>\
+The <b>second one</b> includes a <font color="#33FB01"><b>home</b></font> partition.<br><br>\
+The <b>third one</b> includes a <font color="#33FB01"><b>home</b></font> and <font color="#33FB01"><b>var</b></font> partition.<br><br>\
+The <b>fourth one</b> includes a <font color="#33FB01"><b>home</b></font>, <font color="#33FB01"><b>var</b></font>, and <font color="#33FB01"><b>share</b></font> partition.<br><br>\
+The <b>other ones</b> are the first four choices <b>plus encryption</b>.<br><br>\
+Remember to <span color="red"><b>backup your data</b></span> before proceeding !<br><br>\
+Select a <b>partitioning mode</b> before <b>continuing</b>.
+
+TIP_SETTING_EXPERTISE_LEVEL=\
+The <b>default installation mode</b> is <font color="#33FB01"><b>beginner</b></font>, and it offers a basic set of choices;<br>such as <b>hostname</b>, <b>timezone</b>, and <b>hard-drive</b> selection, etc..<br><br>\
+Logical volume partitioning (LVM) is not available in <font color="#33FB01"><b>beginner</b></font> mode.<br><br>\
+Select an <b>expertise level</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+TIP_SETTING_INTERNET=\
+<b>Internet</b> connections are provided by Internet Service Providers <b>ISPs</b>.<br><br>\
+You must have an <b>account</b> with an <b>ISP</b> if you want to connect to the <span color="#33FB01">World Wide Web</span>.<br><br>\
+You <b>must</b> select the <b>type</b> of account, that your <b>ISP</b> provides; e.g. an <span color="#33FB01">adsl</span> account.<br><br>\
+If you do not have a <b>self-managed</b> <span color="#33FB01">router</span> modem; then to <b>enable</b><br>\
+your <b>Internet connection</b>, you <b>will have</b> to provide a <span color="#33FB01">user-name</span> and <span color="#33FB01">password</span>.<br><br>\
+Select a <b>connection type</b> or click on the <span color="yellow"><b>Next</b></span> arrow button <b>to continue</b>.
+
+TIP_SETTING_CABLE_NETWORK=\
+Enter the <b>appropriate</b> info on the left, to setup your <font color="#33FB01">Cable</font> account.\
+<br><br>\
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your settings</b>.
+
+TIP_SETTING_ADSL_NETWORK=\
+Enter the <b>appropriate</b> info on the left, to setup your <font color="#33FB01">ADSL</font> account.\
+<br><br>\
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your settings</b>.
+
+TIP_SETTING_DIALUP_NETWORK=\
+Enter the <b>appropriate</b> info on the left, to setup your <font color="#33FB01">Dialup</font> account.\
+<br><br>\
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your settings</b>.
+
+TIP_SETTING_WIRELESS_NETWORK=\
+Enter the <b>appropriate</b> info on the left, to setup your <font color="#33FB01">Wireless</font> connection.\
+<br><br>\
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your settings</b>
+
+
+TIP_SETTING_PKGSRC=\
+You <span color="red"><b>must select</b></span> your source of packages before continuing.<br><br>\
+   <span color="#33FB01"><b>Cdrom</b></span> if your installation media is on a <b>cdrom</b> drive.<br>\
+   <span color="#33FB01"><b>Flash</b></span> if your installation media is on a <b>flash</b> drive.<br>\
+   <span color="#33FB01"><b>Network</b></span> if packages are to be retrieved from the <b>network</b>.<br><br>\
+All sources are <b>verified</b> as valid <b>Breeze::OS</b> package sources.<br><br>\
+Select a <b>package source</b> before <b>continuing</b>.
+
+TIP_SETTING_PKGSRC_FLASH=\
+You <span color="red"><b>must select</b></span> a <b>flash drive</b> as package source before continuing.<br><br>\
+The selected <span color="#33FB01"><b>flash drive</b></span> will be <b>verified</b> as a valid <b>Breeze::OS</b> package source.<br><br>\
+Select a <b>USB drive</b> before <b>continuing</b>.
+
+
+TIP_SETTING_PKGSRC_CDROM=\
+You <span color="red"><b>must select</b></span> a <b>cdrom drive</b> as package source before continuing.<br><br>\
+The selected <span color="#33FB01"><b>cdrom drive</b></span> will be <b>verified</b> as a valid <b>Breeze::OS</b> package source.<br><br>\
+Select a <b>CD-Rom drive</b> before <b>continuing</b>.
+
+
+TIP_SETTING_DISPLAY=\
+The <span color="#33FB01"><b>Xorg X11</b></span> toolkit provides the basic functions for your desktop. Almost every graphical user interface (GUI) relies on it. It tries to automatically detect your devices; but, configuration files can be used to set a few default settings. Following is a partial device detection report:<br><br>\
+   <span color="#33FB01"><b>Mouse device</b></span> %detected-mouse-device%<br>\
+   <span color="#33FB01"><b>VGA controller</b></span> %detected-vga-controller%<br>\
+   <span color="#33FB01"><b>Audio device</b></span> %detected-audio-device%<br>\
+   <span color="#33FB01"><b>Modem device</b></span> %detected-modem-device%<br>\
+   <span color="#33FB01"><b>Wireless apdapter</b></span> %detected-wireless-adapter%<br><br>\
+The screen sync values, and valid screen resolution should be in your monitor manual. Your monitor name is for informational purposes. The graphics card entry is used to select an <b>Xorg/X11</b> driver.<br><br>\
+Click on the <span color="yellow"><b><u>Apply</u></b></span> button to <b>Save your Settings</b>.
+
+
+
+TIP_ADD_USERS=\
+You <b>must</b> have an account for <b>yourself</b>, and for the <b>system administrator [<span color="#33FB01">root</span>]</b>, and the <b>security manager [<span color="#33FB01">secadmin</span>]</b>.<br><br>\
+The <b>sysadmin</b> or <span color="#33FB01">root</span> acccount, as well as, the <b>secadmin</b> or <span color="#33FB01">secadmin</span> account, are automatically created. The <b>password</b> for <span color="#33FB01">root</span> is <b>sysadmin</b>, and is <b>secadmin</b> for <span color="#33FB01">secadmin</span>.<br><br>\
+You <span color="red"><b>should</b></span> choose to change the <b>password</b> for <span color="#33FB01">root</span> and <span color="#33FB01">secadmin</span>, by filling the password entries on the left, and clicking on the <b>apply</b> button.<br><br>\
+To create your <b>user account</b> and other optional ones, you <span color="red"><b>must fill-in</b></span> the entry fields on the left. Only your <b>username</b>, <b>full name</b>, and <b>password</b> are necessary.<br><br>\
+Click on the <span color="yellow"><b><u>Apply</u></b></span> button to <b>Save your Settings</b>.
+
+TIP_UPDATING_USER_ACCOUNT=<markup>\
+<b>Updating User Account ...</b>\n\n\
+    <b>Username</b>: %user%\n\
+    <b>UID/GID</b>: %uid% / %gid%\n\
+    <b>Homedir</b>: %homedir%\n\
+	</markup>
+
+TIP_DEFAULTING_TO_RSYNC=<markup>\
+<b>Low Memory</b> -- Defaulting to <u>rsync</u> ...\n\n\
+    <b>Package</b>: %pkg%\n\
+    <b>Real Memory</b>: %real%\n\
+    <b>Free Memory</b>: %free%\n\
+	</markup>
+
+TIP_SETTING_MOUNTPOINTS=<markup>\
+<b>Setting <b>mount</b> points for:</b>\n\n\
+	<b>Device:</b> $device\n\
+	<b>Mountpoint:</b> $mountpoint\n\
+	<b>Filesystem:</b> $filesystem\n\
+	</markup>
+
+TIP_CREATING_X_LVM_LOGICAL_PARTITION=<markup>\
+<b>Creating LVM Logical partitions ...</b>\n\n\
+    <b>Volume Group</b>: %vgroup%\n\
+    <b>Logical Volume</b>: %volume%\n\
+    <b>Logical Size</b>: %size%\n\
+	</markup>
+
+TIP_CRYPTING_X_PARTITION=<markup>\
+<b>Crypto formatting your partitions ...</b>\n\n\
+    <b>Device</b>: %device%\n\
+    <b>Filesystem</b>: %filesystem%\n\
+    <b>Mountpoint</b>: %mountpoint%\n\
+	</markup>
+
+TIP_FORMATTING_X_PARTITION=<markup>\
+<b>Formatting your partitions ...</b>\n\n\
+    <b>Device</b>: %device%\n\
+    <b>Filesystem</b>: %filesystem%\n\
+    <b>Mountpoint</b>: %mountpoint%\n\
+	</markup>
+
+
+[message]
+
+pkg-info=\
+<markup>\
+<big>\
+<b><i>%title%</i></b>\
+</big><br><br>\
+%description%\
+<br><br>\
+<a href="%url%">\
+<small><u>%url%</u></small>\
+</a>\
+</markup>
+
+[/message]
+
+[/bundles]

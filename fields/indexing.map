@@ -1,0 +1,8 @@
+engine=widget/combobox
+indexing=widget/combobox
+startup=widget/combobox
+home-paths=widget/comboboxentry
+doc-paths=widget/comboboxentry
+img-paths=widget/comboboxentry
+sound-paths=widget/comboboxentry
+app-paths=widget/comboboxentry

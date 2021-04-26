@@ -1,0 +1,6 @@
+hostname=widget/combobox
+user-name=widget/entry
+area-code=widget/entry
+phone-nb=widget/entry
+password=widget/entry
+confirm=widget/entry

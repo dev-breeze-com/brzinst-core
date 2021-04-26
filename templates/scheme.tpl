@@ -1,0 +1,12 @@
+device=@DEVICE@
+scheme=@SCHEME@
+gpt-mode=@GPT_MODE@
+fstype=@FSTYPE@
+disk-type=@DISK_TYPE@
+disk-size=@DISK_SIZE@
+sector-size=@SECTOR_SIZE@
+boot-size=@BOOT_SIZE@
+swap-size=@SWAP_SIZE@
+reserved=@RESERVED@
+encrypted=@ENCRYPTED@
+lukspfx=@LUKSPFX@

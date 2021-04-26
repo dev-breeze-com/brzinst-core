@@ -1,0 +1,34 @@
+
+[ req ]
+default_bits = 2048
+default_keyfile = keyfile.pem
+distinguished_name = %hostname%
+x509_extensions = v3_ca
+dirstring_type = nobmp
+default_md = sha1
+default_days = %lifespan%
+prompt = no
+
+[ %hostname% ]
+countryName = %countryName%
+countryName_default = US
+countryName_min = 2
+countryName_max = 2
+stateOrProvinceName = %stateOrProvinceName%
+localityName = %localityName%
+organizationalName = %organizationalName%
+organizationalUnitName = %organizationalUnitName%
+commonName = %commonName%
+commonName_max = 64
+emailAddress = %emailAddress%
+emailAddress_max = 40
+
+[ v3_ca ]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer:always
+basicConstraints = CA:true
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+subjectKeyIdentifier = hash
+

@@ -1,0 +1,13 @@
+          [1;33;40m Kodiak.light Setup -- Desktop Installation  [0;37;40m
+
+        [workgroup]                  [office]                  [openssl]
+      [1;37;40mNetwork             [1;37;40mDesktop         [1;37;40mEncryption
+   Installation [0;37;40m       Installation [0;37;40m         Keys [0;37;40m
+        [personal]                  [internet]                 [kernel]
+       [1;37;40mUser              [1;37;40mInternet            [1;37;40mLinux
+     Accounts [0;37;40m           Accounts [0;37;40m          Kernel [0;37;40m
+
+
+
+                   Click on ● to [1;37;40mContinue [0;37;40m.
+

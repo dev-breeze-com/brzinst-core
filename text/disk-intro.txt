@@ -1,0 +1,18 @@
+          [1;33;40m Kodiak.light Setup -- Hard Drive Selection  [0;37;40m
+
+               If you have [1;37;40mWindows [0;37;40m partitions,
+you [1;37;40mshould [0;37;40m reserve [1;31;40mhalf [0;37;40m of the space, on the
+   [1;37;40mselected [0;37;40m drive, for your [1;37;40mWindows [0;37;40m files.
+
+    You must make [1;37;40msure [0;37;40m, therefore, that files kept in your
+   [1;37;40mWindows [0;37;40m partitions [1;37;40mdo not use [0;37;40m more than
+                   [1;31;40mhalf of the disk space [0;37;40m.
+
+ If you [1;37;40mreformat [0;37;40m your drives; you will [1;37;40mloose [0;37;40m
+                                all your data.
+  You cannot [1;37;40mrecover [0;37;40m data, from [1;37;40mreformatted [0;37;40m
+                                    drives.
+
+[1;37;40mSelect [0;37;40m one of the [1;32;40mhard-drives [0;37;40m listed on the left
+                                       !
+

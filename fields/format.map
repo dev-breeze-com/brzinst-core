@@ -1,0 +1,6 @@
+device=widget/label
+partition=widget/label
+size=widget/spinbox
+filesystem=widget/combobox
+mountpoint=widget/entry
+mode=widget/combobox

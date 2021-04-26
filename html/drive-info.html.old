@@ -1,0 +1,15 @@
+<html>
+<body bgcolor="#000000" fgcolor="#ffffff" halign="center">
+<p color="yellow">
+Kodiak.light Setup -- Drive Information
+</p>
+<p>
+<b>Drive</b>: <font color="#33fb01">%selected-drive%</font><br><b>Model</b>: <font color="#33fb01">%selected-drive-model%</font><br>
+The table below displays information, about how your <b>hard-drive</b> was partitioned.<br>You can re-partition <b>part</b> of the drive; by selecting the partitions you want to keep, under column <b>Mode</b>.<br>The kept partitions <b>have to be</b> at the <b>front</b> or <b>rear</b> of the drive.<br>You <b>must</b> also specify the <b>filesystem paths</b> to which the <b>kept partitions</b> will be associated.<br>It is <b>preferable</b> that you <font color="#ff0000">re-partition</font> the whole drive; because our partitioning scheme<br><b>requires</b> a <b>separate boot</b> partition.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save the list of partitions to keep</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

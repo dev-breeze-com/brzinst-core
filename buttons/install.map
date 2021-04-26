@@ -1,0 +1,4 @@
+boot-loader=crystalproject/64x64/apps/lockstart_session.png
+unpack=oxygen/64x64/apps/utilities-file-archiver.png
+config=oxygen/64x64/actions/configure.png
+finish=oxygen/extra/64x64/actions/finish.png

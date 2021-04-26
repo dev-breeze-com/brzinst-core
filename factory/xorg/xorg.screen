@@ -1,0 +1,35 @@
+Section "Screen"
+	Identifier "Screen0"
+	Device     "Card0"
+	Monitor    "Monitor0"
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     1
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     4
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     8
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     15
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     16
+	EndSubSection
+	SubSection "Display"
+		Viewport   0 0
+        Modes       "1280x1024" "1024x768" "800x600" "640x480"
+		Depth     24
+	EndSubSection
+EndSection

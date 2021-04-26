@@ -1,0 +1,23 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<h2><b>Breeze::OS Installer -- Drive Partitioning Schemes</b></h2>
+<p>
+To the left are settings for <b>hard-drive</b> partitioning <b>schemes</b>.<br>
+The schemes differ based on the disk types of <font color="#33FB01">normal</font> or <font color="#33FB01">lvm</font>.<br>Specify whether or not your drive is a <b>4K drive</b> using <font color="#33FB01">sector size</font>.<br>The scheme <font color="#33FB01">root</font> uses <b>most</b> of the drive for a <b>single</b> partition.<br>The offered schemes create the following partitions:
+<ul>
+<li>a <font color="#33FB01">/boot</font> partition, for boot loaders,
+<li>a <font color="#33FB01">/</font> <b>root</b> partition where <b>/usr</b> is located,
+<li>a <font color="#33FB01">/home</font> partition for user files,
+<li>a <font color="#33FB01">/var</font> partition, for system and log files (+home),
+<li>a <font color="#33FB01">/srv</font> partition for HTTP, NFS, FTP, etc. files (+home, +var),
+<li>a <font color="#33FB01">/share</font> partition, as a <b>common</b> area (+home, +var, +srv), and
+<li>a <font color="#33FB01">/opt</font> partition for third-party software (+home, +var, +srv, +share),
+</ul>
+<b>/share</b> should not be confused with <b>/usr/share</b>.<br>It is used to store common repositories (git), archives, etc.<br>
+You can still choose to rename mount points, other<br>than <b>/ root</b>, <b>swap</b>, <b>boot</b>, and <b>home</b>, before formatting.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Save your Settings</b>.
+</p>
+</body>
+</html>

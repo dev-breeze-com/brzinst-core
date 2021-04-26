@@ -1,0 +1,7 @@
+/,11,root,#ff0000,#red
+/var,11,var,#0000ff,#blue
+/srv,11,srv,#fff000
+/share [20%],22,share,#ff00ff,#magenta
+/opt,11,opt,#00fff0,#cyan
+/build [20%],23,build,#808080,#grey
+/home,11,home,#00ff00,#green

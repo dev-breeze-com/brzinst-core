@@ -1,0 +1,18 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<p color="yellow">Breeze::OS Installer -- Installation</p>
+<p>
+The final installation steps are:
+<ul>
+<li><font color="#33FB01"><b>boot</b></font> selecting a boot loader.
+<li><font color="#33FB01"><b>unpack</b></font> unpacking packages.
+<li><font color="#33FB01"><b>configure</b></font> configuring packages.
+<li><font color="#33FB01"><b>finish</b></font> miscellaneous tasks before rebooting.
+</ul>
+</p>
+<br>
+<p align="center">
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

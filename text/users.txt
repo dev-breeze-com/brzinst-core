@@ -1,0 +1,16 @@
+         [1;33;40m Kodiak.light Setup -- User Account Creation  [0;37;40m
+
+    [1;32;40mUser accounts[0;37;40m are [1;37;40mrequired[0;37;40m, to make your computer [1;37;40mfunctional[0;37;40m.
+
+    You must have an account for [1;37;40myourself[0;37;40m, for the [1;37;40msystem administrator [0;37;40m,
+    and for the [1;37;40msecurity manager[0;37;40m.
+
+    The [1;37;40msysadmin[0;37;40m or [1;32;40mroot[0;37;40m acccount, as well as, the [1;37;40msecadmin[0;37;40m or [1;32;40mtsert[0;37;40m
+    account, are automatically created.
+
+    To create your [1;37;40muser account[0;37;40m and other optional ones, you [1;37;40mmust enter [0;37;40m
+    in the entry fields of the form on the next page the appropriate
+    information.
+
+               Press any key to [1;37;40mContinue[0;37;40m.
+

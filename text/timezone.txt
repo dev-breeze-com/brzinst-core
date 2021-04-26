@@ -1,0 +1,9 @@
+           [1;33;40m Kodiak.light Setup -- Timezone Selection  [0;37;40m
+
+       You [1;37;40mshould select [0;37;40m a timezone, which is close to
+       your [1;32;40mgeographical location [0;37;40m, or [1;32;40mcity [0;37;40m,
+
+                    e.g. [1;37;40mAmerica/New-York [0;37;40m.
+
+                   Click on ● to [1;37;40mContinue [0;37;40m.
+

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Breeze-Dark
+Type=X-GNOME-Metatheme
+Comment=Attractive Usability
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Breeze-Dark
+MetacityTheme=Breeze-Dark

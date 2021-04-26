@@ -1,0 +1,5 @@
+    Option     "XkbRules"      "xorg"
+    Option     "XkbModel"      "%keyboard%"
+    Option     "XkbLayout"     "%layout%"
+    Option     "XkbVariant"    ""
+    Option     "XkbOptions"    ""

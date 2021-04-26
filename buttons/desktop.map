@@ -1,0 +1,7 @@
+network=oxygen/64x64/devices/network-wired.png
+office=oxygen/64x64/categories/preferences-desktop-peripherals.png
+#office=oxygen/64x64/categories/applications-office.png
+users=oxygen/extra/64x64/actions/add_user.png
+#password=oxygen/64x64/apps/preferences-desktop-user-password.png
+kernel=crystalclear/64x64/apps/kbackgammon_engine.png
+openssl=oxygen/extra/64x64/actions/kgpg_key3_kgpg.png

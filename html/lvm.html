@@ -1,0 +1,35 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<h2><b>Breeze::OS Installer -- Logical Volume Manager</b></h2>
+<p>
+The Logical Volume Manager (<b>LVM</b>) is used to map the partitions<br>on your hard-drives, as <b>physical</b> and <b>logical</b> volumes, which are<br>independent of the underlying layout of your hard-drives.
+<br/>
+<big><b>It facilitates the resizing of formatted partitions.</b></big>
+<ul>
+<li>A <font color="#33FB01"><b>physical volume</b></font> can be created using any block device.
+<li>A <font color="#33FB01"><b>volume group</b></font> is allocated from <b>physical volumes</b>.
+<li>A <font color="#33FB01"><b>logical volume</b></font> is allocated from a <b>volume group</b>.
+</ul>
+<big><b>Installer steps required to enable LVM partitions:</b></big>
+<ul>
+<li>Create <font color="#33FB01"><b>physical volumes</b></font> from physical partitions,
+<li>Create <font color="#33FB01"><b>volume groups</b></font> with the physical volumes,
+<li>Create <font color="#33FB01"><b>logical volumes</b></font> from physical volumes and volume groups.
+<li>Format <font color="#33FB01"><b>logical volumes</b></font> to setup an LVM context for your drives.
+</ul>
+<br/>
+<big><b>The Breeze::OS&copy;&reg; LVM scheme:</b></big>
+<br/>
+Our schemes create only two volume groups, <b>vgswap</b> and <b>vgstore</b>.<br>All <b>logical volumes</b> except for <b>swap</b> are allocated from <b>vgstore</b>.<br>Our <b>LVM</b> partitioning scheme <b>requires</b> a <b>separate boot</b> partition;<br>therefore, will <font color="#ff0000">create</font> your <b>LVM</b> setup from scratch.
+<br/>
+If you choose to include several hard-drives within an <b>LVM context</b>; then,<br>you <b>must</b> partition <b>every</b> hard-drive with the <b>same</b> partitioning scheme.<br>
+<br/>
+You may go back to <b>drives</b> to partition another hard-drive; or,<br>continue by first selecting one or more <b>LVM</b> partitioned drives on the left.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Create the LVM Physical Volumes</b>.
+<br/>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

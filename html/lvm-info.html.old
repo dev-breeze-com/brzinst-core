@@ -1,0 +1,13 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<h2><b>Breeze::OS Installer -- Logical Volume Manager Information</b></h2>
+<p>
+<b>Drive</b>: <font color="#33FB01">%selected-drive%</font><br><b>Model</b>: <font color="#33FB01">%selected-drive-model%</font><br>
+The table below displays information, about the <b>LVM</b> setup of your hard-drive.<br>It is <b>preferable</b> that you <font color="#ff0000">create</font> your <b>LVM</b> setup from scratch; because,<br>our partitioning scheme <b>requires</b> a <b>separate boot</b> partition;<br>therefore, you should first remove any <b>LVM</b> volume groups or physical volumes.<br>You <b>must</b> select below, every volume to be <b>removed</b> from your hard drive.
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/apply.png"></a> to <b>Remove selected LVM groups or volumes</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+       [1;33;40m Kodiak.light Setup -- Disk Partition Formatting  [0;37;40m
+
+ If you [1;37;40mformat [0;37;40m your partitions, [1;37;40mall data [0;37;40m on
+                   them [1;37;40mwill be lost [0;37;40m; and,
+      you [1;31;40mcannot recover [0;37;40m your data, by [1;37;40many known
+                                means [0;37;40m.
+
+    You [1;37;40mmust [0;37;40m select the [1;32;40mfilesystem [0;37;40m for each
+                        partition you wish to reformat.
+   You [1;37;40mmust [0;37;40m also select the [1;32;40mlocation [0;37;40m for the
+                         [1;37;40mboot block [0;37;40m;
+        the [1;31;40mMaster Boot Record [0;37;40m is selected by default.
+ You [1;37;40mmay [0;37;40m select a [1;32;40mformat [0;37;40m with [1;37;40mbad block
+                              checking [0;37;40m.
+
+            Click on ● to [1;37;40mRestore [0;37;40m your partitions.
+       Click on [blockdevic] to [1;37;40mFormat [0;37;40m your partitions.
+          Click on ● to [1;37;40mContinue [0;37;40m without formatting.
+

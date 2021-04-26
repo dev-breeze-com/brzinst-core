@@ -1,0 +1,20 @@
+       [1;33;40m Kodiak.light Setup -- Disk Partitioning Schemes  [0;37;40m
+
+       To the left is a list of [1;37;40mhard-drive [0;37;40m partitioning
+                           [1;37;40mschemes [0;37;40m.
+ The [1;37;40mfirst scheme [0;37;40m uses the [1;37;40mwhole drive [0;37;40m for a
+                      [1;37;40msingle [0;37;40m partition.
+       The others consist in partitioning the drive, the following way:
+
+    a [1;32;40m/ [0;37;40m [1;37;40mroot [0;37;40m partition,
+    a [1;32;40m/usr [0;37;40m partition for installation,
+    a [1;32;40m/home [0;37;40m partition for user files, and
+    a [1;32;40m/share [0;37;40m partition, as a [1;37;40mcommon [0;37;40m area.
+
+The remaining schemes include an existing [1;32;40m/windows[0;37;40m partition.
+
+    The [1;37;40mrecommended [0;37;40m scheme is [1;32;40mroot home usr [0;37;40m.
+
+[1;37;40mSelect [0;37;40m a scheme for partitioning, or [1;37;40mclick [0;37;40m on
+                        ● to [1;37;40mContinue [0;37;40m.
+

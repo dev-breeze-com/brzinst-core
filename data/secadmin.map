@@ -1,0 +1,17 @@
+username=secadmin
+group-id=users
+user-access=secadmin
+fullname=Security Manager
+job-title=Security Manager
+street-address=
+city=
+state-prov=
+country=
+postal-code=
+email-address=
+url=
+work-phone=
+home-phone=
+comments=
+password=root
+confirm=root

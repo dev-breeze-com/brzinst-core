@@ -1,0 +1,17 @@
+            [1;33;40m Kodiak.light Setup -- Locale Selection  [0;37;40m
+
+
+Setting your locale will select settings, such as:
+
+  • [1;32;40mMessage [0;37;40m setting for localized messages.
+  • [1;32;40mMonetary [0;37;40m setting for monetary formats.
+  • [1;32;40mNumeric [0;37;40m setting for number formats.
+  • [1;32;40mTime [0;37;40m setting for time and date formats, etc..
+
+
+    The [1;32;40mUS [0;37;40m locale is picked, if [1;37;40mnone [0;37;40m is
+    selected; and, [1;32;40mUTF-8 [0;37;40m locales are used by default.
+
+
+                   Click on ● to [1;37;40mContinue [0;37;40m.
+

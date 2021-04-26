@@ -1,0 +1,5 @@
+/,10,root,#ff0000,#red
+/usr,20,usr,#ff0ff0,#red
+/var,20,var,#0000ff,#blue
+/share,20,share,#ff00ff,#magenta
+/home,30,home,#00ff00,#green

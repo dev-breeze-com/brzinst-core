@@ -1,0 +1,10 @@
+L_CORE_LXDE=corelxde
+L_CORE_XFCE=corexfce
+L_CORE_MATE=coremate
+L_STD_LXDE=lxde
+L_STD_XFCE=xfce
+L_STD_MATE=mate
+L_STD_KDE=kde
+#L_STD_CARBON2=carbon2
+#L_STD_GNOME=
+#L_STD_HTTP=

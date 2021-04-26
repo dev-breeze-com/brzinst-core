@@ -1,0 +1,36 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eth0
+iface eth0 inet dhcp
+
+iface dsl-provider inet ppp
+pre-up /sbin/ifconfig eth0 up # line maintained by pppoeconf
+provider dsl-provider
+
+#auto wlan0
+iface wlan0 inet static
+	address %wifi-addr%
+	netmask 255.255.255.0
+	gateway %wifi-dns%
+	dns-nameservers %wifi-dns%
+	wpa-driver wext
+	wpa-conf managed
+	wpa-ssid "%essid"
+	wpa-ap-scan 2
+	wpa-proto %wpa-mode%
+	wpa-pairwise CCMP TKIP
+	wpa-group CCMP TKIP
+	wpa-key-mgmt %key-mgmt%
+	wpa-psk "%crypt-key%"
+	wireless-essid "%essid"
+	nickname "%nickname%"
+
+	pre-up /etc/desktop/bin/load-wifi-modules.sh
+	post-down killall -q wpa_supplicant
+

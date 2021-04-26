@@ -1,0 +1,10 @@
+basic-root
+basic-root-home
+basic-root-var
+basic-root-share
+basic-root-srv
+lvm-root
+lvm-root-home
+lvm-root-var
+lvm-root-share
+lvm-root-srv

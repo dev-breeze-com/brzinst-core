@@ -1,0 +1,25 @@
+html=/install/html/intro.html
+html=/install/html/pcmcia.html&system-box=no&script=install/bin/d-laptop.sh
+html=/install/html/timezone.html&entries=/install/data/timezone.map&listbox=yes&selected=timezone&value=America/New_York&locale-box=yes&icon=_flag
+html=/install/html/locale.html&entries=/install/data/locales.map&listbox=yes&selected=locale&value=en_US&locale-box=yes&icon=_flag
+html=/install/html/keymap.html&entries=/install/data/keymaps.map&listbox=yes&selected=keymap&value=qwerty/us.map&locale-box=yes&icon=keyboard_layout&script=/install/bin/d-keymap.sh&cmd-option=keymap&precedence=pre
+html=/install/html/hostname.html&system-box=no&title=L_CHOOSE_A_HOSTNAME&value=kodiak_light&system-box=yes
+html=/install/html/disk-intro.html&cmd=/sbin/sfdisk -s&system-box=yes&listbox=yes
+html=/install/html/disk-descr.html&cmd=/sbin/sfdisk -l %P&cmd-option=hard-drive&system-box=yes
+html=/install/html/disk-schemes.html&entries=/install/schemes/default.map&listbox=yes&system-box=yes&icon=harddrive&selected=scheme&value=scheme-3
+html=/install/html/formatting.html&treebox=yes&selected=hard-drive
+html=/install/html/swap-space.html&system-box=yes&script=/install/bin/d-swapon.sh
+html=/install/html/target.html&listbox=yes&selected=hard-drive&script=/install/bin/d-select-source.sh
+html=/install/html/desktop.html&desktop=no
+html=/install/html/workgroup.html&desktop-box=yes&entries=/install/data/workgroup.map&listbox=yes&selected=workgroup&value=standalone&icon=workgroup
+html=/install/html/office.html&desktop-box=yes&entries=/install/data/office.map&listbox=yes&selected=office-suite&value=complete&icon=office
+html=/install/html/users.html&desktop-box=yes&users-box=yes&entries=/install/data/users.map&selected=user-id&value=root
+html=/install/html/password.html&desktop-box=yes&users-box=yes&user-password-box=yes&entries=/install/data/users.map&selected=user-id&value=root
+html=/install/html/vpn.html&desktop-box=yes&icon=vpn
+html=/install/html/openssl.html&desktop-box=yes&icon=openssl&openssl-box=yes&entries=/install/data/locales.map&selected=country&value=en_US
+html=/install/html/internet.html&desktop-box=yes&entries=/install/data/connections.map&listbox=yes&selected=internet&value=dialup&icon=network
+html=/install/html/kernel.html&desktop-box=yes&entries=/install/data/kernel.map&listbox=yes&selected=kernel&icon=pi-indexer&value=intel-32bit
+html=/install/html/xorg.html&desktop-box=yes&icon=xorg&xorg-box=yes
+html=/install/html/unpack.html&package-box=yes&entries=/install/packages.lst&progress-box=yes
+html=/install/html/config.html&package-box=yes&entries=/install/packages.lst&progress-box=yes
+html=/install/html/grub.html&progress-box=yes

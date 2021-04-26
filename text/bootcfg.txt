@@ -1,0 +1,23 @@
+           [1;33;40m Kodiak.light Setup -- Boot Configuration  [0;37;40m
+
+    You [1;37;40mmust[0;37;40m enable [1;32;40mboot configuration[0;37;40m before finishing.
+    The [1;37;40mboot configuration[0;37;40m will allow you to [1;37;40mboot[0;37;40m your new installation.
+
+    You will [1;37;40malso be able[0;37;40m to [1;37;40mboot[0;37;40m a [1;32;40mWindows[0;37;40m installation, if any present.
+
+    The [1;37;40mhard drive[0;37;40m is [1;32;40m%device%[0;37;40m.
+    The [1;37;40mhard drive model[0;37;40m is [1;32;40m%model%[0;37;40m.
+
+    The [1;37;40mroot device[0;37;40m was [1;37;40mformatted[0;37;40m with the [1;32;40m%filesystem%[0;37;40m file system.
+    The [1;37;40mdrive partitioning mode[0;37;40m selected was [1;32;40m%gptmode%[0;37;40m.
+
+    The [1;37;40mMaster Boot Record (MBR)[0;37;40m is the boot location in [1;32;40mMBR[0;37;40m mode.
+    The [1;37;40mBIOS Boot Partition (BBP)[0;37;40m is the boot location in [1;32;40mGPT[0;37;40m mode.
+    The [1;37;40mEFI System Partition (EFI)[0;37;40m is the boot location in [1;32;40mUEFI[0;37;40m mode.
+
+    The [1;37;40mActual Boot Location[0;37;40m is [1;32;40m%boot-location%[0;37;40m.
+    The [1;37;40mActual Boot Partition[0;37;40m is [1;32;40m%boot-partition%[0;37;40m.
+
+
+            Type [[1;32;40mY[0;37;40m] to [1;37;40mContinue[0;37;40m, or any other key to [1;37;40mCancel[0;37;40m.
+

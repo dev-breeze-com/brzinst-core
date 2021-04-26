@@ -1,0 +1,3 @@
+AMD/Intel 32bit=older
+AMD/Intel 32bit-SMP=modern
+AMD/Intel 64bit=amd64

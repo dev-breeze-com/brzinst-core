@@ -1,0 +1,23 @@
+            [1;33;40m Kodiak.light Setup -- Network Virtual Clubs [0;37;40m
+
+  You [1;37;40mmust[0;37;40m have a dynamic domain name service [1;32;40m(DNS)[0;37;40m account, to allow you to
+  communicate, in a peer-to-peer fashion, with other people on the Internet.
+  A dynamic DNS account is [1;37;40mnot[0;37;40m required, if you have a [1;37;40mstatic[0;37;40m Internet
+  [1;32;40mIP address[0;37;40m from your Internet Service Provider [1;32;40m(ISP)[0;37;40m.
+
+  Your [1;32;40mdynamic DNS address[0;37;40m is used as your [1;37;40mpublicly visible[0;37;40m [1;32;40mF[0;37;40mully [1;32;40mQ[0;37;40mualified
+  [1;32;40mD[0;37;40momain [1;32;40mN[0;37;40mame [1;32;40m(FQDN)[0;37;40m on the [1;37;40mInternet[0;37;40m.
+
+  Once you have a dynamic DNS account, you can then use your dynamic DNS FQDN
+  to communicate with friends and colleagues. When creating your account; you
+  must provide the FQDN, consisting of host and domain names; as well as,
+  username and password.
+
+  You can communicate with your friends and colleagues, in several ways.
+  The first way, is simply by using the dynamic DNS FQDN to issue requests;
+  and the second way, is by creating [1;32;40mvirtual clubs[0;37;40m with limited access to peers.
+  See the [1;32;40mNetworked Virtual Club Message of the Day (Motd)[0;37;40m after rebooting.
+
+
+                   Press on any key to [1;37;40mContinue[0;37;40m.
+

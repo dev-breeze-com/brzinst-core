@@ -1,0 +1,17 @@
+<html>
+<body bgcolor="#000000" text="#ffffff" halign="center">
+<h2><b>Breeze::OS Installer -- LVM Physical Volumes</b></h2>
+<p>
+You may go back to <b>drives</b> to re-partition another hard-drive.<br>
+</p>
+<p>
+<b>The following paragraph is taken verbatim from the LinuxQuestions.org wiki.</b><br>
+volume group
+    In LVM a volume group (VG) is, a set of physical volumes. All physical volumes in a volume group should have the same extent size. It is from the volume group that you actually allocate extents to created your logical volumes (see below). If you have 2 VGs each holding two 250GB physical volumes (say 250GB hard disks) then you could create, at most, two logical volumes each 500GB in size. Alternatively if you had a single VG holding all four of your 250GB PVs you could create yourself a single 1TB logical volume. Note that you don't have to just create a single LV for each VG, in these examples you could create say eight 128GB LVs, or 16 64GB LVs. 
+</p>
+<p>
+Click on <a href="action=apply"><img width="16" height="16" src="install/images/next.png"></a> to <b>Create LVM Volume Groups</b>.<br>
+Click on <a href="action=continue"><img width="16" height="16" src="install/images/next.png"></a> to <b>Continue</b>.
+</p>
+</body>
+</html>

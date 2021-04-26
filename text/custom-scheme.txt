@@ -1,0 +1,27 @@
+
+[1;37;40mEnter your scheme as a colon separated list of path and size.
+
+[1;37;40mPath [0;37;40mis where your partition will be mounted.
+
+The sizes [1;31;40mmust[0;37;40m be listed in percentage of your total drive size.
+
+The size of the swap partition is automaticaly substracted from your scheme.
+The size of the UEFI/GPT boot partition is also substracted from your scheme,
+if [1;37;40mGPT[0;37;40m or [1;37;40mEFI[0;37;40m partitioning was selected.
+
+The entries must be entered as follows:
+
+    [1;37;40mpath:size[0;31;40m<space>[1;37;40mpath:size
+    [1;37;40mexample:[1;37;40m /:30 /var:20 /home:50
+
+
+
+
+
+
+
+
+
+
+[1;37;40mEnter your scheme to continue with partitioning ![0;37;40m
+

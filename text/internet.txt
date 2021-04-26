@@ -1,0 +1,24 @@
+          [1;33;40m Kodiak.light Setup -- Internet Connection  [0;37;40m
+
+    The list of [1;37;40mInternet[0;37;40m connections are shown below.
+
+    You must have an [1;37;40maccount[0;37;40m with an [1;37;40mInternet Service Provider (ISP)[0;37;40m
+    if you want to connect to the [1;32;40mWorld Wide Web[0;37;40m.
+
+    You [1;37;40mmust[0;37;40m select the [1;37;40mtype [0;37;40m of account, that your [1;37;40mISP[0;37;40m provides;
+    for example, a [1;32;40mdialup[0;37;40m or [1;32;40madsl[0;37;40m account.
+
+    To [1;37;40menable[0;37;40m your [1;37;40mInternet connection[0;37;40m, you [1;37;40mmust[0;37;40m provide a [1;32;40musername[0;37;40m
+    and [1;32;40mpassword[0;37;40m on the next page; unless, you have a router modem
+    which automatically connects to your [1;37;40mISP[0;37;40m account.
+
+    [1;37;40mSelect[0;37;40m your type of connection.
+
+	   Type [[1;32;40mR[0;37;40m] for an internet connection by [1;37;40mrouter[0;37;40m modem.
+	   Type [[1;32;40mA[0;37;40m] for an [1;37;40madsl[0;37;40m internet connection.
+	   Type [[1;32;40mD[0;37;40m] for a [1;37;40mdialup[0;37;40m internet connection.
+	   Type [[1;32;40mC[0;37;40m] for a [1;37;40mcable[0;37;40m internet connection.
+	   Type [[1;32;40mW[0;37;40m] for a [1;37;40mwireless[0;37;40m internet connection.
+	   Type [[1;32;40mN[0;37;40m] for [1;37;40mno[0;37;40m internet connection.
+	   Type [1;37;40many other key[0;37;40m to [1;37;40mcontinue.[0;37;40m
+

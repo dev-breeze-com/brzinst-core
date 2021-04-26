@@ -1,0 +1,7 @@
+drives=oxygen/64x64/devices/drive-harddisk.png
+drive-info=crystalproject/48x48/apps/kwikdisk.png
+schemes=oxygen/64x64/devices/hdd_mount.png
+partition=oxygen/64x64/devices/kchart.png
+format=crystalproject/64x64/apps/disksfilesystems.png
+lvm=oxygen/64x64/devices/kchart.png
+target=crystalproject/64x64/apps/hdd_mount.png

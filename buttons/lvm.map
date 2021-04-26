@@ -1,0 +1,5 @@
+lvm=oxygen/extra/48x48/devices/drive_remote.png
+lvm-physical=oxygen/48x48/devices/drive-hardisk.png
+lvm-group=oxygen/extra/48x48/filesystems/folder_network.png
+lvm-logical=oxygen/48x48/apps/preferences-system-network-sharing.png
+lvm-format=oxygen/48x48/devices/drive-partitions.png

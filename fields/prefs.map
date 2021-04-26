@@ -1,0 +1,7 @@
+repository=widget/combobox
+wait=widget/spinbox
+no-colors=widget/combobox
+downgrade=widget/combobox
+ignore=widget/combobox
+force=widget/combobox
+quiet=widget/combobox

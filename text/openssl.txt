@@ -1,0 +1,16 @@
+            [1;33;40m Kodiak.light Setup -- Encryption Keys  [0;37;40m
+
+    You [1;37;40mmust[0;37;40m have [1;32;40ma set of encryption keys[0;37;40m to enable [1;37;40mSecure Socket Layer
+    (SSL)[0;37;40m connections.
+
+    The [1;37;40mSSL[0;37;40m set of public keys are required by the [1;32;40mKodiak.light[0;37;40m [1;37;40mserver[0;37;40m to
+    allow connections from client plugins and applications; as well as
+    other [1;32;40mKodiak.light[0;37;40m servers.
+
+    The [1;32;40mKodiak.light[0;37;40m [1;37;40mserver[0;37;40m will check, the [1;37;40mfirst time[0;37;40m you boot your computer
+    after installation, that a set of encryption keys need to be generated; and
+    use the information you [1;37;40mmust type[0;37;40m, in the entry fields on the next page, to
+    [1;37;40mcreate[0;37;40m the set.
+
+                     Press on any key to [1;37;40mContinue[0;37;40m.
+

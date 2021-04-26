@@ -1,0 +1,8 @@
+A core system installation=core
+A basic Lxde desktop installation=corelxde
+A basic Xfce desktop installation=corexfce
+A standard Lxde desktop installation=xfce
+A standard Xfce desktop installation=xfce
+A standard KDE desktop installation=kde
+A core Gnome desktop installation=gnome
+#A standard HTTP server installation=server

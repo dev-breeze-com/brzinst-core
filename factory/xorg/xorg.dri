@@ -1,0 +1,9 @@
+Section "Extensions"
+	Option	"Composite" "Enable"
+EndSection
+
+Section "DRI"
+    Mode 0666
+EndSection
+
+# **********************************************************************

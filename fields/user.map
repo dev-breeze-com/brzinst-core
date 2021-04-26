@@ -1,0 +1,15 @@
+user-id=widget/entry
+#group-id=widget/label
+full-name=widget/entry
+job-title=widget/entry
+street-address=widget/entry
+city=widget/entry
+prov-state=widget/entry
+country=widget/entry
+postal-code=widget/entry
+email-address=widget/entry
+#url=widget/entry
+work-phone=widget/entry
+home-phone=widget/entry
+#photo=widget/entry
+comments=widget/entry

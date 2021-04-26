@@ -1,0 +1,11 @@
+         [1;33;40m Kodiak.light Setup -- Keyboard Map Selection  [0;37;40m
+
+   The [1;32;40mUS [0;37;40m keyboard map is picked, if [1;37;40mnone [0;37;40m is
+                                   selected.
+
+[1;37;40mKeyboard maps [0;37;40m are used to associate characters to keystrokes.
+     They are able to remap your keystrokes to permit the use of accented
+    characters, for certain locales .i.e [1;37;40mazerty/fr_latin1 [0;37;40m.
+
+                   Click on ● to [1;37;40mContinue [0;37;40m.
+

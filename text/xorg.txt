@@ -1,0 +1,18 @@
+          [1;33;40m Kodiak.light Setup -- Xorg X11 Installation[0;37;40m
+
+    The [1;32;40mXorg X11[0;37;40m toolkit provides the basic functions for your [1;37;40mGUI[0;37;40m desktop.
+    Almost every graphical user interface [1;37;40m(GUI)[0;37;40m relies on it.
+
+    VGA controller: [1;32;40m%graphics%[0;37;40m
+
+    Possible X11 drivers: [1;32;40m%drivers%[0;37;40m
+
+    The [1;32;40mXorg X11[0;37;40m toolkit tries to automatically detect your devices, when
+    initialising. But, a configuration file can be used to set a few default
+    settings. We will, now, try to create an X11/Xorg configuration file.
+
+    If the configuration does not work, you must manually select
+    the manufacturer's graphics card and driver.
+
+        Type [1;37;40many key[0;37;40m to continue.
+

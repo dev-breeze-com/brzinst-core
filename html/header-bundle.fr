@@ -1,0 +1,4 @@
+<tr align="center">
+<th>&nbsp;Partition&nbsp;</th>
+<th>&nbsp;Grosseur&nbsp;</th>
+</tr>

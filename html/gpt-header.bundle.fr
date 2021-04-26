@@ -1,0 +1,9 @@
+<tr align="center">
+<th>Partition</th>
+<th>Cyl.&nbsp;D&eacute;but</th>
+<th>Cyl.&nbsp;Fin</th>
+<th>Cylindres#</th>
+<th>Blocs#</th>
+<th>ID</th>
+<th>Type</th>
+</tr>

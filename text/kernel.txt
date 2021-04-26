@@ -1,0 +1,23 @@
+         [1;33;40m Kodiak.light Setup -- Linux Kernel Selection[0;37;40m
+
+    All available kernels are for [1;37;40mIntel[0;37;40m or [1;37;40mAthlon[0;37;40m computers.
+    Below is a list of [1;32;40mLinux kernel[0;37;40m options from which to choose.
+
+    Option [1;37;40m(1)[0;37;40m is for [1;37;40molder 32bit[0;37;40m computers, or compatibles.
+    Option [1;37;40m(2)[0;37;40m, the [1;32;40mdefault[0;37;40m, is for [1;37;40mmodern[0;37;40m computers, or compatibles.
+    Option [1;37;40m(3)[0;37;40m is for [1;37;40mnewer 64bit[0;37;40m computers, or compatibles.
+
+    A [1;32;40m64-bit[0;37;40m kernel, on a [1;37;40m64-bit[0;37;40m computer, [1;37;40mmay[0;37;40m increase execution speed.
+
+    Modem [1;32;40m%modem%[0;37;40m
+    If you have an [1;37;40mHCF conexant modem[0;37;40m, you must select a 32-bit kernel.
+    The appropriate Conexant kernel module must also be installed.
+
+    Wireless LAN Adapter [1;32;40m%wifi%[0;37;40m
+    If you have a [1;37;40mWireless adapter[0;37;40m, you must select a 32-bit kernel.
+    The appropriate wireless kernel module will be installed.
+
+        Type [[1;32;40m1[0;37;40m] for older computers with one processor.
+        Type [[1;32;40m2[0;37;40m] for modern computers with one+ processor.
+        Type [[1;32;40m3[0;37;40m] for modern computers with 64bit processors.
+        Type [1;37;40many other key [0;37;40m to continue.

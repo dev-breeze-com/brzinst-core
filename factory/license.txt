@@ -1,0 +1,236 @@
+Operating System Distributor License for PI-Desktop v0.9.0
+│
+│ Operating System Distributor License for PI-Desktop version 0.9.0
+│
+│ TSERT.COM IS WILLING TO LICENSE THE PI-DESKTOP KODIAK.LIGHT EDITION
+│ ("PI-DESKTOP" - THE "SOFTWARE") TO YOU ONLY UPON THE CONDITION THAT
+│ YOU ACCEPT ALL OF THE TERMS CONTAINED IN THIS LICENSE AGREEMENT
+│ (THE "AGREEMENT").  PLEASE READ THE AGREEMENT CAREFULLY. BY INSTALLING,
+│ OR USING THIS SOFTWARE, YOU ACCEPT ALL OF THE TERMS OF THE AGREEMENT.
+│
+│
+│ 1.  DEFINITIONS.
+│     "Software" means the code identified above in binary
+│     form, any other machine readable materials including, but not
+│     limited to, libraries, source files, header files, and data files),
+│     any updates or error corrections provided by Tsert.Com, and any user
+│     manuals, programming guides and other documentation provided to you
+│     by Tsert.Com under this Agreement, and any subsequent versions that
+│     Tsert.Com makes available to you hereunder.  "Operating System" means
+│     any version of the Linux or BSD operating systems that manages
+│     the hardware resources of a general purpose desktop or server
+│     computer and shares these resources with various software programs
+│     that run on top of it. "Programs" means PI-Desktop technology applets
+│     daemons, and applications intended to run on the Breeze::OS Kodiak.light
+│     Edition (PI-Desktop Kodiak.light) platform.
+│
+│
+│ 2.  LICENSE GRANT.
+│     Subject to the terms and conditions of this Agreement, as well as
+│     the restrictions and exceptions set forth below, Tsert.Com grants
+│     you a non-exclusive, non-transferable, royalty-free limited license
+│     to reproduce the software according the SEAT-LICENCE AGREEMENT; and
+│     use the Software internally, complete and unmodified, for the sole
+│     purposes of running Programs and designing, developing and testing
+│     Programs.
+│
+│
+│ 3.  RESTRICTIONS.
+│     Software is copyrighted and title to Software and all associated
+│     intellectual property rights is retained by Tsert.Com unless
+│     enforcement is prohibited by
+│     applicable law, you may not modify, decompile, or reverse engineer
+│     Software.  You may not create, modify, or change the behavior of,
+│     or authorize your licensees, distributors, resellers, OEMs, or end
+│     users (collectively, "Licensees") to create, modify, or change the
+│     behavior of, classes, interfaces, or subpackages that are in any
+│     way identified as "pi-desktop", "pi-desktop plugins",
+│     "pi-desktop daemons", "pi-desktop applications", or similar
+│     convention as specified by Tsert.Com in any naming convention
+│     designation.
+│
+│     Licensee may not disclose, modify, sell, market, commercialise,
+│     distribute, loan, rent, lease, or license the Licensed Software or any
+│     copy of it or use the Licensed Software for any purpose that is not
+│     expressly granted. Licensee may not alter or remove
+│     any details of ownership, copyright, trademark or other property right
+│     connected with the Licensed Software. Licensee may not distribute any
+│     software statically or dynamically linked with the Licensed Software.
+│
+│
+│ 4.  OWNERSHIP.
+│     The Licensed Software is protected by copyright laws and international
+│     copyright treaties, as well as other intellectual property laws and
+│     treaties. The Licensed Software is licensed, not sold.
+│     If Licensee provides any findings, proposals, suggestions or other
+│     feedback ("Feedback") to Tsert.Com regarding the Licensed Software,
+│     Tsert.Com shall own all right, title and interest including the
+│     intellectual property rights in and to such Feedback, excluding however
+│     any existing patent rights of Licensee. To the extent Licensee owns or
+│     controls any patents for such Feedback Licensee hereby grants to
+│     Tsert.Com and its Affiliates, a worldwide, perpetual, non-transferable,
+│     sublicensable, royalty-free license to (i) use, copy and modify
+│     Feedback and to create derivative works thereof, (ii) to make (and
+│     have made), use, import, sell, offer for sale, lease, dispose, offer
+│     for disposal or otherwise exploit any products or services of Tsert.Com
+│     containing Feedback,, and (iii) sublicense all the foregoing rights to
+│     third party licensees and customers of Tsert.Com and/or its Affiliates.
+│
+│
+│ 5.  VALIDITY OF THE AGREEMENT
+│     By installing, copying, or otherwise using the Licensed Software,
+│     Licensee agrees to be bound by the terms of this Agreement. If
+│     Licensee does not agree to the terms of this Agreement, Licensee may
+│     not install, copy, or otherwise use the Licensed Software. Upon
+│     Licensee's acceptance of the terms and conditions of this Agreement,
+│     Tsert.Com grants Licensee the right to use the Licensed Software in the
+│     manner provided below.
+│
+│
+│ 6.  NO ASSIGNMENT.
+│     Licensee shall not be entitled to assign or transfer all or any of
+│     its rights, benefits and obligations under this Agreement without
+│     the prior written consent of Tsert.Com, which shall not be unreasonably
+│     withheld.
+│
+│
+│ 7.  VIRTUAL CLUBS.
+│     This license agreement only allows the licensee, with
+│     regards to the creation and managment of virtual clubs, to only
+│     create and manage virtual clubs in a peer-top-peer setup. 
+│     The agreement does not allow the licensee, to setup a web-based
+│     service to create and manage virtual clubs, or to offer commercials
+│     using a reminder like message on any desktop running the software,
+│     whether or not, the software is running in a virtual club setup.
+│     Furthermore, the licensee grants Tsert.Com the right to advertise,
+│     with commercials, using a reminder like message, on any of their
+│     desktop running the software, or to include the licensee in virtual
+│     clubs, created by Tsert.Com.
+│
+│
+│ 8.  TRADEMARKS and LOGOS.
+│     No right, title or interest in or to any trademark, service mark,
+│     logo or trade name of Tsert.Com or its licensors is granted under
+│     this Agreement. You acknowledge and agree that, as between you and
+│     Tsert.Com, Tsert.Com owns the TSERT.COM, BREEZE::OS, KODIAK, KATMAI,
+│     and PI-DESKTOP trademarks and all TSERT.COM and PI-DESKTOP-related
+│     trademarks, service marks, logos and other brand designations 
+│     ("Tsert.Com Marks"), and you agree to comply with the restrictions
+│     stated in this section.
+│
+│
+│ 9.  LIMITED WARRANTY.
+│     If you received the Software directly from Tsert.Com
+│     or its authorized resellers, Tsert.Com warrants to you that for a period
+│     of ninety (90) days from delivery to you, the media on which
+│     Software is furnished (if any) will be free of defects in
+│     materials and workmanship under normal use.  Except for the
+│     foregoing, Software is provided "AS IS".  Your exclusive remedy
+│     and Tsert.Com's entire liability under this limited warranty will be
+│     replacement of the Software media.  This limited warranty gives
+│     you specific legal rights.  You may have others, which vary from
+│     state to state, province to province.
+│
+│
+│ 10. DISCLAIMER OF WARRANTY.
+│     UNLESS SPECIFIED IN THIS AGREEMENT, ALL
+│     EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES,
+│     INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A
+│     PARTICULAR PURPOSE OR NON-INFRINGEMENT ARE DISCLAIMED, EXCEPT TO
+│     THE EXTENT THAT THESE DISCLAIMERS ARE HELD TO BE LEGALLY INVALID.
+│
+│
+│ 11. LIMITATION OF LIABILITY.
+│     IN NO EVENT WILL TSERT.COM OR ITS LICENSORS
+│     BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR
+│     PUNITIVE DAMAGES IN CONNECTION WITH OR ARISING OUT OF THIS
+│     AGREEMENT (INCLUDING LOSS OF PROFITS, USE, DATA, OR OTHER ECONOMIC
+│     ADVANTAGE), NO MATTER WHAT THEORY OF LIABILITY, EVEN IF TSERT.COM
+│     HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  In no event
+│     will Tsert.Com's liability to you, whether in contract, tort (including
+│     negligence), or otherwise, exceed the amount paid by you for the
+│     Software under this Agreement. The foregoing limitations will
+│     apply even if the above stated warranty fails of its essential
+│     purpose.  Some states do not allow the exclusion of incidental or
+│     consequential damages, so some of the terms above may not be
+│     applicable to you.
+│
+│
+│ 12. THIRD PARTY SOFTWARE.
+│     The Licensed Software may provide links to third party libraries or
+│     code (collectively "Third Party Software") to implement various
+│     functions.  Third Party Software does not comprise part of the
+│     Licensed Software. In some cases, access to Third Party Software may
+│     be included along with the Licensed Software delivery as a convenience
+│     for development and testing only. Such source code and libraries may
+│     be listed in the ".../src/3rdparty" source tree delivered with the
+│     Licensed Software or documented in the Licensed Software where the
+│     Third Party Software is used, as may be amended from time to time, do
+│     not comprise the Licensed Software.  Licensee acknowledges (1) that
+│     some part of Third Party Software may require additional licensing of
+│     copyright and patents from the owners of such, and (2) that
+│     distribution of any of the Licensed Software referencing any portion
+│     of a Third Party Software may require appropriate licensing from such
+│     third parties.
+│
+│
+│ 13. TERMINATION.
+│     This Agreement is effective until it is terminated.
+│     You may terminate this Agreement at any time by ceasing usage or
+│     distribution of the Software. This Agreement will terminate
+│     immediately without notice from Tsert.Com if you fail to comply
+│     with any material provision herein.  Either party may terminate
+│     this Agreement immediately should any Software become, or in either
+│     party's opinion be likely to become, the subject of a claim of
+│     infringement of any intellectual property right. Upon termination,
+│     you must destroy all copies and cease copying and distribution of
+│     the Software. All of your obligations and any applicable limitations
+│     on your rights and remedies under this Agreement shall survive
+│     termination.
+│
+│
+│ 14. TECHNICAL SUPPORT.
+│     Tsert.Com has no obligation to furnish Licensee with any technical
+│     support whatsoever. Any such support is subject to separate agreement
+│     between the Parties.
+│
+│
+│ 15. SOURCE CODE.
+│     Software may contain source code that, unless
+│     expressly licensed for other purposes, is provided solely for
+│     reference purposes pursuant to the terms of this Agreement.
+│     Source code may not be redistributed unless expressly provided for
+│     in this Agreement. The source code consisting of shell scripts, in
+│     the Breeze::OS package installer fall under the GNU GPL license.
+│
+│
+│ 16. EXPORT REGULATIONS.
+│     All Software and technical data delivered under
+│     this Agreement are subject to US/Canada export control laws and may
+│     be subject to export or import regulations in other countries.
+│     You acknowledge that you have the responsibility to obtain such
+│     licenses to export, re-export, or import as may be required after
+│     delivery to you, under a distribution agreement.
+│
+│
+│ 17. MISCELLANEOUS.
+│     Any action related to this Agreement will be governed
+│     by and controlling U.S. federal law. No choice of law rules of any
+│     jurisdiction will apply. If any provision of this Agreement is held
+│     to be unenforceable, this
+│     Agreement will remain in effect upon the parties' agreement to
+│     revised terms that most nearly accomplish the same effect. This
+│     Agreement is the entire agreement between you and Tsert.Com relating
+│     to its subject matter.  It supersedes all prior or contemporaneous
+│     oral or written communications, proposals, representations and
+│     warranties and prevails over any conflicting or additional terms
+│     of any quote, order, acknowledgment, or other communication
+│     between the parties relating to its subject matter during the term
+│     of this Agreement.  No modification of this Agreement will be
+│     binding, unless in writing and signed by an authorized
+│     representative of each party.
+│
+│
+│ For inquiries please:
+│     See http://www.tsert.com, or email contact@tsert.com
+│

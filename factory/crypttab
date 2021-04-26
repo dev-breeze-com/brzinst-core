@@ -1,0 +1,18 @@
+# Example crypttab file -- fields are:
+# name, underlying device, passphrase, cryptsetup options.
+
+# Mount /dev/lvm/swap re-encrypting it with a fresh key each reboot
+luksswap	/dev/lvm/lvswap	/dev/urandom	swap,cipher=aes-xts-plain64,size=256
+
+# Mount /dev/lvm/tmp as /dev/mapper/tmp using plain dm-crypt with
+# a random passphrase, making its contents unrecoverable after it is dismounted.
+#tmp	/dev/lvm/tmp	/dev/urandom	tmp,cipher=aes-xts-plain64,size=256 
+
+# Mount /dev/lvm/home as /dev/mapper/home using LUKS, and
+# prompt for the passphrase at boot time.
+lukshome   /dev/lvm/home
+
+# Mount /dev/sdb1 as /dev/mapper/backup using LUKS, with
+# a passphrase stored in a file.
+#backup /dev/sdb1       /home/alice/backup.key
+

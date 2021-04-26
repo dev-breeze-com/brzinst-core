@@ -1,0 +1,994 @@
+[installation]
+
+[widget-attrs]
+panel-width-in-chars=100
+panel-width=600
+attr-widget-width=45
+drive-widget-height=350
+[/widget-attrs]
+
+[html-colors]
+[Clearlooks]
+yellow=darkred
+beige=black
+green=darkgreen
+cyan=darkblue
+\#33FB01=darkgreen
+[/Clearlooks]
+
+[Breeze-Light]
+yellow=darkmagenta
+red=darkred
+beige=black
+cyan=blue
+green=darkgreen
+\#33FB01=darkgreen
+[/Breeze-Light]
+
+[/html-colors]
+
+[ordering]
+# Used to drive the user interface.
+#
+# ui - Show the step in action.
+# batch - Dot not show the step in action.
+# store - only store the specified values.
+#
+# To skip the step,
+# just comment the step out; or
+# add a conditional statement.
+#
+init=store
+setenv=batch
+probing=batch
+
+# Include only in a commercial release
+#license=ui
+
+splash=ui
+homepage=ui
+intro=ui
+devices=ui
+expertise=ui
+pkgtype=ui
+
+timezone=ui
+locale=ui
+keyboard=ui
+kbd-layout=ui
+keymap=ui
+
+hostcfg=batch
+internet=ui
+laptop=ui
+hostname=ui
+ifsetup=ui
+adsl=ui
+cable=ui
+wireless=ui
+dialup=ui
+
+drives=ui
+drive-info=ui
+defltpart=ui
+encryption=ui
+schemes=ui
+crypto=ui
+
+partition=ui
+#restore=ui
+format=ui
+
+lvm=ui
+lvm-logical=ui
+lvm-format=ui
+
+fstab=ui
+target=ui
+keysdrive=ui
+keysdrive-info=ui
+savekeys=ui
+
+srcmedia=batch
+pkgsrc=ui
+cdrom-drive=ui
+flash-drive=ui
+network=ui
+
+desktop=ui
+workgroup=ui
+nis=ui
+
+usernames=ui
+display=ui
+services=ui
+#firewall=ui
+#uefi=ui
+
+bootstrap=batch
+settings=ui
+install=ui
+initcfg=batch
+finish=batch
+bootmgr=ui
+cleanup=ui
+
+[/ordering]
+
+[init]
+mesg-delay=2
+fail-mesg-delay=5
+# Set 'interactive' to 'no' for batch mode, as in preseeding
+interactive=yes
+logo=$BRZDIR/images/logo-1.jpg
+#logo=$BRZDIR/images/logo.png
+title=<b><big><font color="yellow"><i>Breeze::OS</i> Community Edition (Gnu/Linux)</font></big></b>
+[/init]
+
+[setenv]
+#Load env defaults from factory/defaults or from command line
+action=$BRZDIR/bin/d-setenv.sh
+[/setenv]
+
+[probing]
+action=$BRZDIR/bin/d-probe-system.sh
+[/probing]
+
+[license]
+condition=test $BREEZE_RELEASE != 'community'
+description=$BRZDIR/html/license.html
+[/license]
+
+[splash]
+image=$BRZDIR/images/splash-3.jpg
+[/splash]
+
+[homepage]
+condition=test %intro/seen% = yes
+attr-fields=$BRZDIR/buttons/homepage.seq
+[/homepage]
+
+[intro]
+imginfo-file=creativecommons/256x256/places/start-breezeos.png
+description=$BRZDIR/html/intro-$BREEZE_FRONTEND.html
+align-html-label=center
+justify-html-label=left
+
+[defaults]
+seen=no
+[/defaults]
+[/intro]
+
+[devices]
+imginfo-file=oxygen/256x256/devices/computer.png
+description=$BRZDIR/html/devices.html
+align-html-label=left
+[/devices]
+
+[expertise]
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=$BRZDIR/data/expertise.map
+list-icon-default=oxygen/48x48/categories/applications-engineering.png
+key=level
+pagename=yes
+
+[defaults]
+level=beginner
+[/defaults]
+[/expertise]
+
+[pkgtype]
+condition=test expertise/level != 'beginner'
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=$BRZDIR/data/pkgtype.map
+list-icon-default=oxygen/48x48/mimetypes/package-x-generic.png
+key=pkgtype
+
+[defaults]
+pkgtype=squashfs
+[/defaults]
+[/pkgtype]
+
+[timezone]
+#description=$BRZDIR/html/timezone.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=$BRZDIR/data/timezone.map
+
+# Selecting the key of the tuple as value
+key=timezone
+select-value=no
+action=$BRZDIR/bin/d-set-timezone.sh
+
+[defaults]
+timezone=America/New_York
+[/defaults]
+[/timezone]
+
+[locale]
+condition=test expertise/level != 'beginner'
+#description=$BRZDIR/html/locale.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=$BRZDIR/data/locales.map
+
+key=locale
+action=$BRZDIR/bin/d-set-locale.sh
+
+[defaults]
+locale=en_US
+[/defaults]
+[/locale]
+
+[keyboard]
+condition=test expertise/level != 'beginner'
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=$BRZDIR/data/keyboards.map
+list-icon-default=oxygen/48x48/devices/input-keyboard.png
+key=keyboard
+
+[defaults]
+keyboard=pc105
+[/defaults]
+[/keyboard]
+
+[kbd-layout]
+condition=test expertise/level = 'expert'
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=default|locale
+list-icon-default=crystalproject/48x48/apps/keyboard_layout.png
+key=kbd-layout
+
+[defaults]
+kbd-layout=default
+[/defaults]
+[/kbd-layout]
+
+[keymap]
+condition=test expertise/level = 'expert'
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=qwerty|qwertz|dvorak|azerty|colemak|olpc
+list-icon-default=crystalclear/48x48/apps/keyboard_layout.png
+key=keymap
+
+[defaults]
+keymap=qwerty
+[/defaults]
+[/keymap]
+
+[hostcfg]
+action=$BRZDIR/bin/d-probe-system.sh network
+[/hostcfg]
+
+[internet]
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=$BRZDIR/data/internet.map
+list-icon-default=oxygen/48x48/places/network-server.png
+key=connection
+
+[defaults]
+connection=router
+[/defaults]
+[/internet]
+
+[laptop]
+batchmode=test expertise/level != 'expert' -a internet/connection = 'wireless'
+condition=test expertise/level = 'expert' -a internet/connection = 'wireless'
+description=$BRZDIR/html/pcmcia.html
+align-html-label=center
+imginfo-file=crystalproject/256x256/devices/laptop.png
+action=$BRZDIR/bin/d-pcmcia.sh start
+goto=next
+pass-mesg=L_LAPTOP_CONFIG_SUCCESS
+fail-mesg=L_LAPTOP_CONFIG_FAILURE
+[/laptop]
+
+[hostname]
+description=$BRZDIR/html/hostname.html
+imginfo-file=crystalproject/256x256/apps/mycomputer.png
+align-html-label=center
+
+input-widget=apply
+input-title=L_ENTER_A_HOSTNAME
+input-constraint=[0-9a-zA-z]+
+
+goto=next
+key=hostname
+please-wait=yes
+action=$BRZDIR/bin/d-network.sh batch
+
+wait-mesg=L_NETWORK_CONFIG_SETUP
+fail-mesg=L_NETWORK_CONFIG_FAILURE
+cancel-mesg=L_NETWORK_CONFIG_CANCEL
+
+[defaults]
+hostname=breeze
+domain=localdomain
+[/defaults]
+[/hostname]
+
+[ifsetup]
+condition=test expertise/level != 'beginner' -o internet/connection != 'router'
+description=$BRZDIR/html/ifsetup.html
+#cmd-buttons=hostcfg.seq
+attr-fields=$BRZDIR/fields/ifsetup.seq
+attr-entries=$TMP/ifsetup.map
+saveto=$TMP/ifsetup.map
+key=hostname
+goto=next
+pass-mesg=L_NETWORK_SETTINGS_SAVED
+
+[defaults]
+dns=dhcp
+hostname=%hostname/value%
+master=master.localdomain
+gateway=192.168.1.1
+netmask=255.255.255.0
+domain=localdomain
+nameserver=
+interface=eth0
+ipaddr=192.168.1.100
+[/defaults]
+[/ifsetup]
+
+[adsl]
+condition=test internet/connection = 'adsl'
+#description=$BRZDIR/html/%internet/connection%.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+#cmd-buttons=hostcfg.seq
+attr-entries=$TMP/adsl.map
+attr-fields=$BRZDIR/fields/adsl.seq
+saveto=$TMP/adsl.map
+action=$BRZDIR/bin/d-network-adsl.sh start '$TMP/adsl.map'
+[/adsl]
+
+[cable]
+condition=test internet/connection = 'cable'
+#description=$BRZDIR/html/%internet/connection%.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+#cmd-buttons=hostcfg.seq
+attr-entries=$TMP/cable.map
+attr-fields=$BRZDIR/fields/adsl.seq
+saveto=$TMP/cable.map
+action=$BRZDIR/bin/d-network-adsl.sh start '$TMP/cable.map'
+[/cable]
+
+[wireless]
+condition=test internet/connection = 'wireless'
+#description=$BRZDIR/html/wireless.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+#cmd-buttons=hostcfg.seq
+attr-entries=$TMP/wireless.map
+attr-fields=$BRZDIR/fields/wireless.seq
+saveto=$TMP/wireless.map
+action=$BRZDIR/bin/d-network-wireless.sh start '$TMP/wireless.map'
+[/wireless]
+
+[dialup]
+condition=test internet/connection = 'dialup'
+#description=$BRZDIR/html/dialup.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+#cmd-buttons=hostcfg.seq
+attr-entries=$TMP/dialup.map
+attr-fields=$BRZDIR/fields/dialup.seq
+saveto=$TMP/dialup.map
+action=$BRZDIR/bin/d-network-dialup.sh start '$TMP/dialup.map'
+[/dialup]
+
+[drives]
+descr-entries=$BRZDIR/fields/globalicons.seq
+#description=$BRZDIR/html/drives.html
+list-entries=$BRZDIR/bin/d-list-drives.sh drives
+list-icon-default=Oxygen/48x48/devices/drive-harddisk.png
+
+select-mode=required
+entries-as=map
+key=drive
+
+[defaults]
+keep=false
+drive=unknown
+drive-id=unknown
+size=256G
+[/defaults]
+[/drives]
+
+[drive-info]
+condition=test drives/drive = '/dev/[a-z]+'
+cond-fail-mesg=L_SELECTED_DRIVE_UNSPECIFIED
+cond-fail-goto=drives
+check-drive=yes
+
+description=$BRZDIR/html/drive-info.html
+description-alt=$BRZDIR/html/drive-info-clean.html
+align-html-label=center
+continue-disabled=true
+
+drive-fields=$BRZDIR/fields/partitions.seq
+drive-fields-editable=no
+editable=mountpoint,mode
+drive-entries=$BRZDIR/bin/d-drive-info.sh %drives/drive%
+entries-as=csv
+
+key=drives/keep
+saveto=keepdrive.csv
+
+action=$BRZDIR/bin/d-keep-drive.sh %drives/drive%
+goto=next
+
+[/drive-info]
+
+[defltpart]
+condition=test expertise/level = 'beginner' -a drives/keep != 'yes|true'
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-entries=$BRZDIR/data/partitioning.map
+list-icon-default=Oxygen/48x48/devices/drive-harddisk.png
+
+select-mode=required
+key=scheme
+action=$BRZDIR/bin/d-set-partitioning.sh %drives/drive% %defltpart/scheme% beginner
+
+[defaults]
+scheme=root-home
+[/defaults]
+[/defltpart]
+
+[encryption]
+condition=test expertise/level = 'beginner' -a $TMP/selected-crypto != 'none' -a drives/keep != 'yes|true'
+description=$BRZDIR/html/encryption.html
+imginfo-file=oxygen/256x256/apps/lock.png
+align-html-label=center
+continue-disabled=true
+
+input-widget=apply
+input-title=L_ENTER_YOUR_PASSWORD
+input-password=yes
+
+key=password
+saveto=crypto.map
+action=$BRZDIR/bin/d-set-encryption.sh %drives/drive% beginner
+goto=next
+
+[/encryption]
+
+[schemes]
+condition=test expertise/level != 'beginner' -a drives/keep != 'yes|true'
+description=$BRZDIR/html/schemes.html
+check-drive=yes
+
+attr-fields=$BRZDIR/fields/schemes.seq
+attr-entries=$TMP/scheme-%drives/drive-id%.map
+saveto=scheme.map
+action=$BRZDIR/bin/d-create-scheme.sh %drives/drive%
+
+fail-goto=schemes
+pass-goto=next
+
+[defaults]
+device=unknown
+gpt-mode=gpt
+disk-type=normal
+fstype=ext4
+scheme=root-home
+total-size=unknown
+uefi-keys=system
+encrypted=no
+[/defaults]
+[/schemes]
+
+[crypto]
+condition=test expertise/level != 'beginner' -a schemes/encrypted = 'yes' -a schemes/device = '%drives/drive%' -a drives/keep != 'yes|true'
+description=$BRZDIR/html/crypto.html
+
+attr-fields=$BRZDIR/fields/crypto.seq
+attr-entries=$TMP/crypto-%drives/drive-id%.map
+
+saveto=crypto.map
+#action=$BRZDIR/bin/d-create-crypto.sh %drives/drive%
+action=$BRZDIR/bin/d-set-encryption.sh %drives/drive% expert
+wait-mesg=L_INIT_CRYPTO_CONTEXT
+
+fail-goto=crypto
+pass-goto=next
+check-password=yes
+
+[defaults]
+type=luks
+[/defaults]
+[/crypto]
+
+[partition]
+condition=test drives/keep != 'yes|true'
+description=$BRZDIR/html/partition.html
+check-drive=yes
+
+drive-fields=$BRZDIR/fields/partitions.seq
+drive-fields-editable=no
+drive-entries=$TMP/partitions-%drives/drive-id%.csv
+editable=mountpoint,filesystem
+
+saveto=$TMP/partitions-%drives/drive-id%.csv.new
+action=$BRZDIR/bin/d-batch-partition.sh %drives/drive%
+wait-mesg=L_PARTITIONING_DRIVE
+
+fail-mesg=L_PARTITIONING_FAILURE
+pass-mesg=L_PARTITIONING_SUCCESS
+proceed-mesg=L_PROCEED_BY_CLICKING_ON_THE_NEXT_BUTTON
+[/partition]
+
+#[restore]
+#condition=test $TMP/do-restore = 'yes'
+#description=$BRZDIR/html/restore-partition.html
+#
+#drive-fields=$BRZDIR/fields/partitions.seq
+#drive-fields-editable=no
+#drive-entries=$TMP/partitions-%drives/drive-id%.csv
+#action=$BRZDIR/bin/d-batch-restore.sh %drives/drive%
+#fail-mesg=L_RESTORE_PARTITION_FAILURE
+#pass-mesg=L_RESTORE_PARTITION_SUCCESS
+#[/restore]
+
+[format]
+condition=test schemes/disk-type != 'lvm' -a drives/keep != 'yes|true'
+description=$BRZDIR/html/format.html
+check-drive=yes
+
+drive-fields=$BRZDIR/fields/partitions.seq
+drive-fields-editable=no
+drive-entries=$BRZDIR/bin/d-format-info.sh %drives/drive%
+editable=mountpoint,filesystem,mode
+entries-as=csv
+
+saveto=$TMP/format.csv
+progress-maximum=$TMP/nb-%drives/drive-id%-partitions
+action=$BRZDIR/bin/d-batch-format.sh %drives/drive%
+wait-mesg=L_FORMATTING_DRIVE
+
+fail-mesg=L_FORMATTING_FAILURE
+pass-mesg=L_FORMATTING_SUCCESS
+proceed-mesg=L_PROCEED_BY_CLICKING_ON_THE_NEXT_BUTTON
+[/format]
+
+[lvm]
+condition=test schemes/disk-type = 'lvm'
+description=$BRZDIR/html/lvm.html
+check-drive=yes
+
+#cmd-buttons=lvm.seq
+list-checked=yes
+list-entries=$BRZDIR/bin/d-list-drives.sh drives disk lvm
+list-icon-default=Oxygen/48x48/devices/drive-removable-media.png
+entries-as=map
+
+saveto=$TMP/lvm-target-drives
+action=$BRZDIR/bin/d-batch-lvm.sh %drives/drive% create pv
+wait-mesg=L_CREATING_LVM_PHYSICAL
+goto=next
+
+fail-mesg=L_LVM_PHYSICAL_FAILURE
+pass-mesg=L_LVM_PHYSICAL_SUCCESS
+[/lvm]
+
+[lvm-logical]
+condition=test schemes/disk-type = 'lvm'
+description=$BRZDIR/html/lvm-logical.html
+#cmd-buttons=lvm.seq
+
+lvm-fields=$BRZDIR/fields/lvm-logical.seq
+lvm-fields-editable=no
+lvm-entries=$BRZDIR/bin/d-lvm-info.sh %drives/drive% lv
+editable=lvtype,size,mode
+with-tooltips=no
+entries-as=csv
+
+saveto=lvm-logical.csv
+progress-maximum=$TMP/nb-logical-volumes
+action=$BRZDIR/bin/d-batch-lvm.sh %drives/drive% create lv
+wait-mesg=L_CREATING_LVM_LOGICAL
+goto=next
+
+fail-mesg=L_LVM_LOGICAL_FAILURE
+pass-mesg=L_LVM_LOGICAL_SUCCESS
+[/lvm-logical]
+
+[lvm-format]
+condition=test schemes/disk-type = 'lvm'
+description=$BRZDIR/html/lvm-format.html
+#cmd-buttons=lvm.seq
+
+drive-fields=$BRZDIR/fields/partitions.seq
+drive-fields-editable=no
+drive-entries=$BRZDIR/bin/d-lvm-info.sh %drives/drive% lv format
+editable=filesystem,mountpoint,mode
+with-tooltips=no
+entries-as=csv
+
+saveto=$TMP/format.csv
+progress-maximum=$TMP/nb-lvm-partitions
+action=$BRZDIR/bin/d-batch-format.sh %drives/drive% lvm
+wait-mesg=L_FORMATTING_DRIVE
+
+fail-mesg=L_LVM_FORMAT_FAILURE
+pass-mesg=L_LVM_FORMAT_SUCCESS
+[/lvm-format]
+
+[fstab]
+condition=test schemes/disk-type != 'lvm' -a $TMP/nb-target-drives > 1
+cond-fail-mesg=L_TARGET_DRIVES_UNSPECIFIED
+cond-fail-goto=target
+descr-entries=$BRZDIR/fields/globalicons.seq
+
+list-checked=yes
+list-entries=$BRZDIR/bin/d-list-drives.sh target
+list-icon-default=Oxygen/48x48/devices/drive-removable-media.png
+entries-as=map
+
+saveto=$TMP/fstab-target-drives
+action=$BRZDIR/bin/d-set-targets.sh
+goto=next
+
+[/fstab]
+
+[target]
+#description=$BRZDIR/html/target.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+
+list-entries=$BRZDIR/bin/d-list-drives.sh target
+list-icon-default=Oxygen/48x48/devices/drive-removable-media.png
+continue-disabled=true
+entries-as=map
+
+progress-maximum=$TMP/nb-target-partitions
+wait-mesg=L_SETTING_MOUNTPOINTS
+action=$BRZDIR/bin/d-set-target.sh %target/value%
+goto=next
+key=drive
+
+[defaults]
+drive=unknown
+[/defaults]
+
+fail-mesg=L_SETTING_MOUNTPOINTS_FAILURE
+pass-mesg=L_SETTING_MOUNTPOINTS_SUCCESS
+[/target]
+
+[keysdrive]
+condition=test $TMP/selected-crypto = 'luks|geli|gcd|bioctl'
+#description=$BRZDIR/html/keysdrive.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+select-mode=required
+
+list-entries=$BRZDIR/bin/d-list-drives.sh savekeys usb
+entries-as=map
+allow-reload=yes
+
+goto=next
+key=device
+
+[defaults]
+device=unknown
+drive-id=unknown
+[/defaults]
+[/keysdrive]
+
+[keysdrive-info]
+condition=test $TMP/selected-crypto = 'luks|geli|gcd|bioctl' -a keysdrive/device = '/dev/[a-z]+'
+description=$BRZDIR/html/keysdrive-info.html
+align-html-label=left
+drive-fields=$BRZDIR/fields/partitions.seq
+drive-fields-editable=no
+drive-entries=$BRZDIR/bin/d-drive-info.sh %keysdrive/device%
+#editable=mode
+entries-as=csv
+goto=next
+[/keysdrive-info]
+
+[savekeys]
+condition=test $TMP/selected-crypto = 'luks|geli|gcd|bioctl' -a keysdrive/device = '/dev/[a-z]+'
+#description=$BRZDIR/html/savekeys.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+
+attr-fields=$BRZDIR/fields/savekeys.seq
+attr-entries=$TMP/crypto-%keysdrive/drive-id%.map
+
+saveto=crypto-%keysdrive/drive-id%.map
+action=$BRZDIR/bin/d-savekeys.sh %keysdrive/value%
+wait-mesg=L_SAVING_CRYPTO_KEYS
+
+fail-goto=keysdrive
+pass-goto=next
+
+fail-mesg=L_SAVING_CRYPTO_KEYS_FAILURE
+pass-mesg=L_SAVING_CRYPTO_KEYS_SUCCESS
+[/savekeys]
+
+[srcmedia]
+action=$BRZDIR/bin/d-probe-system.sh source
+[/srcmedia]
+
+[pkgsrc]
+condition=test $TMP/extended-install-mode = "yes"
+cond-fail-goto=desktop
+#description=$BRZDIR/html/pkgsrc.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+
+list-entries=$BRZDIR/data/source.map
+list-icon-size=48
+select-value=no
+use-mapicon=yes
+key=media
+
+action=$BRZDIR/bin/d-list-drives.sh source %pkgsrc/value%
+
+[defaults]
+media=cdrom
+source=/dev/cdrom
+[/defaults]
+[/pkgsrc]
+
+[cdrom-drive]
+condition=test pkgsrc/value = 'cdrom' -a $TMP/extended-install-mode = "yes"
+cond-fail-goto=next
+
+#description=$BRZDIR/html/pkgsrc-cdrom.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+
+list-entries=$TMP/cdrom-drives.map
+#list-entries=$BRZDIR/bin/d-list-drives.sh source cdrom
+#entries-as=map
+
+action=$BRZDIR/bin/d-set-source.sh cdrom %cdrom-drive/value%
+#parent=pkgsrc
+key=source
+
+[defaults]
+source=/dev/cdrom
+[/defaults]
+[/cdrom-drive]
+
+[flash-drive]
+condition=test pkgsrc/value = 'flash' -a $TMP/extended-install-mode = "yes"
+cond-fail-goto=next
+
+#description=$BRZDIR/html/pkgsrc-usb.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+
+list-entries=$TMP/flash-drives.map
+#list-entries=$BRZDIR/bin/d-list-drives.sh source flash
+#entries-as=map
+
+action=$BRZDIR/bin/d-set-source.sh flash %flash-drive/value%
+#pass-mesg=L_FLASH_MEDIA_VALID
+#parent=pkgsrc
+key=source
+
+[/flash-drive]
+
+[network]
+condition=test pkgsrc/value = 'network' -a $TMP/extended-install-mode = "yes"
+cond-fail-goto=next
+description=$BRZDIR/html/pkgsrc-network.html
+attr-fields=$BRZDIR/fields/network.seq
+attr-entries=$TMP/network.map
+
+action=$BRZDIR/bin/d-set-source.sh network %network/value%
+pass-mesg=L_NETWORK_SOURCE_VALID
+fail-mesg=L_NETWORK_SOURCE_INVALID
+saveto=network.map
+#parent=pkgsrc
+key=source
+
+[defaults]
+source=web
+uri=master.localdomain
+desktop=xfce
+[/defaults]
+[/network]
+
+[desktop]
+#description=$BRZDIR/html/desktop.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+list-icon-default=oxygen/48x48/devices/computer.png
+list-entries=$BRZDIR/data/desktops.map
+
+key=desktop
+action=$BRZDIR/bin/d-displaymgr.sh desktop
+goto=next
+
+[defaults]
+desktop=xfce
+[/defaults]
+[/desktop]
+
+[workgroup]
+condition=test expertise/level = 'expert'
+description=$BRZDIR/html/workgroup.html
+list-entries=$BRZDIR/data/workgroup.map
+list-icon-default=oxygen/48x48/places/network-server.png
+key=workgroup
+
+[defaults]
+workgroup=standalone
+[/defaults]
+[/workgroup]
+
+[nis]
+condition=test workgroup/value != 'standalone'
+description=$BRZDIR/html/nis.html
+attr-fields=$BRZDIR/fields/nis.seq
+with-tooltips=no
+saveto=nis.map
+
+[defaults]
+interface=eth0
+hostname=%hostname/value%
+domain=%hostname/domain%
+ipaddr=192.168.1.100
+netmask=255.255.255.0
+[/defaults]
+[/nis]
+
+[usernames]
+description=$BRZDIR/html/usernames.html
+imginfo-file=oxygen/128x128/actions/list-add-user.png
+align-html-label=center
+
+input-widget=apply
+input-title=L_ENTER_YOUR_FULL_NAME_AND_PASSWORD
+input-title-root=L_ENTER_PASSWORD_FOR_SYSTEM_MANAGER
+input-title-secadmin=L_ENTER_PASSWORD_FOR_SECURITY_MANAGER
+input-username=yes
+input-password=yes
+
+key=username
+saveto=$TMP/users.map
+action=$BRZDIR/bin/d-set-usernames.sh "%usernames/value%"
+proceed-mesg=L_PROCEED_BY_CLICKING_ON_THE_NEXT_BUTTON
+
+[/usernames]
+
+#[users]
+#condition=test expertise/level != 'beginner'
+##description=$BRZDIR/html/users.html
+#descr-entries=$BRZDIR/fields/globalicons.seq
+#
+#attr-fields=$BRZDIR/fields/user.seq
+#attr-entries=$BRZDIR/bin/d-get-user.sh '%users/value%'
+#entries-as=map
+#
+#key=username
+#saveto=$TMP/users.map
+#action=$BRZDIR/bin/d-set-user.sh "%users/value%"
+#
+#check-password=yes
+#check-username=yes
+#
+#[defaults]
+#username=root
+#[/defaults]
+#[/users]
+
+[display]
+#description=$BRZDIR/html/xorg.html
+descr-entries=$BRZDIR/fields/globalicons.seq
+attr-fields=$BRZDIR/fields/displaymgr.seq
+attr-entries=$TMP/displaymgr.map
+saveto=$TMP/xdm.map
+ellipse-tags=55
+goto=next
+[/display]
+
+[services]
+batchmode=test expertise/level = 'beginner' -a $TMP/selected-target != null
+condition=test expertise/level != 'beginner' -a $TMP/selected-target != null
+
+description=$BRZDIR/html/services.html
+attr-fields=$BRZDIR/fields/services.seq
+cond-fail-mesg=L_TARGET_DRIVE_UNSPECIFIED
+cond-fail-goto=homepage
+
+with-tooltips=no
+saveto=services.map
+action=$BRZDIR/bin/d-set-services.sh %target/drive%
+[/services]
+
+#[firewall]
+#batchmode=test expertise/level = 'expert'
+#condition=test services/firewall != 'disabled'
+#description=$BRZDIR/html/firewall.html
+#
+#attr-fields=$BRZDIR/fields/firewall.seq
+#attr-entries=$TMP/firewall.map
+#with-tooltips=no
+#saveto=firewall.map
+#action=$BRZDIR/bin/d-set-firewall.sh
+#pass-mesg=L_SAVED_FIREWALL_CONFIGURATION
+#goto=next
+#[/firewall]
+
+#[uefi]
+#condition=test schemes/gptmode = 'uefi' -a schemes/uefi-keys = 'user'
+#description=$BRZDIR/html/uefi.html
+#attr-fields=$BRZDIR/fields/openssl.seq
+#attr-entries=$TMP/uefi.map
+#saveto=uefi.map
+#action=$BRZDIR/bin/d-set-ssh-keys.sh uefi
+#pass-mesg=L_SAVED_EFI_CONFIGURATION
+#goto=next
+#[/uefi]
+
+[bootstrap]
+condition=test $TMP/selected-target != null
+cond-fail-mesg=L_TARGET_DRIVE_UNSPECIFIED
+cond-fail-goto=homepage
+action=$BRZDIR/bin/d-bootstrap.sh %target/drive%
+[/bootstrap]
+
+[settings]
+condition=test $TMP/selected-target != null
+imginfo-file=crystalproject/256x256/apps/package.png
+description=$BRZDIR/html/settings.html
+cond-fail-mesg=L_TARGET_DRIVE_UNSPECIFIED
+cond-fail-goto=homepage
+[/settings]
+
+[install]
+condition=test $TMP/user-defined = 'yes' -a $TMP/selected-target != null
+list-entries=$BRZDIR/fields/mesgicons.seq
+#list-entries=$TMP/pkg-names.lst
+list-icon-default=Oxygen/48x48/mimetypes/package-x-generic.png
+descr-entries=$BRZDIR/fields/mesgicons.seq
+
+use-markup=yes
+match-names=yes
+select-mode=disabled
+
+progress-maximum=$TMP/pkg-total
+progress-list=yes
+
+cond-fail-mesg=L_USER_ACCOUNT_MISSING
+cond-fail-goto=usernames
+
+action=$BRZDIR/bin/d-install.sh
+please-wait=yes
+pass-goto=next
+
+[defaults]
+packages=$TMP/pkg-total
+footprint=$TMP/pkg-footprint
+[/defaults]
+[/install]
+
+[initcfg]
+action=$BRZDIR/bin/d-initcfg.sh
+wait-mesg=L_PREPARING_CONFIGURATION
+[/initcfg]
+
+[finish]
+action=$BRZDIR/bin/d-chroot.sh 'd-finish.sh'
+fail-mesg=L_FINISH_CONFIG_FAILURE
+please-wait=yes
+goto=next
+[/finish]
+
+[bootmgr]
+description=$BRZDIR/html/bootmgr.html
+align-html-label=center
+action-button=yes
+action-icon=crystalproject/128x128/apps/lockstart_session.png
+action=$BRZDIR/bin/d-set-bootmgr.sh
+goto=next
+
+wait-mesg=L_ENABLING_BOOT_LOADER
+pass-mesg=L_BOOTMGR_CONFIG_SUCCESS
+[/bootmgr]
+
+[cleanup]
+description=$BRZDIR/html/cleanup.html
+please-wait=yes
+align-html-label=center
+action-button=yes
+action-icon=crystal-project/128x128/actions/exit.png
+action=$BRZDIR/bin/d-cleanup.sh
+goto=homepage
+[/cleanup]
+
+[/installation]
